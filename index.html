@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pardeep Chopra – Manager Stores & Purchase with 20+ years of experience in Stores, Materials Management, Purchase Planning and Inventory Management.">
+<meta name="author" content="Pardeep Chopra">
+<title>Pardeep Chopra | Stores & Purchase Management Professional</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Inter,Arial,Helvetica,sans-serif;
+background:#f6f8fb;
+color:#172033;
+line-height:1.7
+}
+a{text-decoration:none}
+.hero{
+min-height:610px;
+background:linear-gradient(135deg,#07111f,#102a43 55%,#164e63);
+color:white;
+display:flex;
+align-items:center;
+position:relative;
+overflow:hidden
+}
+.hero:after{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+border-radius:50%;
+background:rgba(255,255,255,.05);
+right:-180px;
+top:-170px
+}
+.hero-inner{
+width:min(1100px,92%);
+margin:auto;
+position:relative;
+z-index:2
+}
+.badge{
+display:inline-block;
+padding:8px 16px;
+border:1px solid rgba(255,255,255,.25);
+border-radius:30px;
+font-size:13px;
+letter-spacing:1px;
+margin-bottom:22px;
+color:#d9f3ff
+}
+.hero h1{
+font-size:clamp(42px,7vw,72px);
+line-height:1.05;
+margin-bottom:16px;
+letter-spacing:-2px
+}
+.hero h1 span{color:#55d6be}
+.hero h2{
+font-size:clamp(20px,3vw,30px);
+font-weight:400;
+color:#d7e5ef;
+margin-bottom:20px
+}
+.hero p{
+max-width:700px;
+color:#c5d2df;
+font-size:17px
+}
+.hero-buttons{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+display:inline-block;
+padding:13px 23px;
+border-radius:30px;
+font-weight:bold;
+font-size:14px;
+transition:.2s
+}
+.btn-primary{background:#55d6be;color:#06251f}
+.btn-secondary{border:1px solid #7890a4;color:white}
+.btn:hover{transform:translateY(-2px)}
+nav{
+position:sticky;
+top:0;
+z-index:100;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(10px);
+box-shadow:0 2px 18px rgba(0,0,0,.08)
+}
+.nav-inner{
+width:min(1100px,94%);
+margin:auto;
+display:flex;
+justify-content:center;
+gap:6px;
+padding:12px 0;
+flex-wrap:wrap
+}
+nav a{
+color:#334155;
+font-size:13px;
+font-weight:700;
+padding:8px 12px;
+border-radius:20px
+}
+nav a:hover{background:#e7f7f4;color:#087f6b}
+.container{width:min(1100px,92%);margin:auto}
+section{padding:75px 0}
+.section-label{
+color:#0c8c77;
+font-size:12px;
+font-weight:800;
+letter-spacing:2px;
+text-transform:uppercase;
+margin-bottom:8px
+}
+h3.section-title{
+font-size:35px;
+line-height:1.2;
+margin-bottom:35px;
+color:#111827
+}
+.about-grid{
+display:grid;
+grid-template-columns:1.5fr 1fr;
+gap:25px
+}
+.panel{
+background:white;
+border-radius:18px;
+padding:30px;
+box-shadow:0 8px 30px rgba(15,23,42,.06);
+border:1px solid #edf1f5
+}
+.highlight{
+background:linear-gradient(135deg,#0b2737,#123f4e);
+color:white
+}
+.highlight h4{color:#55d6be;font-size:32px}
+.highlight p{color:#cbd9e2;margin-top:5px}
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+margin-top:22px
+}
+.stat{
+background:rgba(255,255,255,.07);
+padding:15px;
+border-radius:12px
+}
+.stat strong{display:block;font-size:22px;color:#55d6be}
+.timeline{
+position:relative;
+margin-left:12px;
+border-left:2px solid #b8ddd6;
+padding-left:28px
+}
+.timeline-item{
+position:relative;
+background:white;
+border:1px solid #e8edf2;
+border-radius:16px;
+padding:25px;
+margin-bottom:22px;
+box-shadow:0 6px 25px rgba(15,23,42,.05)
+}
+.timeline-item:before{
+content:"";
+position:absolute;
+width:13px;
+height:13px;
+border-radius:50%;
+background:#0c8c77;
+left:-36px;
+top:30px;
+border:4px solid #f6f8fb
+}
+.timeline-item h4{font-size:21px;color:#111827}
+.company{color:#0c8c77;font-weight:800;margin:4px 0}
+.date{font-size:13px;color:#64748b;margin-bottom:14px;font-weight:600}
+.timeline-item ul{padding-left:20px}
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px
+}
+.skill{
+background:#e9f7f4;
+color:#087765;
+padding:9px 14px;
+border-radius:25px;
+font-size:13px;
+font-weight:700
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+.card{
+background:white;
+padding:25px;
+border-radius:16px;
+border:1px solid #e8edf2;
+box-shadow:0 5px 20px rgba(15,23,42,.05)
+}
+.card h4{font-size:19px;margin-bottom:8px}
+.card p{color:#64748b;font-size:14px}
+.education{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px
+}
+.edu{
+background:white;
+padding:22px;
+border-left:4px solid #0c8c77;
+border-radius:10px;
+box-shadow:0 4px 18px rgba(15,23,42,.05)
+}
+.edu strong{display:block;color:#111827}
+.edu span{font-size:13px;color:#64748b}
+.contact{
+background:linear-gradient(135deg,#07111f,#123f4e);
+color:white;
+border-radius:24px;
+padding:50px;
+text-align:center
+}
+.contact h3{font-size:34px;margin-bottom:12px}
+.contact p{color:#cbd9e2}
+.contact-buttons{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap
+}
+footer{
+background:#07111f;
+color:#9fb0bd;
+text-align:center;
+padding:25px;
+font-size:13px
+}
+@media(max-width:800px){
+.about-grid,.education{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+.hero{min-height:650px}
+.hero-inner{width:90%}
+.hero h1{letter-spacing:-1px}
+.grid{grid-template-columns:1fr}
+.stats{grid-template-columns:1fr 1fr 1fr}
+.nav-inner{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}
+nav a{white-space:nowrap}
+section{padding:55px 0}
+.panel,.timeline-item,.contact{padding:22px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+<div class="hero-inner">
+<div class="badge">STORES • MATERIALS • PURCHASE MANAGEMENT</div>
+<h1>Pardeep <span>Chopra</span></h1>
+<h2>Manager – Stores & Purchase</h2>
+<p>
+Experienced industrial Stores and Materials Management professional
+with 20+ years of experience in inventory control, purchase planning,
+Min-Max planning, material handling, MIS, scrap management and ERP systems.
+</p>
+
+<div class="hero-buttons">
+<a class="btn btn-primary" href="#experience">View Experience</a>
+<a class="btn btn-secondary" href="mailto:pardeepchopra07@gmail.com">Contact Me</a>
+</div>
+</div>
+</header>
+
+<nav>
+<div class="nav-inner">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#software">ERP</a>
+<a href="#education">Education</a>
+<a href="#training">Training</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<main class="container">
+
+<section id="about">
+<div class="section-label">Professional Profile</div>
+<h3 class="section-title">Stores & Materials Management</h3>
+
+<div class="about-grid">
+
+<div class="panel">
+<p>
+I am a Stores and Materials Management professional with
+20+ years of industrial experience. My experience covers Stores,
+Purchase Planning, Inventory Control, Min-Max planning, material
+receipt and issue, job-work reconciliation, RGP processing,
+scrap management, vendor coordination and MIS reporting.
+</p>
+<br>
+<p>
+My career has included responsibilities across manufacturing
+and industrial environments, with hands-on exposure to SAP MM,
+Tally, Ramco, FoxPro, MS Excel and AutoCAD.
+</p>
+</div>
+
+<div class="panel highlight">
+<h4>20+</h4>
+<p>Years of Professional Experience</p>
+
+<div class="stats">
+<div class="stat"><strong>6</strong><small>Organizations</small></div>
+<div class="stat"><strong>SAP</strong><small>MM Module</small></div>
+<div class="stat"><strong>MBA</strong><small>Marketing</small></div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="experience">
+<div class="section-label">Career Journey</div>
+<h3 class="section-title">Professional Experience</h3>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h4>Manager Stores</h4>
+<div class="company">Shreyans Industries Limited, Rupnagar</div>
+<div class="date">August 2023 – Present</div>
+<ul>
+<li>Monitoring day-to-day stores activities.</li>
+<li>Scrap removal from plant through sale.</li>
+<li>Min-Max planning and execution.</li>
+<li>Daily and monthly MIS reporting.</li>
+<li>Invoice processing and coordination with accounts.</li>
+<li>Monitoring pending RGP receivables.</li>
+<li>Managing inbound and outbound material activities.</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h4>Manager Fulfilment</h4>
+<div class="company">Gardex India Pvt. Ltd., Jalandhar</div>
+<div class="date">June 2022 – July 2023</div>
+<ul>
+<li>Tracking customer orders.</li>
+<li>Procurement of production and maintenance items through production order and Min-Max.</li>
+<li>Follow-up with purchase department and vendors.</li>
+<li>Ensuring 5S in stores.</li>
+<li>Invoice clearance with accounts, approved purchase orders and quality clearance.</li>
+<li>Job-work reconciliation and follow-up.</li>
+<li>Monthly consumption, production and GIC reports.</li>
+<li>Regular scrap clearance.</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h4>Manager Stores</h4>
+<div class="company">Ladhar Paper Mills, Jalandhar</div>
+<div class="date">March 2016 – May 2022</div>
+<ul>
+<li>Receipt, issue, quality check and job-work activities.</li>
+<li>Purchase planning through Min-Max.</li>
+<li>Daily chemical and packing material requirement planning.</li>
+<li>Vendor account reconciliation.</li>
+<li>Spares availability management.</li>
+<li>Daily chemical consumption costing.</li>
+<li>Incoming material quality testing.</li>
+<li>RGP processing and reconciliation.</li>
+<li>Scrap clearance and invoice processing.</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h4>Manager Stores</h4>
+<div class="company">Trident Limited, Punjab</div>
+<div class="date">January 2011 – February 2016</div>
+<ul>
+<li>Scrap rate finalization through tender system.</li>
+<li>TPM implementation in stores.</li>
+<li>Search-free and count-free inventory system.</li>
+<li>Team training.</li>
+<li>Analysis of TAT, VED, FIFO, Ageing, Red Tag and Dead Inventory.</li>
+<li>Systematic inventory storage and FIFO.</li>
+<li>Incoming material inspection.</li>
+<li>RGP processing and reconciliation.</li>
+<li>Min-Max planning of critical items.</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h4>Quality Incharge</h4>
+<div class="company">HR International, Jalandhar</div>
+<div class="date">July 2009 – December 2010</div>
+<ul>
+<li>Hourly quality reporting.</li>
+<li>Checking dimensions, hardness and weight of forged components.</li>
+<li>Die change and production records.</li>
+<li>Daily quality reporting to Plant Head.</li>
+</ul>
+</div>
+
+<div class="timeline-item">
+<h4>Officer / Facilitator – Store</h4>
+<div class="company">Abhishek Industries Limited, Punjab</div>
+<div class="date">February 2007 – June 2009</div>
+<ul>
+<li>Process and function analysis.</li>
+<li>TAT, VED, FIFO, Ageing, Red Tag and Dead Inventory analysis.</li>
+<li>Inventory storage and FIFO.</li>
+<li>Invoice processing and purchase coordination.</li>
+<li>Incoming material inspection.</li>
+<li>RGP processing and reconciliation.</li>
+<li>Scrap and waste clearance.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<div class="section-label">Core Competencies</div>
+<h3 class="section-title">Key Skills</h3>
+
+<div class="panel">
+<div class="skills">
+<span class="skill">Stores Management</span>
+<span class="skill">Material Management</span>
+<span class="skill">Purchase Planning</span>
+<span class="skill">Min-Max Planning</span>
+<span class="skill">Inventory Control</span>
+<span class="skill">Data Analysis</span>
+<span class="skill">MIS Reporting</span>
+<span class="skill">Daily Chemical Costing</span>
+<span class="skill">Material Requirement Planning</span>
+<span class="skill">Scrap Management</span>
+<span class="skill">RGP Processing</span>
+<span class="skill">Job-Work Reconciliation</span>
+<span class="skill">FIFO</span>
+<span class="skill">VED Analysis</span>
+<span class="skill">Ageing Analysis</span>
+<span class="skill">Dead Inventory</span>
+<span class="skill">TPM</span>
+<span class="skill">5S</span>
+<span class="skill">Vendor Coordination</span>
+</div>
+</div>
+</section>
+
+<section id="software">
+<div class="section-label">Technology</div>
+<h3 class="section-title">ERP & Computer Skills</h3>
+
+<div class="grid">
+<div class="card">
+<h4>SAP</h4>
+<p>SAP ECC 6 & SAP 4.6 – MM Module</p>
+</div>
+<div class="card">
+<h4>Accounts & ERP</h4>
+<p>Tally ERP-9, Tally Prime, Ramco and FoxPro</p>
+</div>
+<div class="card">
+<h4>Technical Tools</h4>
+<p>MS Excel and AutoCAD</p>
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="section-label">Education</div>
+<h3 class="section-title">Academic Qualification</h3>
+
+<div class="education">
+<div class="edu"><strong>MBA – Marketing</strong><span>ICFAI Tripura | October 2021</span></div>
+<div class="edu"><strong>Graduation</strong><span>Guru Nanak Dev University | April 2007 – March 2010</span></div>
+<div class="edu"><strong>Diploma – Mechanical Engineering</strong><span>Ramgarhia Polytechnic, Phagwara | June 2004 – May 2006</span></div>
+<div class="edu"><strong>10+2 – Automobile</strong><span>Govt. Model Sr. Sec. School, Jalandhar | 2002 – 2003</span></div>
+<div class="edu"><strong>Matriculation</strong><span>Govt. Model Sr. Sec. School, Jalandhar | 2000 – 2001</span></div>
+</div>
+</section>
+
+<section id="training">
+<div class="section-label">Professional Development</div>
+<h3 class="section-title">Training</h3>
+
+<div class="grid">
+<div class="card"><h4>RUDSET Institute</h4><p>Scooter & Motorcycle Servicing</p></div>
+<div class="card"><h4>ATM Sanitations</h4><p>Factory Supervisor Training</p></div>
+<div class="card"><h4>Krishna Engineering Works</h4><p>Forging, Molding & Machine Shop Training</p></div>
+<div class="card"><h4>International Cars & Motors Ltd.</h4><p>Trainee Supervisor</p></div>
+<div class="card"><h4>Synatic Business School</h4><p>Six Months Management Training</p></div>
+</div>
+</section>
+
+<section>
+<div class="section-label">Languages</div>
+<h3 class="section-title">Communication</h3>
+
+<div class="skills">
+<span class="skill">Punjabi – Mother Tongue</span>
+<span class="skill">Hindi – Fluent</span>
+<span class="skill">English – Moderate</span>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<h3>Let's Connect</h3>
+<p>Jalandhar, Punjab, India</p>
+<p>pardeepchopra07@gmail.com</p>
+<p>+91 95012 48929</p>
+
+<div class="contact-buttons">
+<a class="btn btn-primary" href="mailto:pardeepchopra07@gmail.com">Email Me</a>
+<a class="btn btn-primary" href="tel:+919501248929">Call Me</a>
+<a class="btn btn-primary" href="https://wa.me/919501248929">WhatsApp</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2026 Pardeep Chopra • Manager – Stores & Purchase
+</footer>
+
+</body>
+</html>
