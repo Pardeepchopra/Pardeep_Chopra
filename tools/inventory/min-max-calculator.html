@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Industrial Min-Max and Reorder Point Calculator by Pardeep Chopra.">
+<title>Min-Max & Reorder Point Calculator | Industrial Materials Management</title>
+<link rel="stylesheet" href="../../assets/css/reference.css">
+
+<style>
+.tool-box{
+  background:#fff;
+  border:1px solid #dce5e9;
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 8px 28px rgba(7,59,76,.08);
+  margin-bottom:25px;
+}
+.tool-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+.tool-field label{
+  display:block;
+  font-weight:700;
+  color:#073b4c;
+  margin-bottom:6px;
+}
+.tool-field input{
+  width:100%;
+  padding:13px;
+  border:1px solid #cbd8dd;
+  border-radius:8px;
+  font-size:16px;
+}
+.tool-field small{
+  color:#60727c;
+}
+
+.required-star{
+  color:#d62828;
+  font-weight:800;
+  font-size:18px;
+}
+
+.required-note{
+  margin-top:18px;
+  font-size:13px;
+  color:#60727c;
+}
+
+.required-note .required-star{
+  font-size:16px;
+}
+.tool-button{
+  margin-top:22px;
+  background:#073b4c;
+  color:#fff;
+  border:0;
+  border-radius:8px;
+  padding:14px 24px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+}
+.tool-button:hover{
+  background:#0b7285;
+}
+.result-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.result-card{
+  background:#f5f9fa;
+  border:1px solid #dce5e9;
+  border-radius:10px;
+  padding:18px;
+}
+.result-card span{
+  display:block;
+  color:#60727c;
+  font-size:13px;
+}
+.result-card strong{
+  display:block;
+  color:#073b4c;
+  font-size:25px;
+  margin-top:5px;
+}
+.status{
+  margin-top:20px;
+  padding:18px;
+  border-radius:10px;
+  background:#eef7f5;
+  border-left:5px solid #16a085;
+}
+@media(max-width:800px){
+  .tool-grid,
+  .result-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="ref-header">
+<nav class="ref-nav">
+<div class="ref-brand">
+<strong>Industrial Materials Management</strong>
+<span>Pardeep Chopra</span>
+<small>STORES • INVENTORY • PURCHASE • PLANNING • MATERIALS • ERP • ANALYSIS</small>
+</div>
+
+<div>
+<a href="../../index.html">Home</a>
+<a href="../../reference/inventory/">Inventory</a>
+<a href="../../reference/stores/">Stores</a>
+<a href="../../reference/purchase/">Purchase</a>
+<a href="../../reference/planning/">Planning</a>
+</div>
+</nav>
+</header>
+
+<main class="ref-container">
+
+<section class="ref-hero">
+<div class="ref-label">Analytical Tool • Inventory Control</div>
+<h1>Min-Max & Reorder Point Calculator</h1>
+<p>
+Calculate lead-time demand, reorder point, minimum level, maximum level,
+reorder quantity and current stock status using a practical inventory-control
+method.
+</p>
+</section>
+
+<section class="tool-box">
+
+<h2>Input Parameters</h2>
+
+<div class="tool-grid">
+
+<div class="tool-field">
+<label for="avg">Average Daily Consumption <span class="required-star">*</span></label>
+<input id="avg" type="number" min="0" step="any" placeholder="e.g. 20" required>
+<small>Units consumed per day.</small>
+</div>
+
+<div class="tool-field">
+<label for="max">Maximum Daily Consumption</label>
+<input id="max" type="number" min="0" step="any" placeholder="e.g. 30">
+<small>Maximum observed/planned daily consumption.</small>
+</div>
+
+<div class="tool-field">
+<label for="lead">Average Lead Time <span class="required-star">*</span></label>
+<input id="lead" type="number" min="0" step="any" placeholder="e.g. 10" required>
+<small>Supplier lead time in days.</small>
+</div>
+
+<div class="tool-field">
+<label for="maxLead">Maximum Lead Time</label>
+<input id="maxLead" type="number" min="0" step="any" placeholder="e.g. 15">
+<small>Maximum expected lead time in days.</small>
+</div>
+
+<div class="tool-field">
+<label for="safety">Safety Stock <span class="required-star">*</span></label>
+<input id="safety" type="number" min="0" step="any" placeholder="e.g. 100" required>
+<small>Protection stock in units.</small>
+</div>
+
+
+
+<div class="tool-field">
+<label for="current">Current Stock <span class="required-star">*</span></label>
+<input id="current" type="number" min="0" step="any" placeholder="e.g. 250" required>
+<small>Current physical/on-hand stock.</small>
+</div>
+
+<div class="tool-field">
+<label for="uom">UOM</label>
+<input id="uom" type="text" value="Units" placeholder="Units / Kg / Ltr / Nos">
+<small>Display unit only.</small>
+</div>
+
+</div>
+
+<div class="required-note">
+  <span class="required-star">*</span> Required field
+</div>
+
+<button class="tool-button" onclick="calculate()">Calculate Inventory Parameters</button>
+
+</section>
+
+<section class="tool-box">
+
+<h2>Calculated Results</h2>
+
+<div class="result-grid">
+
+<div class="result-card">
+<span>Lead-Time Demand</span>
+<strong id="leadDemand">—</strong>
+</div>
+
+<div class="result-card">
+<span>Safety Stock</span>
+<strong id="resultSafety">—</strong>
+</div>
+
+<div class="result-card">
+<span>Reorder Point</span>
+<strong id="rop">—</strong>
+</div>
+
+<div class="result-card">
+<span>Minimum Level</span>
+<strong id="minimum">—</strong>
+</div>
+
+<div class="result-card">
+<span>Maximum Level</span>
+<strong id="maximum">—</strong>
+</div>
+
+<div class="result-card">
+<span>Reorder Quantity</span>
+<strong id="resultROQ">—</strong>
+</div>
+
+</div>
+
+<div class="status" id="status">
+Enter the required parameters and select Calculate.
+</div>
+
+</section>
+
+<section class="ref-card">
+
+<h2>Calculation Method</h2>
+
+<div class="ref-formula">
+Lead-Time Demand =
+Average Daily Consumption × Average Lead Time
+<br><br>
+ROP =
+Lead-Time Demand + Safety Stock
+<br><br>
+Minimum Level =
+ROP
+<br><br>
+Maximum Level =
+Minimum Level + Reorder Quantity
+</div>
+
+<p>
+This calculator uses a practical control method. Organizations may use
+different definitions of minimum level, maximum level, inventory position,
+safety stock and replenishment quantity depending on their ERP configuration
+and inventory policy.
+</p>
+
+</section>
+
+<section class="ref-card">
+
+<h2>Stock Status Logic</h2>
+
+<table class="ref-table">
+<thead>
+<tr>
+<th>Current Stock</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Below Minimum</td>
+<td>Potential shortage / urgent replenishment review.</td>
+</tr>
+<tr>
+<td>At or below ROP</td>
+<td>Replenishment trigger should be reviewed.</td>
+</tr>
+<tr>
+<td>Between ROP and Maximum</td>
+<td>Normal operating range.</td>
+</tr>
+<tr>
+<td>Above Maximum</td>
+<td>Potential excess stock; investigate before further purchase.</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+<section class="ref-card">
+
+<h2>Industrial Application</h2>
+
+<p>
+This calculator can be used as a preliminary planning tool for MRO items,
+consumables, stores materials and other inventory where practical
+Min-Max control is appropriate.
+</p>
+
+<p>
+For critical materials, statistical demand analysis, supplier reliability,
+open purchase orders, reserved quantities, service requirements and
+criticality should also be considered.
+</p>
+
+</section>
+
+<section class="ref-card">
+
+<h2>Related Professional References</h2>
+
+<a href="../../reference/inventory/safety-stock.html">Safety Stock</a><br>
+<a href="../../reference/inventory/reorder-point.html">Reorder Point</a><br>
+<a href="../../reference/inventory/min-max-inventory-control.html">Min-Max Inventory Control</a><br>
+<a href="../../reference/inventory/inventory-classification.html">Inventory Classification</a><br>
+<a href="../../reference/inventory/inventory-turnover.html">Inventory Turnover Ratio</a>
+
+</section>
+
+</main>
+
+<footer class="ref-footer">
+Industrial Materials Management • Pardeep Chopra
+</footer>
+
+<script>
+function number(id){
+  return parseFloat(document.getElementById(id).value) || 0;
+}
+
+function format(value){
+  return Number(value).toLocaleString(undefined,{
+    maximumFractionDigits:2
+  });
+}
+
+function calculate(){
+
+  const avg = number("avg");
+  const max = number("max");
+  const lead = number("lead");
+  const maxLead = number("maxLead");
+  const safety = number("safety");
+  const current = number("current");
+  const uom = document.getElementById("uom").value || "Units";
+
+  const status = document.getElementById("status");
+
+  // Validate all essential fields before calculation
+  const missing = [];
+
+  if(!document.getElementById("avg").value.trim())
+    missing.push("Average Daily Consumption");
+
+  if(!document.getElementById("lead").value.trim())
+    missing.push("Average Lead Time");
+
+  if(!document.getElementById("safety").value.trim())
+    missing.push("Safety Stock");
+
+  if(!document.getElementById("current").value.trim())
+    missing.push("Current Stock");
+
+  if(missing.length > 0){
+    status.textContent =
+      "⚠️ Please enter the required field(s): " + missing.join(", ") + ".";
+    status.style.color = "#d62828";
+    return;
+  }
+
+  // Validate numeric values
+  if(avg <= 0){
+    status.textContent =
+      "⚠️ Average Daily Consumption must be greater than zero.";
+    status.style.color = "#d62828";
+    return;
+  }
+
+  if(lead <= 0){
+    status.textContent =
+      "⚠️ Average Lead Time must be greater than zero.";
+    status.style.color = "#d62828";
+    return;
+  }
+
+  if(safety < 0){
+    status.textContent =
+      "⚠️ Safety Stock cannot be negative.";
+    status.style.color = "#d62828";
+    return;
+  }
+
+  if(current < 0){
+    status.textContent =
+      "⚠️ Current Stock cannot be negative.";
+    status.style.color = "#d62828";
+    return;
+  }
+
+  status.style.color = "";
+
+  const leadDemand = avg * lead;
+
+  const rop = leadDemand + safety;
+  const minimum = rop;
+
+  // Maximum stock based on maximum consumption and maximum lead time
+  const maximum = (max * maxLead) + safety;
+
+  // Reorder Quantity is calculated automatically
+  const roq = Math.max(0, maximum - current);
+
+  document.getElementById("leadDemand").textContent =
+    format(leadDemand) + " " + uom;
+
+  document.getElementById("resultSafety").textContent =
+    format(safety) + " " + uom;
+
+  document.getElementById("rop").textContent =
+    format(rop) + " " + uom;
+
+  document.getElementById("minimum").textContent =
+    format(minimum) + " " + uom;
+
+  document.getElementById("maximum").textContent =
+    format(maximum) + " " + uom;
+
+  document.getElementById("resultROQ").textContent =
+    format(roq) + " " + uom;
+
+  let message = "";
+
+  if(current < minimum){
+    message =
+      "CURRENT STOCK IS BELOW MINIMUM — shortage risk. Review replenishment immediately.";
+  }
+  else if(current <= rop){
+    message =
+      "REPLENISHMENT REVIEW — current stock is at or below the Reorder Point.";
+  }
+  else if(current <= maximum){
+    message =
+      "NORMAL OPERATING RANGE — current stock is between the Reorder Point and Maximum Level.";
+  }
+  else{
+    message =
+      "ABOVE MAXIMUM — potential excess inventory. Review open orders and future requirements before purchasing.";
+  }
+
+  document.getElementById("status").textContent =
+    message;
+}
+</script>
+
+</body>
+</html>

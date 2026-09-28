@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Professional reference covering ROP, lead-time demand, safety stock, inventory position and replenishment trigger logic.">
+<title>Reorder Point | Industrial Materials Management</title>
+<link rel="stylesheet" href="../../assets/css/reference.css">
+</head>
+<body>
+<header class="ref-header">
+<nav class="ref-nav">
+<div class="ref-brand">
+<strong>Industrial Materials Management</strong>
+<span>Pardeep Chopra</span>
+<small>STORES • INVENTORY • PURCHASE • PLANNING • MATERIALS • ERP • ANALYSIS</small>
+</div>
+<div>
+<a href="../../index.html">Home</a>
+<a href="index.html">Inventory</a>
+<a href="../stores/">Stores</a>
+<a href="../purchase/">Purchase</a>
+<a href="../planning/">Planning</a>
+</div>
+</nav>
+</header>
+<main class="ref-container">
+
+<section class="ref-hero">
+<div class="ref-label">Professional Reference • Replenishment Control</div>
+<h1>Reorder Point</h1>
+<p>Professional reference covering ROP, lead-time demand, safety stock, inventory position and replenishment trigger logic.</p>
+</section>
+
+<div class="ref-grid">
+<div>
+
+<section class="ref-card">
+<h2>1. Definition</h2>
+
+<div class="ref-definition">
+<strong>Reorder Point (ROP)</strong> is the inventory position at which
+replenishment should be initiated so that expected supply arrives before the
+available stock becomes insufficient, subject to the selected inventory
+policy.
+</div>
+</section>
+
+<section class="ref-card">
+<h2>2. Basic ROP Formula</h2>
+
+<div class="ref-formula">
+ROP = Lead-Time Demand + Safety Stock
+</div>
+
+<p>
+If demand is expressed as average daily consumption:
+</p>
+
+<div class="ref-formula">
+ROP =
+Average Daily Consumption × Lead Time
++ Safety Stock
+</div>
+</section>
+
+<section class="ref-card">
+<h2>3. Worked Example</h2>
+
+<p>
+Average daily consumption = <strong>25 units</strong><br>
+Lead time = <strong>8 days</strong><br>
+Safety stock = <strong>100 units</strong>
+</p>
+
+<div class="ref-formula">
+Lead-Time Demand = 25 × 8 = 200 units
+<br><br>
+ROP = 200 + 100
+<br><br>
+ROP = 300 units
+</div>
+
+<p>
+Therefore, the defined replenishment trigger is approximately
+<strong>300 units</strong> under this simplified policy.
+</p>
+</section>
+
+<section class="ref-card">
+<h2>4. Inventory Position Versus Physical Stock</h2>
+
+<p>
+In a practical ERP environment, the replenishment decision may need to
+consider more than physical stock.
+</p>
+
+<div class="ref-formula">
+Inventory Position =
+On-Hand Stock
++ Open / Scheduled Receipts
+− Allocated / Reserved Quantity
+</div>
+
+<p>
+The exact inventory-position definition should follow the organization's ERP
+and planning policy.
+</p>
+</section>
+
+<section class="ref-card">
+<h2>5. Factors Affecting ROP</h2>
+
+<table class="ref-table">
+<thead>
+<tr><th>Factor</th><th>Impact</th></tr>
+</thead>
+<tbody>
+<tr><td>Consumption rate</td><td>Higher consumption generally increases lead-time demand.</td></tr>
+<tr><td>Lead time</td><td>Longer lead time generally increases stock required before replenishment arrives.</td></tr>
+<tr><td>Safety stock</td><td>Provides protection against uncertainty.</td></tr>
+<tr><td>Criticality</td><td>Critical materials may require stronger availability protection.</td></tr>
+<tr><td>Supplier reliability</td><td>Variable delivery can increase uncertainty.</td></tr>
+<tr><td>Demand variability</td><td>May require a larger buffer.</td></tr>
+</tbody>
+</table>
+</section>
+
+<section class="ref-card">
+<h2>6. ROP Decision Logic</h2>
+
+<ol>
+<li>Calculate or estimate demand during lead time.</li>
+<li>Determine appropriate safety stock.</li>
+<li>Calculate ROP.</li>
+<li>Monitor inventory position.</li>
+<li>Trigger replenishment according to the defined policy.</li>
+<li>Consider open orders and expected receipts.</li>
+<li>Review parameters when demand or supply conditions change.</li>
+</ol>
+</section>
+
+<section class="ref-card">
+<h2>7. Common ROP Errors</h2>
+
+<ul>
+<li>Using outdated consumption data.</li>
+<li>Ignoring supplier lead-time changes.</li>
+<li>Using physical stock instead of inventory position where open orders matter.</li>
+<li>Applying the same ROP to materials with very different demand patterns.</li>
+<li>Never reviewing parameters after major process changes.</li>
+</ul>
+</section>
+
+</div>
+<aside class="ref-side">
+<section class="ref-card">
+<h2>Inventory Reference</h2>
+<a href="index.html">Inventory Management</a>
+<a href="inventory-management-fundamentals.html">Fundamentals</a>
+<a href="inventory-classification.html">Classification</a>
+<a href="inventory-costs.html">Inventory Costs</a>
+<a href="inventory-accuracy.html">Inventory Accuracy</a>
+<a href="inventory-ageing.html">Inventory Ageing</a>
+<a href="dead-obsolete-surplus-inventory.html">Dead / Obsolete / Surplus</a>
+<a href="safety-stock.html">Safety Stock</a>
+<a href="reorder-point.html">Reorder Point</a>
+<a href="min-max-inventory-control.html">Min-Max Control</a>
+<a href="eoq-order-quantity.html">EOQ / Order Quantity</a>
+<a href="inventory-turnover.html">Inventory Turnover</a>
+</section>
+
+<section class="ref-card">
+<h2>Inventory Tools</h2>
+<a href="../../tools/">Analytical Tools</a>
+<a href="../../frameworks/">Management Frameworks</a>
+<a href="../../templates/">Professional Templates</a>
+</section>
+</aside>
+</div>
+
+</main>
+<footer class="ref-footer">
+Industrial Materials Management • Pardeep Chopra
+</footer>
+</body>
+</html>
