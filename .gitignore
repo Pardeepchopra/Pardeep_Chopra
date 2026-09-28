@@ -1,0 +1,29 @@
+# Development backups
+.*-backup-*/
+pre-v2-backup/
+
+# Temporary page snapshots
+*-before-search.html
+index-before-*.html
+index-after-*.html
+profile-before-search.html
+
+# Development audit/report outputs
+integration-audit.json
+integration-audit-clean.json
+sitemap-report.json
+
+# Local development scripts
+upgrade_erp_mis_reference.py
+upgrade_kpi_reference.py
+upgrade_lean_mro_reference.py
+
+# CSS development snapshots
+assets/css/*-before-*.css
+assets/css/*-v2-backup.css
+
+# Reference development backup directories and snapshots
+reference/**/_backup-*/
+reference/stores/*-before-deep-upgrade.html
+reference/stores/*-before-batch-upgrade.html
+reference/stores/*-before-redesign.html

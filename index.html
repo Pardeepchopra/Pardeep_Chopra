@@ -1,584 +1,394 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Pardeep Chopra – Manager Stores & Purchase with 20+ years of experience in Stores, Materials Management, Purchase Planning and Inventory Management.">
-<meta name="author" content="Pardeep Chopra">
-<title>Pardeep Chopra | Stores & Purchase Management Professional</title>
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-font-family:Inter,Arial,Helvetica,sans-serif;
-background:#f6f8fb;
-color:#172033;
-line-height:1.7
-}
-a{text-decoration:none}
-.hero{
-min-height:610px;
-background:linear-gradient(135deg,#07111f,#102a43 55%,#164e63);
-color:white;
-display:flex;
-align-items:center;
-position:relative;
-overflow:hidden
-}
-.hero:after{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-border-radius:50%;
-background:rgba(255,255,255,.05);
-right:-180px;
-top:-170px
-}
-.hero-inner{
-width:min(1100px,92%);
-margin:auto;
-position:relative;
-z-index:2
-}
-.badge{
-display:inline-block;
-padding:8px 16px;
-border:1px solid rgba(255,255,255,.25);
-border-radius:30px;
-font-size:13px;
-letter-spacing:1px;
-margin-bottom:22px;
-color:#d9f3ff
-}
-.hero h1{
-font-size:clamp(42px,7vw,72px);
-line-height:1.05;
-margin-bottom:16px;
-letter-spacing:-2px
-}
-.hero h1 span{color:#55d6be}
-.hero h2{
-font-size:clamp(20px,3vw,30px);
-font-weight:400;
-color:#d7e5ef;
-margin-bottom:20px
-}
-.hero p{
-max-width:700px;
-color:#c5d2df;
-font-size:17px
-}
-.hero-buttons{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
-.btn{
-display:inline-block;
-padding:13px 23px;
-border-radius:30px;
-font-weight:bold;
-font-size:14px;
-transition:.2s
-}
-.btn-primary{background:#55d6be;color:#06251f}
-.btn-secondary{border:1px solid #7890a4;color:white}
-.btn:hover{transform:translateY(-2px)}
-nav{
-position:sticky;
-top:0;
-z-index:100;
-background:rgba(255,255,255,.96);
-backdrop-filter:blur(10px);
-box-shadow:0 2px 18px rgba(0,0,0,.08)
-}
-.nav-inner{
-width:min(1100px,94%);
-margin:auto;
-display:flex;
-justify-content:center;
-gap:6px;
-padding:12px 0;
-flex-wrap:wrap
-}
-nav a{
-color:#334155;
-font-size:13px;
-font-weight:700;
-padding:8px 12px;
-border-radius:20px
-}
-nav a:hover{background:#e7f7f4;color:#087f6b}
-.container{width:min(1100px,92%);margin:auto}
-section{padding:75px 0}
-.section-label{
-color:#0c8c77;
-font-size:12px;
-font-weight:800;
-letter-spacing:2px;
-text-transform:uppercase;
-margin-bottom:8px
-}
-h3.section-title{
-font-size:35px;
-line-height:1.2;
-margin-bottom:35px;
-color:#111827
-}
-.about-grid{
-display:grid;
-grid-template-columns:1.5fr 1fr;
-gap:25px
-}
-.panel{
-background:white;
-border-radius:18px;
-padding:30px;
-box-shadow:0 8px 30px rgba(15,23,42,.06);
-border:1px solid #edf1f5
-}
-.highlight{
-background:linear-gradient(135deg,#0b2737,#123f4e);
-color:white
-}
-.highlight h4{color:#55d6be;font-size:32px}
-.highlight p{color:#cbd9e2;margin-top:5px}
-.stats{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:12px;
-margin-top:22px
-}
-.stat{
-background:rgba(255,255,255,.07);
-padding:15px;
-border-radius:12px
-}
-.stat strong{display:block;font-size:22px;color:#55d6be}
-.timeline{
-position:relative;
-margin-left:12px;
-border-left:2px solid #b8ddd6;
-padding-left:28px
-}
-.timeline-item{
-position:relative;
-background:white;
-border:1px solid #e8edf2;
-border-radius:16px;
-padding:25px;
-margin-bottom:22px;
-box-shadow:0 6px 25px rgba(15,23,42,.05)
-}
-.timeline-item:before{
-content:"";
-position:absolute;
-width:13px;
-height:13px;
-border-radius:50%;
-background:#0c8c77;
-left:-36px;
-top:30px;
-border:4px solid #f6f8fb
-}
-.timeline-item h4{font-size:21px;color:#111827}
-.company{color:#0c8c77;font-weight:800;margin:4px 0}
-.date{font-size:13px;color:#64748b;margin-bottom:14px;font-weight:600}
-.timeline-item ul{padding-left:20px}
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:10px
-}
-.skill{
-background:#e9f7f4;
-color:#087765;
-padding:9px 14px;
-border-radius:25px;
-font-size:13px;
-font-weight:700
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px
-}
-.card{
-background:white;
-padding:25px;
-border-radius:16px;
-border:1px solid #e8edf2;
-box-shadow:0 5px 20px rgba(15,23,42,.05)
-}
-.card h4{font-size:19px;margin-bottom:8px}
-.card p{color:#64748b;font-size:14px}
-.education{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px
-}
-.edu{
-background:white;
-padding:22px;
-border-left:4px solid #0c8c77;
-border-radius:10px;
-box-shadow:0 4px 18px rgba(15,23,42,.05)
-}
-.edu strong{display:block;color:#111827}
-.edu span{font-size:13px;color:#64748b}
-.contact{
-background:linear-gradient(135deg,#07111f,#123f4e);
-color:white;
-border-radius:24px;
-padding:50px;
-text-align:center
-}
-.contact h3{font-size:34px;margin-bottom:12px}
-.contact p{color:#cbd9e2}
-.contact-buttons{
-margin-top:25px;
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap
-}
-footer{
-background:#07111f;
-color:#9fb0bd;
-text-align:center;
-padding:25px;
-font-size:13px
-}
-@media(max-width:800px){
-.about-grid,.education{grid-template-columns:1fr}
-.grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:560px){
-.hero{min-height:650px}
-.hero-inner{width:90%}
-.hero h1{letter-spacing:-1px}
-.grid{grid-template-columns:1fr}
-.stats{grid-template-columns:1fr 1fr 1fr}
-.nav-inner{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}
-nav a{white-space:nowrap}
-section{padding:55px 0}
-.panel,.timeline-item,.contact{padding:22px}
-}
-</style>
-<link rel="stylesheet" href="assets/css/upgrade.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Industrial Materials Management | Pardeep Chopra</title>
+<meta name="description" content="Industrial Materials Management professional reference by Pardeep Chopra covering Stores, Inventory, Purchase, Planning, Materials, ERP and Analysis.">
+<link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="stylesheet" href="/assets/css/site-search.css">
+<link rel="stylesheet" href="/assets/css/home.css">
 </head>
 
-<body>
+<body class="home-page">
 
-<header class="hero">
-<div class="hero-inner">
-<div class="badge">STORES • MATERIALS • PURCHASE MANAGEMENT</div>
-<h1>Pardeep <span>Chopra</span></h1>
-<h2>Manager – Stores & Purchase</h2>
-<p>
-Experienced industrial Stores and Materials Management professional
-with 20+ years of experience in inventory control, purchase planning,
-Min-Max planning, material handling, MIS, scrap management and ERP systems.
-</p>
+<header class="home-header">
+<div class="home-header-inner">
 
-<div class="hero-buttons">
-<a class="btn btn-primary" href="#experience">View Experience</a>
-<a class="btn btn-secondary" href="Pardeep_Chopra_CV.pdf" download>Download CV</a><a class="btn btn-secondary" href="mailto:pardeepchopra07@gmail.com">Contact Me</a>
+<div class="home-brand">
+<span class="home-brand-title">Industrial Materials Management</span>
+<span class="home-brand-name">Pardeep Chopra</span>
+<span class="home-brand-line">STORES &nbsp;|&nbsp; INVENTORY &nbsp;|&nbsp; PURCHASE &nbsp;|&nbsp; PLANNING &nbsp;|&nbsp; MATERIALS &nbsp;|&nbsp; ERP &nbsp;|&nbsp; ANALYSIS</span>
 </div>
-</div>
-</header>
-<section class="quick-stats" aria-label="Professional highlights">
-<div class="quick-stat"><strong>20+</strong><span>Years Experience</span></div>
-<div class="quick-stat"><strong>6</strong><span>Organizations</span></div>
-<div class="quick-stat"><strong>19+</strong><span>Core Skill Areas</span></div>
-<div class="quick-stat"><strong>SAP MM</strong><span>ERP Expertise</span></div>
-</section>
 
-<nav>
-<div class="nav-inner">
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#skills">Skills</a>
-<a href="#software">ERP</a>
-<a href="#education">Education</a>
-<a href="#training">Training</a>
-<a href="#contact">Contact</a>
-</div>
+<nav class="home-nav" aria-label="Main navigation">
+<a href="/index.html">Home</a>
+<a href="/reference/inventory/index.html">Inventory</a>
+<a href="/reference/stores/index.html">Stores</a>
+<a href="/reference/purchase/index.html">Purchase</a>
+<a href="/reference/planning/index.html">Planning</a>
+<a href="/reference/materials/index.html">Materials</a>
+<a href="/reference/control-systems/index.html">Control Systems</a>
+<a href="/reference/erp/index.html">ERP & MIS</a>
+<a href="/tools/index.html">Tools</a>
+<a href="/templates/index.html">Templates</a>
+<a href="/case-studies/index.html">Cases</a>
+<a href="/profile.html">Profile</a>
 </nav>
 
-<main class="container">
+</div>
+</header>
 
-<section class="what-i-do">
-<div class="section-label">Professional Capabilities</div>
-<h3 class="section-title">What I Do</h3>
-<div class="what-grid">
-<div class="what-card">
-<div class="what-icon">📦</div>
-<h4>Stores Management</h4>
-<p>Material receipt, issue, storage, FIFO, RGP, scrap management and systematic stores operations.</p>
-<a class="what-link" href="#skills">Explore Skills →</a>
-</div>
-<div class="what-card">
-<div class="what-icon">📊</div>
-<h4>Inventory Management</h4>
-<p>ABC, FSN, VED, ageing, dead inventory, Min-Max planning and inventory control.</p>
-<a class="what-link" href="#skills">Explore Skills →</a>
-</div>
-<div class="what-card">
-<div class="what-icon">🛒</div>
-<h4>Purchase Planning</h4>
-<p>Material requirement planning, replenishment, vendor coordination and purchase follow-up.</p>
-<a class="what-link" href="#skills">Explore Skills →</a>
-</div>
-<div class="what-card">
-<div class="what-icon">💻</div>
-<h4>ERP & MIS</h4>
-<p>SAP MM, ERP systems, Excel-based analysis and management information reporting.</p>
-<a class="what-link" href="#software">Explore ERP →</a>
-</div>
-</div>
-</section>
-<section id="about">
-<div class="section-label">Professional Profile</div>
-<h3 class="section-title">Stores & Materials Management</h3>
+<main>
 
-<div class="about-grid">
+<section class="home-hero">
+<div class="home-hero-inner">
 
-<div class="panel">
-<p>
-I am a Stores and Materials Management professional with
-20+ years of industrial experience. My experience covers Stores,
-Purchase Planning, Inventory Control, Min-Max planning, material
-receipt and issue, job-work reconciliation, RGP processing,
-scrap management, vendor coordination and MIS reporting.
+<div class="home-hero-copy">
+<div class="home-kicker">Professional Reference & Management Framework</div>
+
+<h1>
+Industrial
+<span>Materials</span>
+Management
+</h1>
+
+<p class="home-hero-text">
+A comprehensive practical reference for managing material flow, inventory, purchasing, planning, working capital and industrial control systems.
 </p>
-<br>
+
+<div class="home-actions">
+<a class="home-btn" href="/reference/index.html">Professional Reference →</a>
+<a class="home-btn alt" href="/tools/index.html">Analytical Tools →</a>
+</div>
+</div>
+
+<div class="home-visual" aria-label="Material flow illustration">
+<div class="home-visual-grid"></div>
+
+<div class="material-flow">
+<div class="flow-title">Material Flow</div>
+
+<div class="flow-step"><span class="flow-number">01</span> Supplier</div>
+<div class="flow-step"><span class="flow-number">02</span> Receipt & GRN</div>
+<div class="flow-step"><span class="flow-number">03</span> Inspection</div>
+<div class="flow-step"><span class="flow-number">04</span> Storage</div>
+<div class="flow-step"><span class="flow-number">05</span> Inventory Control</div>
+<div class="flow-step"><span class="flow-number">06</span> Issue to Production</div>
+</div>
+
+<div class="flow-side">
+<strong>4R</strong>
+<small>MATERIAL CONTROL</small>
+<div class="control-item"><b>01</b><span>Right Material</span></div>
+<div class="control-item"><b>02</b><span>Right Quality</span></div>
+<div class="control-item"><b>03</b><span>Right Time</span></div>
+<div class="control-item"><b>04</b><span>Right Cost</span></div>
+<hr>
+<em>Availability • Quality • Timing • Value</em>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="home-metrics">
+<div class="home-wrap">
+<div class="home-metrics-grid">
+
+<div class="home-metric">
+<strong>20+</strong>
+<span>Years Experience</span>
+<p>Industrial Stores & Materials Management</p>
+</div>
+
+<div class="home-metric">
+<strong>2800+</strong>
+<span>SKU Management</span>
+<p>Multi-location material control</p>
+</div>
+
+<div class="home-metric">
+<strong>6+</strong>
+<span>Organizations</span>
+<p>Manufacturing & process industries</p>
+</div>
+
+<div class="home-metric">
+<strong>SAP MM</strong>
+<span>ERP Experience</span>
+<p>Implementation, operations & reporting</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="home-reference">
+<div class="home-wrap">
+
+<div class="home-section-label">Professional Reference</div>
+
+<h2>Complete Materials Management Framework</h2>
+
+<p class="home-reference-intro">
+A structured professional reference covering the complete material lifecycle — from planning and procurement through receipt, storage, inventory control, issue, utilization, ERP, analytics and working-capital management.
+</p>
+
+<div class="framework-grid">
+
+<div class="framework">
+<div class="framework-number">01</div>
+<div class="framework-body">
+<h3>Stores Management</h3>
+<p>Receipt • GRN • Inspection • Storage • Issue • Return • RGP • Scrap • Audit</p>
+<a href="/reference/stores/index.html">Explore Stores →</a>
+</div>
+</div>
+
+<div class="framework">
+<div class="framework-number">02</div>
+<div class="framework-body">
+<h3>Inventory Management</h3>
+<p>ABC • FSN • VED • Ageing • Safety Stock • ROP • Min-Max • EOQ • Turnover</p>
+<a href="/reference/inventory/index.html">Explore Inventory →</a>
+</div>
+</div>
+
+<div class="framework">
+<div class="framework-number">03</div>
+<div class="framework-body">
+<h3>Purchase Management</h3>
+<p>PR • RFQ • Vendor Evaluation • Quotation • Negotiation • PO • Expediting</p>
+<a href="/reference/purchase/index.html">Explore Purchase →</a>
+</div>
+</div>
+
+<div class="framework">
+<div class="framework-number">04</div>
+<div class="framework-body">
+<h3>Material Planning</h3>
+<p>Demand • Consumption Planning • MRP • BOM • MPS • Lot Sizing • Lead Time</p>
+<a href="/reference/planning/index.html">Explore Planning →</a>
+</div>
+</div>
+
+<div class="framework">
+<div class="framework-number">05</div>
+<div class="framework-body">
+<h3>Materials Management</h3>
+<p>Material Flow • Utilization • Value Analysis • Value Engineering • TCO • Working Capital</p>
+<a href="/reference/materials/index.html">Explore Materials →</a>
+</div>
+</div>
+
+<div class="framework">
+<div class="framework-number">06</div>
+<div class="framework-body">
+<h3>ERP & MIS</h3>
+<p>Material Master • PR/PO/GRN • Issues • Transfers • SAP MM • MIS • Reporting</p>
+<a href="/reference/erp/index.html">Explore ERP & MIS →</a>
+</div>
+</div>
+
+<div class="framework">
+<div class="framework-number">07</div>
+<div class="framework-body">
+<h3>Inventory Control Systems</h3>
+<p>Two-Bin • Three-Bin • Kanban • JIT • Pull/Push • Base Stock • Order-Up-To</p>
+<a href="/reference/control-systems/index.html">Explore Control Systems →</a>
+</div>
+</div>
+
+<div class="framework">
+<div class="framework-number">08</div>
+<div class="framework-body">
+<h3>Lean & MRO</h3>
+<p>Lean Materials • Supermarket • Milk Run • Visual Control • MRO • Critical Spares</p>
+<a href="/reference/lean/index.html">Explore Lean →</a>
+</div>
+</div>
+
+<div class="framework">
+<div class="framework-number">09</div>
+<div class="framework-body">
+<h3>Industrial KPIs</h3>
+<p>Inventory Turnover • Accuracy • Stock Coverage • OTIF • GRN TAT • Purchase Cycle</p>
+<a href="/reference/kpi/index.html">Explore KPIs →</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="home-analytics">
+
+<div class="home-wrap">
+
+<div class="home-section-label">Analytical Decision Support</div>
+
+<div class="home-analytics-intro">
+<div>
+<h2>From Inventory Data to Management Decisions</h2>
+</div>
+<div>
 <p>
-My career has included responsibilities across manufacturing
-and industrial environments, with hands-on exposure to SAP MM,
-Tally, Ramco, FoxPro, MS Excel and AutoCAD.
+Practical analytical tools for replenishment, order quantity, inventory classification,
+stock movement, ageing and working-capital control.
 </p>
 </div>
-
-<div class="panel highlight">
-<h4>20+</h4>
-<p>Years of Professional Experience</p>
-
-<div class="stats">
-<div class="stat"><strong>6</strong><small>Organizations</small></div>
-<div class="stat"><strong>SAP</strong><small>MM Module</small></div>
-<div class="stat"><strong>MBA</strong><small>Marketing</small></div>
-</div>
 </div>
 
+<div class="analytics-grid">
+
+<a class="analytics-card" href="/tools/inventory/min-max-calculator.html">
+<span class="analytics-no">01</span>
+<div>
+<h3>Min-Max & Reorder Point</h3>
+<p>Determine minimum level, maximum level, reorder point and replenishment quantity from consumption, lead time and safety stock.</p>
 </div>
-</section>
+<span class="analytics-link">Open Tool →</span>
+</a>
 
-<section id="experience">
-<div class="section-label">Career Journey</div>
-<h3 class="section-title">Professional Experience</h3>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<h4>Manager Stores</h4>
-<div class="company">Shreyans Industries Limited, Rupnagar</div>
-<div class="date">August 2023 – Present</div>
-<ul>
-<li>Monitoring day-to-day stores activities.</li>
-<li>Scrap removal from plant through sale.</li>
-<li>Min-Max planning and execution.</li>
-<li>Daily and monthly MIS reporting.</li>
-<li>Invoice processing and coordination with accounts.</li>
-<li>Monitoring pending RGP receivables.</li>
-<li>Managing inbound and outbound material activities.</li>
-</ul>
+<a class="analytics-card" href="/tools/inventory/eoq-calculator.html">
+<span class="analytics-no">02</span>
+<div>
+<h3>EOQ / Order Quantity</h3>
+<p>Calculate economical order quantity and understand the relationship between demand, ordering cost and carrying cost.</p>
 </div>
+<span class="analytics-link">Open Tool →</span>
+</a>
 
-<div class="timeline-item">
-<h4>Manager Fulfilment</h4>
-<div class="company">Gardex India Pvt. Ltd., Jalandhar</div>
-<div class="date">June 2022 – July 2023</div>
-<ul>
-<li>Tracking customer orders.</li>
-<li>Procurement of production and maintenance items through production order and Min-Max.</li>
-<li>Follow-up with purchase department and vendors.</li>
-<li>Ensuring 5S in stores.</li>
-<li>Invoice clearance with accounts, approved purchase orders and quality clearance.</li>
-<li>Job-work reconciliation and follow-up.</li>
-<li>Monthly consumption, production and GIC reports.</li>
-<li>Regular scrap clearance.</li>
-</ul>
+<a class="analytics-card" href="/tools/inventory/turnover-calculator.html">
+<span class="analytics-no">03</span>
+<div>
+<h3>Inventory Turnover</h3>
+<p>Measure how efficiently inventory is converted through consumption or cost of goods and identify slow capital rotation.</p>
 </div>
+<span class="analytics-link">Open Tool →</span>
+</a>
 
-<div class="timeline-item">
-<h4>Manager Stores</h4>
-<div class="company">Ladhar Paper Mills, Jalandhar</div>
-<div class="date">March 2016 – May 2022</div>
-<ul>
-<li>Receipt, issue, quality check and job-work activities.</li>
-<li>Purchase planning through Min-Max.</li>
-<li>Daily chemical and packing material requirement planning.</li>
-<li>Vendor account reconciliation.</li>
-<li>Spares availability management.</li>
-<li>Daily chemical consumption costing.</li>
-<li>Incoming material quality testing.</li>
-<li>RGP processing and reconciliation.</li>
-<li>Scrap clearance and invoice processing.</li>
-</ul>
+<a class="analytics-card" href="/tools/inventory/abc-analyzer.html">
+<span class="analytics-no">04</span>
+<div>
+<h3>ABC Analysis</h3>
+<p>Classify inventory according to annual consumption value and establish differentiated control priorities.</p>
 </div>
+<span class="analytics-link">Open Tool →</span>
+</a>
 
-<div class="timeline-item">
-<h4>Manager Stores</h4>
-<div class="company">Trident Limited, Punjab</div>
-<div class="date">January 2011 – February 2016</div>
-<ul>
-<li>Scrap rate finalization through tender system.</li>
-<li>TPM implementation in stores.</li>
-<li>Search-free and count-free inventory system.</li>
-<li>Team training.</li>
-<li>Analysis of TAT, VED, FIFO, Ageing, Red Tag and Dead Inventory.</li>
-<li>Systematic inventory storage and FIFO.</li>
-<li>Incoming material inspection.</li>
-<li>RGP processing and reconciliation.</li>
-<li>Min-Max planning of critical items.</li>
-</ul>
+<a class="analytics-card" href="/tools/inventory/fsn-analyzer.html">
+<span class="analytics-no">05</span>
+<div>
+<h3>FSN Analysis</h3>
+<p>Identify Fast, Slow and Non-Moving materials from issue activity and support inventory rationalization.</p>
+</div>
+<span class="analytics-link">Open Tool →</span>
+</a>
+
+<a class="analytics-card" href="/tools/inventory/ageing-analyzer.html">
+<span class="analytics-no">06</span>
+<div>
+<h3>Inventory Ageing</h3>
+<p>Analyse stock by age, identify ageing exposure and support action on excess, obsolete and dead inventory.</p>
+</div>
+<span class="analytics-link">Open Tool →</span>
+</a>
+
 </div>
 
-<div class="timeline-item">
-<h4>Quality Incharge</h4>
-<div class="company">HR International, Jalandhar</div>
-<div class="date">July 2009 – December 2010</div>
-<ul>
-<li>Hourly quality reporting.</li>
-<li>Checking dimensions, hardness and weight of forged components.</li>
-<li>Die change and production records.</li>
-<li>Daily quality reporting to Plant Head.</li>
-</ul>
-</div>
-
-<div class="timeline-item">
-<h4>Officer / Facilitator – Store</h4>
-<div class="company">Abhishek Industries Limited, Punjab</div>
-<div class="date">February 2007 – June 2009</div>
-<ul>
-<li>Process and function analysis.</li>
-<li>TAT, VED, FIFO, Ageing, Red Tag and Dead Inventory analysis.</li>
-<li>Inventory storage and FIFO.</li>
-<li>Invoice processing and purchase coordination.</li>
-<li>Incoming material inspection.</li>
-<li>RGP processing and reconciliation.</li>
-<li>Scrap and waste clearance.</li>
-</ul>
+<div class="analytics-note">
+<strong>Management principle</strong>
+<span>Measure → Classify → Control → Replenish → Review → Improve</span>
 </div>
 
 </div>
 </section>
 
-<section id="skills">
-<div class="section-label">Core Competencies</div>
-<h3 class="section-title">Key Skills</h3>
+<section class="home-resources">
 
-<div class="panel">
-<div class="skills">
-<a class="skill" href="skills/stores-management.html">Stores Management</a>
-<a class="skill" href="skills/material-management.html">Material Management</a>
-<a class="skill" href="skills/purchase-planning.html">Purchase Planning</a>
-<a class="skill" href="skills/min-max-planning.html">Min-Max Planning</a>
-<a class="skill" href="skills/inventory-control.html">Inventory Control</a>
-<a class="skill" href="skills/data-analysis.html">Data Analysis</a>
-<a class="skill" href="skills/mis-reporting.html">MIS Reporting</a>
-<a class="skill" href="skills/daily-chemical-costing.html">Daily Chemical Costing</a>
-<a class="skill" href="skills/material-requirement-planning.html">Material Requirement Planning</a>
-<a class="skill" href="skills/scrap-management.html">Scrap Management</a>
-<a class="skill" href="skills/rgp-processing.html">RGP Processing</a>
-<a class="skill" href="skills/job-work-reconciliation.html">Job-Work Reconciliation</a>
-<a class="skill" href="skills/fifo.html">FIFO</a>
-<a class="skill" href="skills/ved-analysis.html">VED Analysis</a>
-<a class="skill" href="skills/ageing-analysis.html">Ageing Analysis</a>
-<a class="skill" href="skills/dead-inventory.html">Dead Inventory</a>
-<a class="skill" href="skills/tpm.html">TPM</a>
-<a class="skill" href="skills/5s.html">5S</a>
-<a class="skill" href="skills/vendor-coordination.html">Vendor Coordination</a>
+<div class="home-wrap">
+
+<div class="home-section-label">Professional Resources</div>
+
+<div class="home-resources-intro">
+<div>
+<h2>Practical Resources for Materials Management</h2>
+</div>
+<div>
+<p>
+A structured collection of analytical tools, professional templates, industrial case studies and professional experience covering the complete materials management cycle.
+</p>
 </div>
 </div>
-</section>
 
-<section id="software">
-<div class="section-label">Technology</div>
-<h3 class="section-title">ERP & Computer Skills</h3>
+<div class="resources-grid">
 
-<div class="grid">
-<div class="card">
-<h4>SAP</h4>
-<p>SAP ECC 6 & SAP 4.6 – MM Module</p>
+<a class="resource-card" href="/tools/index.html">
+<span class="resource-number">01</span>
+<div class="resource-body">
+<div class="resource-type">ANALYTICAL TOOLS</div>
+<h3>Tools for Real-World Decisions</h3>
+<p>
+Calculators and analyzers for Min-Max, Reorder Point, EOQ, ABC, FSN, inventory turnover and ageing.
+</p>
+<span class="resource-link">Explore Tools →</span>
 </div>
-<div class="card">
-<h4>Accounts & ERP</h4>
-<p>Tally ERP-9, Tally Prime, Ramco and FoxPro</p>
-</div>
-<div class="card">
-<h4>Technical Tools</h4>
-<p>MS Excel and AutoCAD</p>
-</div>
-</div>
-</section>
+</a>
 
-<section id="education">
-<div class="section-label">Education</div>
-<h3 class="section-title">Academic Qualification</h3>
-
-<div class="education">
-<div class="edu"><strong>MBA – Marketing</strong><span>ICFAI Tripura | October 2021</span></div>
-<div class="edu"><strong>Graduation</strong><span>Guru Nanak Dev University | April 2007 – March 2010</span></div>
-<div class="edu"><strong>Diploma – Mechanical Engineering</strong><span>Ramgarhia Polytechnic, Phagwara | June 2004 – May 2006</span></div>
-<div class="edu"><strong>10+2 – Automobile</strong><span>Govt. Model Sr. Sec. School, Jalandhar | 2002 – 2003</span></div>
-<div class="edu"><strong>Matriculation</strong><span>Govt. Model Sr. Sec. School, Jalandhar | 2000 – 2001</span></div>
+<a class="resource-card" href="/templates/index.html">
+<span class="resource-number">02</span>
+<div class="resource-body">
+<div class="resource-type">PROFESSIONAL TEMPLATES</div>
+<h3>Ready-to-Use Management Formats</h3>
+<p>
+Practical formats for inventory control, stores operations, purchasing, MIS reporting, reconciliation and management review.
+</p>
+<span class="resource-link">View Templates →</span>
 </div>
-</section>
+</a>
 
-<section id="training">
-<div class="section-label">Professional Development</div>
-<h3 class="section-title">Training</h3>
-
-<div class="grid">
-<div class="card"><h4>RUDSET Institute</h4><p>Scooter & Motorcycle Servicing</p></div>
-<div class="card"><h4>ATM Sanitations</h4><p>Factory Supervisor Training</p></div>
-<div class="card"><h4>Krishna Engineering Works</h4><p>Forging, Molding & Machine Shop Training</p></div>
-<div class="card"><h4>International Cars & Motors Ltd.</h4><p>Trainee Supervisor</p></div>
-<div class="card"><h4>Synatic Business School</h4><p>Six Months Management Training</p></div>
+<a class="resource-card" href="/case-studies/index.html">
+<span class="resource-number">03</span>
+<div class="resource-body">
+<div class="resource-type">INDUSTRIAL CASE STUDIES</div>
+<h3>Applied Industrial Decisions</h3>
+<p>
+Practical situations involving inventory, purchasing, material planning, vendor performance, cost and working-capital control.
+</p>
+<span class="resource-link">View Case Studies →</span>
 </div>
-</section>
+</a>
 
-<section>
-<div class="section-label">Languages</div>
-<h3 class="section-title">Communication</h3>
-
-<div class="skills">
-<span class="skill">Punjabi – Mother Tongue</span>
-<span class="skill">Hindi – Fluent</span>
-<span class="skill">English – Moderate</span>
+<a class="resource-card resource-card-profile" href="/profile.html">
+<span class="resource-number">04</span>
+<div class="resource-body">
+<div class="resource-type">PROFESSIONAL PROFILE</div>
+<h3>About Pardeep Chopra</h3>
+<p>
+20+ years of experience across Stores, Inventory, Purchase, Planning, Materials and ERP operations in manufacturing and process industries.
+</p>
+<span class="resource-link">View Profile →</span>
 </div>
-</section>
+</a>
 
-<section id="contact">
-<div class="contact">
-<h3>Let's Connect</h3>
-<p>Jalandhar, Punjab, India</p>
-<p>pardeepchopra07@gmail.com</p>
-<p>+91 95012 48929</p>
+</div>
 
-<div class="contact-buttons">
-<a class="btn btn-primary" href="mailto:pardeepchopra07@gmail.com">Email Me</a>
-<a class="btn btn-primary" href="tel:+919501248929">Call Me</a>
-<a class="btn btn-primary" href="https://wa.me/919501248929">WhatsApp</a>
 </div>
-</div>
+
 </section>
 
 </main>
 
-<footer>
-© 2026 Pardeep Chopra • Manager – Stores & Purchase
-</footer>
+<footer class="home-footer">
+<div class="home-footer-inner">
+<div>© 2026 <strong>Pardeep Chopra</strong> • Industrial Materials Management</div>
+<span class="site-map-link"><a href="/sitemap.html">Site Map</a></span><div>Stores &nbsp;|&nbsp; Inventory &nbsp;|&nbsp; Purchase &nbsp;|&nbsp; Planning &nbsp;|&nbsp; Materials &nbsp;|&nbsp; ERP &nbsp;|&nbsp; Analysis</div>
+</div></footer>
 
+    <script src="/assets/js/site-search.js" defer></script>
 </body>
 </html>
