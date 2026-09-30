@@ -1047,3 +1047,75 @@
     min-height: 520px !important;
   }
 }
+
+/* FINAL WIDE DESKTOP HOMEPAGE
+   Restore a genuine desktop composition while preserving mobile. */
+
+@media (min-width: 1001px) {
+  .home-header-inner {
+    width: 94% !important;
+    max-width: 1480px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .home-hero-inner {
+    width: 94% !important;
+    max-width: 1480px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.08fr) minmax(480px, .92fr) !important;
+    gap: 64px !important;
+    align-items: center !important;
+  }
+
+  .home-hero-copy {
+    max-width: none !important;
+  }
+
+  .home-hero-copy h1 {
+    max-width: 820px !important;
+  }
+
+  .home-hero-text {
+    max-width: 760px !important;
+  }
+
+  .home-visual {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .material-flow {
+    max-width: none !important;
+  }
+
+  .flow-side {
+    max-width: 330px !important;
+  }
+
+  .home-section-inner,
+  .home-reference-inner,
+  .home-framework-inner,
+  .home-analytics-inner,
+  .home-resources-inner {
+    width: 94% !important;
+    max-width: 1480px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .home-header-inner,
+  .home-hero-inner,
+  .home-section-inner,
+  .home-reference-inner,
+  .home-framework-inner,
+  .home-analytics-inner,
+  .home-resources-inner {
+    max-width: 1580px !important;
+  }
+}
