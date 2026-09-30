@@ -688,3 +688,18 @@ body:not(.home-page) .approved-infographic-frame img{
     display:block !important;
   }
 }
+
+/* Reliable touch/pointer interaction for sitewide dropdowns */
+.imm-menu-drop > a{
+  cursor:pointer;
+  touch-action:manipulation;
+}
+
+@media (pointer: coarse){
+  .imm-menu-drop.is-open > .imm-menu-panel{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    pointer-events:auto !important;
+  }
+}
