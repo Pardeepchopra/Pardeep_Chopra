@@ -678,3 +678,13 @@ body:not(.home-page) .approved-infographic-frame img{
   }
 }
 
+
+/* ============================================================
+   SITEWIDE TOUCH DROPDOWN SUPPORT
+   Tap-to-open support for touch/coarse-pointer devices.
+   ============================================================ */
+@media (pointer: coarse){
+  .imm-menu-drop.is-open .imm-menu-panel{
+    display:block !important;
+  }
+}
