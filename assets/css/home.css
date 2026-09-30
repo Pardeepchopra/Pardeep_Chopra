@@ -951,3 +951,99 @@
  .control-item{font-size:6.5px!important}
  .home-metrics-grid{grid-template-columns:1fr}
 }
+
+/* =========================================================
+   HOMEPAGE LAYOUT NORMALIZATION
+   Desktop uses the same composition as the approved
+   mobile "Desktop Site" view.
+   ========================================================= */
+
+/* Header: brand above navigation, same compact composition */
+.home-header-inner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.home-brand {
+  width: 100% !important;
+}
+
+.home-nav {
+  width: 100% !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* Hero: one controlled vertical composition */
+.home-hero-inner {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 42px !important;
+  align-items: start !important;
+}
+
+.home-hero-copy {
+  width: 100% !important;
+  max-width: 760px !important;
+  min-width: 0 !important;
+}
+
+.home-hero-copy h1 {
+  max-width: 760px !important;
+}
+
+.home-hero-text {
+  max-width: 700px !important;
+}
+
+/* Material-flow visual stays completely below the headline */
+.home-visual {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1100px !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+}
+
+/* Keep the visual itself contained */
+.material-flow {
+  max-width: 720px !important;
+}
+
+.flow-side {
+  max-width: 300px !important;
+}
+
+/* Prevent desktop text/visual overlap */
+.home-hero,
+.home-hero-inner,
+.home-hero-copy,
+.home-visual {
+  overflow: visible !important;
+}
+
+/* Large screens should retain the same proportions rather
+   than switching to the old overlapping two-column design. */
+@media (min-width: 1100px) {
+  .home-hero-inner {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .home-hero-copy {
+    max-width: 760px !important;
+  }
+
+  .home-visual {
+    min-height: 520px !important;
+  }
+}
