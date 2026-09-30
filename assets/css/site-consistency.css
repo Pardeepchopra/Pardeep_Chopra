@@ -558,21 +558,22 @@ body:not(.home-page) .approved-infographic-frame img{
 }
 
 /* ============================================================
-   SITEWIDE DROPDOWN NAVIGATION
-   Matches the Industrial Materials Management homepage menu.
+   SITEWIDE HOMEPAGE-IDENTICAL DROPDOWN NAVIGATION
+   The internal pages use the same menu classes as index.html.
    ============================================================ */
-.imm-global-nav{
+
+.main-menu{
   width:100%;
-  display:flex !important;
+  display:flex;
   justify-content:center;
   align-items:stretch;
   flex-wrap:wrap;
   gap:0;
-  overflow:visible !important;
+  overflow:visible;
 }
 
-.imm-global-nav > a,
-.imm-global-nav > .imm-menu-drop > a{
+.main-menu > .menu-item,
+.main-menu > .menu-drop > .menu-item{
   display:flex;
   align-items:center;
   min-height:42px;
@@ -580,32 +581,32 @@ body:not(.home-page) .approved-infographic-frame img{
   font-family:Verdana,Geneva,sans-serif;
   font-size:11px;
   line-height:1.2;
-  color:#31484c !important;
-  text-decoration:none !important;
+  color:#31484c;
+  text-decoration:none;
   white-space:nowrap;
   box-sizing:border-box;
 }
 
-.imm-global-nav > a:hover,
-.imm-global-nav > .imm-menu-drop:hover > a,
-.imm-global-nav > .imm-menu-drop:focus-within > a{
-  color:#145f57 !important;
+.main-menu > .menu-item:hover,
+.main-menu > .menu-drop:hover > .menu-item,
+.main-menu > .menu-drop:focus-within > .menu-item{
+  color:#145f57;
   background:#f0f5f2;
 }
 
-.imm-menu-drop{
+.menu-drop{
   position:relative;
   display:flex;
   align-items:stretch;
 }
 
-.imm-menu-drop > a span{
+.menu-drop > .menu-item span{
   margin-left:5px;
   font-size:10px;
   color:#5e7770;
 }
 
-.imm-menu-panel{
+.menu-panel{
   display:none;
   position:absolute;
   top:100%;
@@ -620,86 +621,52 @@ body:not(.home-page) .approved-infographic-frame img{
   z-index:1000;
 }
 
-.imm-menu-drop:hover .imm-menu-panel,
-.imm-menu-drop:focus-within .imm-menu-panel{
+.menu-drop:hover .menu-panel,
+.menu-drop:focus-within .menu-panel{
   display:block;
 }
 
-.imm-menu-panel a{
+.menu-panel a{
   display:block;
   padding:8px 14px;
   font-family:Verdana,Geneva,sans-serif;
   font-size:11px;
   line-height:1.35;
-  color:#31484c !important;
-  text-decoration:none !important;
+  color:#31484c;
+  text-decoration:none;
   white-space:normal;
 }
 
-.imm-menu-panel a:hover,
-.imm-menu-panel a:focus{
+.menu-panel a:hover,
+.menu-panel a:focus{
   background:#e8efeb;
-  color:#145f57 !important;
+  color:#145f57;
 }
 
 @media(max-width:850px){
-  .imm-global-nav{
-    justify-content:flex-start !important;
-    flex-wrap:nowrap !important;
-    overflow-x:auto !important;
-    overflow-y:visible !important;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
+  .main-menu{
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    overflow:visible;
     padding-bottom:2px;
   }
 
-  .imm-global-nav::-webkit-scrollbar{
-    display:none;
-  }
-
-  .imm-global-nav > a,
-  .imm-global-nav > .imm-menu-drop > a{
+  .main-menu > .menu-item,
+  .main-menu > .menu-drop > .menu-item{
     flex:0 0 auto;
     min-height:42px;
     padding:0 9px;
     font-size:10px;
   }
 
-  .imm-menu-panel{
-    position:fixed;
-    top:46px;
-    left:8px;
-    right:8px;
-    min-width:0;
-    max-width:none;
+  .menu-panel{
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:235px;
+    max-width:300px;
     max-height:70vh;
     overflow-y:auto;
-    border-radius:8px;
-  }
-}
-
-
-/* ============================================================
-   SITEWIDE TOUCH DROPDOWN SUPPORT
-   Tap-to-open support for touch/coarse-pointer devices.
-   ============================================================ */
-@media (pointer: coarse){
-  .imm-menu-drop.is-open .imm-menu-panel{
-    display:block !important;
-  }
-}
-
-/* Reliable touch/pointer interaction for sitewide dropdowns */
-.imm-menu-drop > a{
-  cursor:pointer;
-  touch-action:manipulation;
-}
-
-@media (pointer: coarse){
-  .imm-menu-drop.is-open > .imm-menu-panel{
-    display:block !important;
-    visibility:visible !important;
-    opacity:1 !important;
-    pointer-events:auto !important;
+    border-radius:0 0 8px 8px;
   }
 }
