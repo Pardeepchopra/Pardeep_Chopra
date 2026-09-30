@@ -667,7 +667,7 @@ body:not(.home-page) .approved-infographic-frame img{
 
   .imm-menu-panel{
     position:fixed;
-    top:auto;
+    top:46px;
     left:8px;
     right:8px;
     min-width:0;
