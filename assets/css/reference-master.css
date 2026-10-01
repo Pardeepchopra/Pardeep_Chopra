@@ -1053,3 +1053,455 @@ main.reference-page .imm-ref-flow{
     gap:14px !important;
   }
 }
+
+/* =========================================================
+   ACCESSIBILITY + READABILITY MASTER SCALE
+   Industrial Materials Management — user-friendly reference UI
+
+   Design principle:
+   READABLE FIRST • PROFESSIONAL SECOND • COMPACT THIRD
+
+   This is intentionally applied globally through the master
+   reference stylesheet so individual topic pages do not need
+   separate font-size patches.
+   ========================================================= */
+
+/* ---------- BASE READING SIZE ---------- */
+
+.reference-page{
+  font-size:18px !important;
+  line-height:1.75;
+}
+
+.reference-page p,
+.reference-page li{
+  font-size:18px;
+  line-height:1.75;
+}
+
+.reference-page strong{
+  font-weight:750;
+}
+
+/* ---------- HERO ---------- */
+
+.reference-page .reference-hero{
+  min-height:330px;
+}
+
+.reference-page .reference-hero .home-wrap{
+  padding:64px 0 58px;
+}
+
+.reference-page .reference-hero h1{
+  font-size:clamp(2.35rem,4.2vw,3.45rem) !important;
+  line-height:1.08;
+  letter-spacing:-.025em;
+  margin:8px 0 16px;
+}
+
+.reference-page .reference-hero p{
+  font-size:18px !important;
+  line-height:1.65;
+  max-width:850px;
+}
+
+.reference-page .reference-hero .hero-kicker,
+.reference-page .reference-hero .topic-kicker{
+  font-size:14px !important;
+  letter-spacing:.14em;
+}
+
+/* ---------- BREADCRUMB ---------- */
+
+.reference-page .reference-breadcrumb .home-wrap,
+.reference-page .reference-breadcrumb-inner{
+  font-size:14px !important;
+  line-height:1.5;
+}
+
+.reference-page .reference-breadcrumb{
+  min-height:42px;
+}
+
+/* ---------- INTRO / AT-A-GLANCE ---------- */
+
+.reference-page .topic-intro-grid > div{
+  padding:28px 30px !important;
+  border-radius:12px;
+}
+
+.reference-page .topic-intro-grid h2{
+  font-size:25px !important;
+  line-height:1.25;
+  margin:8px 0 12px;
+}
+
+.reference-page .topic-intro-grid p{
+  font-size:17px !important;
+  line-height:1.7;
+}
+
+.reference-page .topic-intro-grid .topic-kicker{
+  font-size:13px !important;
+  font-weight:800;
+  letter-spacing:.13em;
+}
+
+.reference-page .topic-intro-grid .topic-quick strong{
+  font-size:20px !important;
+}
+
+.reference-page .topic-intro-grid .topic-quick span{
+  font-size:15px !important;
+  margin-top:9px;
+}
+
+.reference-page .topic-intro-grid .topic-quick b{
+  font-size:17px !important;
+  line-height:1.55;
+}
+
+/* ---------- ANCHOR NAVIGATION ---------- */
+
+.reference-page .topic-anchor-nav a{
+  font-size:15px !important;
+  line-height:1.4;
+  padding:8px 13px;
+}
+
+/* ---------- TOPIC ILLUSTRATIONS ---------- */
+
+.reference-page .topic-illustration{
+  padding:25px 28px !important;
+  overflow-x:auto;
+}
+
+.reference-page .topic-illustration-label{
+  font-size:13px !important;
+  letter-spacing:.14em;
+}
+
+.reference-page .topic-illustration svg{
+  width:100%;
+  max-width:100%;
+  min-height:150px;
+  margin:16px auto;
+}
+
+/* Inline SVG labels must remain readable when the graphic scales. */
+.reference-page .topic-illustration svg text{
+  font-size:15px !important;
+}
+
+.reference-page .topic-illustration p{
+  font-size:16px !important;
+  line-height:1.65;
+}
+
+/* ---------- MAIN TECHNICAL SECTIONS ---------- */
+
+.reference-page .topic-sections > article{
+  padding:30px 32px !important;
+  margin-bottom:22px;
+}
+
+.reference-page .topic-sections > article > h3{
+  font-size:29px !important;
+  line-height:1.25;
+  margin-bottom:16px;
+}
+
+.reference-page .topic-sections > article p,
+.reference-page .topic-sections > article li{
+  font-size:18px !important;
+  line-height:1.78;
+}
+
+.reference-page .topic-sections > article h4{
+  font-size:21px !important;
+  line-height:1.4;
+}
+
+/* ---------- OTHER REFERENCE SECTIONS ---------- */
+
+.reference-page .reference-section{
+  padding:27px 30px;
+}
+
+.reference-page .reference-section h2{
+  font-size:27px !important;
+  line-height:1.3;
+}
+
+.reference-page .reference-section p,
+.reference-page .reference-section li{
+  font-size:18px !important;
+  line-height:1.75;
+}
+
+/* ---------- INFORMATION / ROLE / CASE CARDS ---------- */
+
+.reference-page .topic-role-grid > div,
+.reference-page .topic-case-grid > div,
+.reference-page .topic-two-col > div{
+  padding:20px !important;
+}
+
+.reference-page .topic-role-grid strong,
+.reference-page .topic-case-grid strong{
+  font-size:18px !important;
+  line-height:1.4;
+}
+
+.reference-page .topic-role-grid span,
+.reference-page .topic-case-grid span{
+  font-size:16px !important;
+  line-height:1.6;
+}
+
+/* ---------- TABLES ---------- */
+
+.reference-page table{
+  font-size:16px !important;
+  line-height:1.55;
+}
+
+.reference-page th{
+  padding:13px 14px !important;
+  font-size:16px !important;
+  line-height:1.45;
+}
+
+.reference-page td{
+  padding:12px 14px !important;
+  font-size:16px !important;
+  line-height:1.6;
+}
+
+/* ---------- CALLOUTS / FORMULAS / PRACTICAL BOXES ---------- */
+
+.reference-page .callout,
+.reference-page .formula-box,
+.reference-page .practical-box,
+.reference-page .topic-decision,
+.reference-page .topic-review{
+  padding:21px 23px !important;
+}
+
+.reference-page .callout,
+.reference-page .formula-box,
+.reference-page .practical-box{
+  font-size:17px !important;
+  line-height:1.7;
+}
+
+.reference-page .formula-box strong{
+  font-size:18px !important;
+}
+
+.reference-page .topic-decision strong{
+  font-size:18px !important;
+}
+
+.reference-page .topic-decision span{
+  font-size:17px !important;
+  line-height:1.7;
+}
+
+/* ---------- RELATED TOPICS ---------- */
+
+.reference-page .related-grid{
+  gap:16px;
+}
+
+.reference-page .related-grid > *{
+  padding:18px !important;
+}
+
+.reference-page .related-grid p,
+.reference-page .related-grid li{
+  font-size:16px !important;
+  line-height:1.6;
+}
+
+.reference-page .related-grid strong,
+.reference-page .related-grid h3{
+  font-size:18px !important;
+  line-height:1.4;
+}
+
+/* ---------- LANDING-PAGE CONTENT ---------- */
+
+.reference-page .imm-domain-overview,
+.reference-page .imm-overview-grid,
+.reference-page .topic-list{
+  font-size:17px;
+}
+
+.reference-page .imm-domain-overview p,
+.reference-page .imm-overview-grid p,
+.reference-page .topic-list p{
+  font-size:17px !important;
+  line-height:1.7;
+}
+
+.reference-page .imm-domain-overview h2,
+.reference-page .imm-overview-grid h2{
+  font-size:28px !important;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:900px){
+
+  .reference-page{
+    font-size:17px !important;
+  }
+
+  .reference-page p,
+  .reference-page li{
+    font-size:17px;
+    line-height:1.75;
+  }
+
+  .reference-page .reference-hero{
+    min-height:275px;
+  }
+
+  .reference-page .reference-hero .home-wrap{
+    padding:52px 0 42px;
+  }
+
+  .reference-page .reference-hero h1{
+    font-size:clamp(2.1rem,8.5vw,2.7rem) !important;
+  }
+
+  .reference-page .reference-hero p{
+    font-size:17px !important;
+  }
+
+  .reference-page .topic-intro-grid > div{
+    padding:24px !important;
+  }
+
+  .reference-page .topic-intro-grid h2{
+    font-size:23px !important;
+  }
+
+  .reference-page .topic-sections > article{
+    padding:25px 22px !important;
+  }
+
+  .reference-page .topic-sections > article > h3{
+    font-size:26px !important;
+  }
+
+  .reference-page .topic-sections > article p,
+  .reference-page .topic-sections > article li{
+    font-size:17px !important;
+  }
+
+  .reference-page .reference-section h2{
+    font-size:25px !important;
+  }
+
+  .reference-page .topic-illustration{
+    padding:21px !important;
+  }
+
+  /*
+     Prevent wide technical diagrams from becoming microscopic.
+     The user can scroll horizontally only when a diagram genuinely
+     needs more width.
+  */
+  .reference-page .topic-illustration svg{
+    min-width:720px;
+  }
+
+  .reference-page .topic-illustration svg text{
+    font-size:15px !important;
+  }
+
+  .reference-page table{
+    font-size:15.5px !important;
+  }
+
+  .reference-page th,
+  .reference-page td{
+    font-size:15.5px !important;
+    padding:11px 12px !important;
+  }
+}
+
+/* ---------- SMALL PHONES ---------- */
+
+@media(max-width:520px){
+
+  .reference-page{
+    font-size:17px !important;
+  }
+
+  .reference-page p,
+  .reference-page li{
+    font-size:17px;
+  }
+
+  .reference-page .reference-hero{
+    min-height:250px;
+  }
+
+  .reference-page .reference-hero .home-wrap{
+    padding:44px 0 34px;
+  }
+
+  .reference-page .reference-hero h1{
+    font-size:clamp(2rem,9.5vw,2.45rem) !important;
+  }
+
+  .reference-page .reference-hero p{
+    font-size:16.5px !important;
+  }
+
+  .reference-page .topic-intro-grid > div{
+    padding:22px !important;
+  }
+
+  .reference-page .topic-intro-grid h2{
+    font-size:22px !important;
+  }
+
+  .reference-page .topic-sections > article{
+    padding:23px 19px !important;
+  }
+
+  .reference-page .topic-sections > article > h3{
+    font-size:24px !important;
+  }
+
+  .reference-page .topic-sections > article p,
+  .reference-page .topic-sections > article li{
+    font-size:17px !important;
+  }
+
+  .reference-page .topic-illustration{
+    padding:19px !important;
+  }
+
+  .reference-page .topic-illustration svg{
+    min-width:680px;
+  }
+
+  .reference-page .topic-illustration svg text{
+    font-size:15px !important;
+  }
+
+  .reference-page .topic-illustration p{
+    font-size:16px !important;
+  }
+
+  .reference-page th,
+  .reference-page td{
+    font-size:15px !important;
+  }
+}
