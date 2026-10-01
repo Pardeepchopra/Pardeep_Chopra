@@ -972,3 +972,84 @@
     box-sizing:border-box !important;
   }
 }
+
+
+/* =========================================================
+   FINAL GLOBAL LOCKDOWN — REFERENCE TOPIC LEGACY COMPONENTS
+   Applies to ALL professional reference topic pages.
+   Preserve the modern topic illustration and content.
+   Remove only obsolete duplicate process components.
+   ========================================================= */
+
+/* 1. REMOVE ALL LEGACY PROCESS STEP ROWS */
+main.reference-page section.imm-reference-expansion .imm-ref-step,
+main.reference-page .imm-reference-expansion .imm-ref-step{
+  display:none !important;
+}
+
+/* 2. REMOVE THE OLD DUPLICATE "HOW THE CONCEPT WORKS" VISUAL */
+main.reference-page section.imm-reference-expansion .imm-ref-visual,
+main.reference-page .imm-ref-visual{
+  display:none !important;
+}
+
+/* 3. REMOVE THE OLD DUPLICATE FLOW INSIDE LEGACY VISUALS */
+main.reference-page .imm-ref-flow{
+  display:none !important;
+}
+
+/* 4. MODERN TOPIC INTRO — DESKTOP */
+@media (min-width:901px){
+  main.reference-page section.topic-deep-dive .topic-intro-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 300px !important;
+    grid-auto-flow:row !important;
+    width:min(1120px,calc(100% - 40px)) !important;
+    max-width:1120px !important;
+    margin:-42px auto 26px !important;
+    padding:0 !important;
+    gap:18px !important;
+    box-sizing:border-box !important;
+  }
+
+  main.reference-page section.topic-deep-dive .topic-intro-grid > div{
+    display:block !important;
+    width:100% !important;
+    max-width:none !important;
+    min-width:0 !important;
+    margin:0 !important;
+    box-sizing:border-box !important;
+  }
+}
+
+/* 5. MODERN TOPIC INTRO — TABLET / MOBILE */
+@media (max-width:900px){
+  main.reference-page section.topic-deep-dive .topic-intro-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) !important;
+    grid-auto-flow:row !important;
+    width:calc(100% - 32px) !important;
+    max-width:none !important;
+    margin:-25px auto 20px !important;
+    padding:0 !important;
+    gap:16px !important;
+    box-sizing:border-box !important;
+  }
+
+  main.reference-page section.topic-deep-dive .topic-intro-grid > div{
+    display:block !important;
+    width:100% !important;
+    max-width:none !important;
+    min-width:0 !important;
+    margin:0 !important;
+    box-sizing:border-box !important;
+  }
+}
+
+/* 6. SMALL PHONES */
+@media (max-width:520px){
+  main.reference-page section.topic-deep-dive .topic-intro-grid{
+    width:calc(100% - 28px) !important;
+    gap:14px !important;
+  }
+}
