@@ -1225,3 +1225,79 @@ body:not(.home-page) .approved-infographic-frame img{
     font-size:14px !important;
   }
 }
+
+/* ============================================================
+   FINAL FIT — NAVIGATION MUST STAY INSIDE PAGE
+   ============================================================ */
+
+.main-menu{
+  width:100% !important;
+  max-width:100% !important;
+  box-sizing:border-box !important;
+  display:flex !important;
+  flex-wrap:nowrap !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:2px !important;
+  padding:0 4px !important;
+  margin:0 auto !important;
+  overflow:hidden !important;
+}
+
+.main-menu > .menu-item,
+.main-menu > .menu-drop > .menu-trigger{
+  flex:0 1 auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+  height:40px !important;
+  min-height:40px !important;
+  padding:0 6px !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+}
+
+.main-menu > .menu-drop > .menu-trigger span{
+  margin-left:3px !important;
+  font-size:9px !important;
+}
+
+.main-menu > .menu-drop{
+  flex:0 1 auto !important;
+  min-width:0 !important;
+}
+
+@media(min-width:901px){
+  .main-menu{
+    gap:2px !important;
+    padding-left:3px !important;
+    padding-right:3px !important;
+  }
+
+  .main-menu > .menu-item,
+  .main-menu > .menu-drop > .menu-trigger{
+    height:40px !important;
+    min-height:40px !important;
+    padding-left:6px !important;
+    padding-right:6px !important;
+    font-size:12px !important;
+  }
+}
+
+@media(max-width:900px){
+  .main-menu{
+    justify-content:flex-start !important;
+    overflow-x:auto !important;
+    overflow-y:visible !important;
+    scrollbar-width:thin !important;
+  }
+
+  .main-menu > .menu-item,
+  .main-menu > .menu-drop > .menu-trigger{
+    flex:0 0 auto !important;
+    font-size:14px !important;
+    padding-left:10px !important;
+    padding-right:10px !important;
+  }
+}
