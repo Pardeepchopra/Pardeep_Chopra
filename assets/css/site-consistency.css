@@ -1301,3 +1301,95 @@ body:not(.home-page) .approved-infographic-frame img{
     padding-right:10px !important;
   }
 }
+
+/* ============================================================
+   FINAL DROPDOWN BEHAVIOUR — ALL INTERNAL PAGES
+   ============================================================ */
+
+.main-menu > .menu-drop{
+  position:relative !important;
+}
+
+.main-menu > .menu-drop > .menu-panel{
+  display:none !important;
+  position:absolute !important;
+  top:calc(100% + 4px) !important;
+  left:0 !important;
+  min-width:290px !important;
+  max-width:390px !important;
+  padding:9px 0 !important;
+  background:#fff !important;
+  border:1px solid #c9dcd6 !important;
+  border-radius:8px !important;
+  box-shadow:0 12px 30px rgba(20,45,45,.17) !important;
+  z-index:100000 !important;
+}
+
+/* Open with mouse or keyboard/touch focus */
+.main-menu > .menu-drop:hover > .menu-panel,
+.main-menu > .menu-drop:focus-within > .menu-panel{
+  display:block !important;
+}
+
+/* Keep dropdown open while pointer moves from button to panel */
+.main-menu > .menu-drop > .menu-panel:hover{
+  display:block !important;
+}
+
+/* Dropdown links */
+.main-menu > .menu-drop > .menu-panel a{
+  display:block !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+  padding:10px 16px !important;
+  color:#294842 !important;
+  background:#fff !important;
+  text-decoration:none !important;
+  font-size:15px !important;
+  font-weight:600 !important;
+  line-height:1.4 !important;
+}
+
+.main-menu > .menu-drop > .menu-panel a:hover,
+.main-menu > .menu-drop > .menu-panel a:focus{
+  background:#edf5f2 !important;
+  color:#07584e !important;
+}
+
+.main-menu > .menu-drop > .menu-panel a.menu-panel-parent{
+  margin:0 8px 7px !important;
+  width:calc(100% - 16px) !important;
+  padding:10px 13px !important;
+  border:1px solid #b9d7cf !important;
+  border-radius:6px !important;
+  background:#edf6f3 !important;
+  color:#07584e !important;
+  font-size:15px !important;
+  font-weight:800 !important;
+}
+
+.main-menu > .menu-drop > .menu-panel a.menu-panel-parent:hover,
+.main-menu > .menu-drop > .menu-panel a.menu-panel-parent:focus{
+  background:#dfeee9 !important;
+  border-color:#8ebbb0 !important;
+}
+
+/* Prevent the compact one-row navigation from clipping the panel. */
+@media(min-width:901px){
+  .main-menu{
+    overflow:visible !important;
+  }
+}
+
+@media(max-width:900px){
+  .main-menu > .menu-drop > .menu-panel{
+    position:fixed !important;
+    top:auto !important;
+    left:10px !important;
+    right:10px !important;
+    width:auto !important;
+    max-width:none !important;
+    max-height:72vh !important;
+    overflow-y:auto !important;
+  }
+}
