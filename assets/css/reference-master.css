@@ -947,3 +947,28 @@
   box-shadow: 0 8px 24px rgba(20,55,50,.08) !important;
 }
 
+
+
+/* FINAL DESKTOP OVERRIDE — MASTER TOPIC INTRO
+   Prevent site-consistency.css from forcing the legacy
+   four-column desktop layout on professional topic pages.
+*/
+@media (min-width:901px){
+  body:not(.home-page) .reference-page .topic-intro-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 300px !important;
+    width:min(1120px,calc(100% - 40px)) !important;
+    max-width:1120px !important;
+    margin:-42px auto 26px !important;
+    gap:18px !important;
+    box-sizing:border-box !important;
+  }
+
+  body:not(.home-page) .reference-page .topic-intro-grid > div{
+    width:100% !important;
+    max-width:none !important;
+    min-width:0 !important;
+    margin:0 !important;
+    box-sizing:border-box !important;
+  }
+}
