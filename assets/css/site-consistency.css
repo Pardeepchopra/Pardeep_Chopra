@@ -773,3 +773,218 @@ body:not(.home-page) .approved-infographic-frame img{
     font-size:15px !important;
   }
 }
+
+
+/* ============================================================
+   FINAL SITEWIDE NAVIGATION BUTTON SYSTEM
+   All primary navigation objects use the same visual language.
+   Dropdown trigger buttons are display-only; their section
+   landing page is the first item inside the dropdown.
+   ============================================================ */
+
+.main-menu{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-wrap:wrap !important;
+  gap:8px !important;
+  overflow:visible !important;
+}
+
+/* ALL TOP-LEVEL MENU OBJECTS */
+.main-menu > .menu-item,
+.main-menu > .menu-drop > .menu-trigger{
+  appearance:none !important;
+  -webkit-appearance:none !important;
+  box-sizing:border-box !important;
+
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+
+  min-height:44px !important;
+  padding:0 16px !important;
+
+  border:1px solid #b9d0c9 !important;
+  border-radius:7px !important;
+
+  background:#f7faf9 !important;
+  color:#173f3a !important;
+
+  font-family:Arial,"Helvetica Neue",Helvetica,sans-serif !important;
+  font-size:15px !important;
+  font-weight:700 !important;
+  line-height:1.15 !important;
+
+  white-space:nowrap !important;
+  text-decoration:none !important;
+
+  box-shadow:0 2px 5px rgba(20,55,50,.08) !important;
+  transition:
+    background .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    box-shadow .18s ease,
+    transform .18s ease !important;
+}
+
+/* Dropdown arrow */
+.main-menu > .menu-drop > .menu-trigger span{
+  display:inline-block !important;
+  margin-left:7px !important;
+  font-size:13px !important;
+  font-weight:800 !important;
+  color:#35675e !important;
+}
+
+/* Hover / focus */
+.main-menu > .menu-item:hover,
+.main-menu > .menu-drop:hover > .menu-trigger,
+.main-menu > .menu-item:focus,
+.main-menu > .menu-drop:focus-within > .menu-trigger{
+  background:#e9f3ef !important;
+  border-color:#82b3a8 !important;
+  color:#07584e !important;
+  box-shadow:0 3px 8px rgba(20,75,65,.12) !important;
+  transform:translateY(-1px);
+}
+
+/* Keyboard focus */
+.main-menu > .menu-item:focus-visible,
+.main-menu > .menu-drop > .menu-trigger:focus-visible{
+  outline:3px solid rgba(20,121,109,.20) !important;
+  outline-offset:2px !important;
+}
+
+/* Dropdown trigger is NOT a navigation link */
+.main-menu > .menu-drop > .menu-trigger{
+  cursor:default !important;
+}
+
+/* Dropdown container */
+.menu-drop{
+  display:flex !important;
+  align-items:center !important;
+  position:relative !important;
+}
+
+/* Dropdown panel */
+.menu-panel{
+  min-width:290px !important;
+  max-width:390px !important;
+  padding:9px 0 !important;
+
+  background:#ffffff !important;
+  border:1px solid #c9dcd6 !important;
+  border-radius:8px !important;
+
+  box-shadow:0 12px 30px rgba(20,45,45,.17) !important;
+
+  z-index:10000 !important;
+}
+
+/* Dropdown entries */
+.menu-panel a{
+  display:block !important;
+  box-sizing:border-box !important;
+
+  padding:11px 17px !important;
+
+  font-family:Arial,"Helvetica Neue",Helvetica,sans-serif !important;
+  font-size:15px !important;
+  font-weight:600 !important;
+  line-height:1.4 !important;
+
+  color:#294842 !important;
+  text-decoration:none !important;
+}
+
+/* Section title inside dropdown */
+.menu-panel a.menu-panel-parent{
+  margin:0 8px 7px !important;
+  padding:11px 14px !important;
+
+  border:1px solid #b9d7cf !important;
+  border-radius:6px !important;
+
+  background:#edf6f3 !important;
+  color:#07584e !important;
+
+  font-size:16px !important;
+  font-weight:800 !important;
+}
+
+/* Dropdown hover */
+.menu-panel a:hover,
+.menu-panel a:focus{
+  background:#edf5f2 !important;
+  color:#07584e !important;
+}
+
+.menu-panel a.menu-panel-parent:hover,
+.menu-panel a.menu-panel-parent:focus{
+  background:#dfeee9 !important;
+  border-color:#8ebbb0 !important;
+}
+
+/* ---------- LARGE DESKTOP ---------- */
+
+@media(min-width:1101px){
+  .main-menu > .menu-item,
+  .main-menu > .menu-drop > .menu-trigger{
+    min-height:46px !important;
+    padding-left:17px !important;
+    padding-right:17px !important;
+    font-size:15px !important;
+  }
+}
+
+/* ---------- TABLET / MOBILE ---------- */
+
+@media(max-width:850px){
+
+  .main-menu{
+    justify-content:flex-start !important;
+    flex-wrap:nowrap !important;
+    overflow-x:auto !important;
+    overflow-y:visible !important;
+    gap:7px !important;
+    padding:3px 2px 7px !important;
+    scrollbar-width:thin;
+  }
+
+  .main-menu > .menu-item,
+  .main-menu > .menu-drop > .menu-trigger{
+    flex:0 0 auto !important;
+    min-height:44px !important;
+    padding:0 15px !important;
+    font-size:15px !important;
+  }
+
+  .menu-panel{
+    min-width:285px !important;
+    max-width:calc(100vw - 20px) !important;
+    max-height:72vh !important;
+    overflow-y:auto !important;
+  }
+
+  .menu-panel a{
+    font-size:15px !important;
+  }
+}
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media(max-width:520px){
+
+  .main-menu > .menu-item,
+  .main-menu > .menu-drop > .menu-trigger{
+    min-height:43px !important;
+    padding:0 14px !important;
+    font-size:15px !important;
+  }
+
+  .menu-panel{
+    min-width:270px !important;
+  }
+}
