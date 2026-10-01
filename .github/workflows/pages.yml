@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["website-upgrade"]
   workflow_dispatch:
 
 permissions:
@@ -13,12 +13,97 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Prepare project-site deployment
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          import shutil
+
+          root = Path(".")
+          site = Path("_site")
+
+          if site.exists():
+              shutil.rmtree(site)
+
+          site.mkdir()
+
+          excluded = {".git", ".github", "_site"}
+
+          for item in root.iterdir():
+              if item.name in excluded:
+                  continue
+              target = site / item.name
+              if item.is_dir():
+                  shutil.copytree(item, target)
+              else:
+                  shutil.copy2(item, target)
+
+          roots = (
+              "assets",
+              "reference",
+              "tools",
+              "templates",
+              "case-studies",
+              "profile",
+              "contact",
+          )
+
+          path_pattern = re.compile(
+              r'(?<![A-Za-z0-9_.-])/'
+              r'(' + "|".join(map(re.escape, roots)) + r')'
+              r'(?=[/?.#"\')\s])'
+          )
+
+          root_attr_pattern = re.compile(
+              r'((?:href|src|action)\s*=\s*["\'])/'
+              r'(["\'])'
+          )
+
+          changed_files = 0
+          changed_paths = [0]
+
+          for path in site.rglob("*"):
+              if not path.is_file():
+                  continue
+
+              if path.suffix.lower() not in {".html", ".css", ".js"}:
+                  continue
+
+              try:
+                  original = path.read_text(encoding="utf-8")
+              except (UnicodeDecodeError, OSError):
+                  continue
+
+              text = original
+
+              def path_repl(match):
+                  changed_paths[0] += 1
+                  return "/Pardeep_Chopra/" + match.group(1)
+
+              text = path_pattern.sub(path_repl, text)
+
+              def root_repl(match):
+                  changed_paths[0] += 1
+                  return match.group(1) + "/Pardeep_Chopra/" + match.group(2)
+
+              text = root_attr_pattern.sub(root_repl, text)
+
+              if text != original:
+                  path.write_text(text, encoding="utf-8")
+                  changed_files += 1
+
+          print(f"Deployment files changed: {changed_files}")
+          print(f"Deployment paths corrected: {changed_paths[0]}")
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -26,7 +111,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
