@@ -1505,3 +1505,38 @@ main.reference-page .imm-ref-flow{
     font-size:15px !important;
   }
 }
+
+/* =========================================================
+   REFERENCE HERO — PROPORTIONAL HEIGHT
+   Keep the industrial hero prominent without excessive
+   empty vertical space.
+   ========================================================= */
+
+.reference-page .reference-hero{
+  min-height:235px !important;
+  padding:0 !important;
+}
+
+.reference-page .reference-hero .home-wrap{
+  padding:38px 0 36px !important;
+}
+
+@media(max-width:900px){
+  .reference-page .reference-hero{
+    min-height:210px !important;
+  }
+
+  .reference-page .reference-hero .home-wrap{
+    padding:34px 0 30px !important;
+  }
+}
+
+@media(max-width:520px){
+  .reference-page .reference-hero{
+    min-height:195px !important;
+  }
+
+  .reference-page .reference-hero .home-wrap{
+    padding:30px 0 27px !important;
+  }
+}
