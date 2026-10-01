@@ -91,7 +91,21 @@ function inject(){
    return;
   }
   const cs=conceptsFor(q);
-  const ranked=PAGES.map(p=>({p:p,s:score(p,q)})).filter(x=>x.s>0).sort((a,b)=>b.s-a.s).slice(0,15);
+  const rankedCandidates=PAGES
+   .filter(p=>!/(^|\/)[^\/]*(?:backup|before)[^\/]*\.html$/i.test(p.url))
+   .map(p=>({p:p,s:score(p,q)}))
+   .filter(x=>x.s>0)
+   .sort((a,b)=>b.s-a.s);
+
+  const ranked=[];
+  const seen=new Set();
+  for(const x of rankedCandidates){
+   const key=norm(x.p.title)||norm(x.p.url);
+   if(seen.has(key))continue;
+   seen.add(key);
+   ranked.push(x);
+   if(ranked.length>=15)break;
+  }
   const note=cs.length?'<div class="site-search-concept">Standard concept: <b>'+esc(cs.join(" • "))+'</b></div>':"";
   rs.innerHTML=ranked.length?note+ranked.map(x=>'<a class="site-search-result" href="'+x.p.url+'"><span class="site-search-result-title">'+esc(x.p.title)+'</span><span class="site-search-result-path">'+esc(x.p.url.slice(1))+'</span><span class="site-search-result-excerpt">'+esc(excerpt(x.p,q))+'</span></a>').join(""):'<div class="site-search-empty">No direct match. Try a broader industrial term such as inventory, stores, purchase, planning or materials.</div>';
  }
