@@ -6,7 +6,81 @@
 <title>Material Document | Industrial Materials Management</title>
 <link href="/assets/css/site.css" rel="stylesheet"/><link href="/assets/css/site-search.css" rel="stylesheet"/>
 <link href="/assets/css/premium-v4.css" rel="stylesheet"/><link href="/assets/css/site-consistency.css" rel="stylesheet"/>
-<link href="/assets/css/reference-master.css" rel="stylesheet"/></head><body>
+<link href="/assets/css/reference-master.css" rel="stylesheet"/><style data-page-fix>
+/* MATERIAL DOCUMENT — AT A GLANCE PAGE-SPECIFIC FIX */
+
+main.reference-page .topic-intro-grid{
+  grid-template-columns:minmax(0,2fr) minmax(310px,340px) !important;
+  align-items:stretch !important;
+}
+
+main.reference-page .topic-intro-grid .topic-quick{
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  gap:0 !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+  padding:28px 30px !important;
+}
+
+main.reference-page .topic-intro-grid .topic-quick strong{
+  display:block !important;
+  width:100% !important;
+  margin:0 0 18px !important;
+  font-size:22px !important;
+  line-height:1.2 !important;
+  text-transform:uppercase !important;
+  letter-spacing:.10em !important;
+}
+
+main.reference-page .topic-intro-grid .topic-quick span{
+  display:block !important;
+  width:100% !important;
+  margin:0 0 5px !important;
+  font-size:15px !important;
+  font-weight:800 !important;
+  line-height:1.4 !important;
+  color:#496963 !important;
+}
+
+main.reference-page .topic-intro-grid .topic-quick b{
+  display:block !important;
+  width:100% !important;
+  margin:0 0 16px !important;
+  font-size:17px !important;
+  font-weight:700 !important;
+  line-height:1.65 !important;
+  color:#294842 !important;
+  overflow-wrap:break-word !important;
+}
+
+@media(max-width:900px){
+  main.reference-page .topic-intro-grid{
+    grid-template-columns:minmax(0,1fr) !important;
+  }
+
+  main.reference-page .topic-intro-grid .topic-quick{
+    padding:24px !important;
+  }
+}
+
+@media(max-width:520px){
+  main.reference-page .topic-intro-grid .topic-quick{
+    padding:22px !important;
+  }
+
+  main.reference-page .topic-intro-grid .topic-quick strong{
+    font-size:20px !important;
+  }
+
+  main.reference-page .topic-intro-grid .topic-quick b{
+    font-size:17px !important;
+  }
+}
+</style>
+</head><body>
 <header class="imm-global-header"><div class="imm-global-header-inner"><a class="imm-global-brand" href="/"><strong>INDUSTRIAL MATERIALS MANAGEMENT</strong><small>STORES • INVENTORY • PURCHASE • PLANNING • MATERIALS • ERP • ANALYSIS</small></a><nav class="main-menu" aria-label="Main navigation">
     <a class="menu-item active" href="/">Home</a>
 
