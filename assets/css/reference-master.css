@@ -598,3 +598,352 @@
     grid-template-columns:1fr;
   }
 }
+
+/* =========================================================
+   BATCH COMPATIBILITY
+   Existing reference pages use .topic-intro-grid
+   ========================================================= */
+
+.reference-page .topic-intro-grid{
+  width:min(1120px,calc(100% - 40px));
+  margin:-42px auto 26px;
+  position:relative;
+  z-index:5;
+  display:grid;
+  grid-template-columns:minmax(0,2fr) minmax(280px,1fr);
+  gap:18px;
+}
+
+.reference-page .topic-intro-grid > div{
+  box-sizing:border-box;
+  min-width:0;
+  width:100%;
+  background:#fff;
+  border:1px solid #d8e4e1;
+  border-radius:12px;
+  padding:25px 27px;
+  box-shadow:0 12px 34px rgba(8,54,48,.11);
+}
+
+.reference-page .topic-intro-grid > div:first-child{
+  border-top:4px solid #0d6b61;
+}
+
+.reference-page .topic-intro-grid .topic-quick{
+  border-top:4px solid #9acbc2;
+}
+
+.reference-page .topic-intro-grid h2{
+  color:#15564f;
+  font-size:1.55rem;
+  margin:7px 0 10px;
+}
+
+.reference-page .topic-intro-grid p{
+  margin:0;
+  line-height:1.7;
+  color:#526460;
+}
+
+@media(max-width:899px){
+  .reference-page .topic-intro-grid{
+    width:calc(100% - 32px);
+    margin:-25px auto 20px;
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:520px){
+  .reference-page .topic-intro-grid{
+    width:calc(100% - 28px);
+  }
+
+  .reference-page .topic-intro-grid > div{
+    padding:21px;
+  }
+}
+
+/* =========================================================
+   GLOBAL COMPONENT CLEANUP — ALL REFERENCE TOPIC PAGES
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. INTRO / OVERVIEW COMPONENT
+   Prevent legacy layout rules from creating narrow cards
+   or large unused whitespace.
+   --------------------------------------------------------- */
+
+.reference-page .topic-intro-grid{
+  display:grid !important;
+  grid-template-columns:minmax(0,2fr) minmax(280px,1fr) !important;
+  width:min(1120px,calc(100% - 40px)) !important;
+  max-width:none !important;
+  margin:-42px auto 26px !important;
+  gap:18px !important;
+  box-sizing:border-box !important;
+  position:relative;
+  z-index:5;
+}
+
+.reference-page .topic-intro-grid > div{
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+}
+
+@media(max-width:899px){
+  .reference-page .topic-intro-grid{
+    grid-template-columns:minmax(0,1fr) !important;
+    width:calc(100% - 32px) !important;
+    margin:-25px auto 20px !important;
+  }
+}
+
+/* ---------------------------------------------------------
+   2. REMOVE REDUNDANT STANDALONE PROCESS FLOW
+   Keep the professional .topic-illustration version.
+   --------------------------------------------------------- */
+
+.reference-page .topic-deep-dive > svg{
+  display:none !important;
+}
+
+/* The explanatory paragraph belonging to the removed
+   standalone flow should also disappear when it is the
+   immediate following element. */
+.reference-page .topic-deep-dive > svg + p{
+  display:none !important;
+}
+
+/* ---------------------------------------------------------
+   3. THE PROFESSIONAL ILLUSTRATION REMAINS VISIBLE
+   --------------------------------------------------------- */
+
+.reference-page .topic-deep-dive .topic-illustration{
+  display:block !important;
+  width:min(1120px,calc(100% - 40px));
+  margin:0 auto 26px;
+}
+
+/* ---------------------------------------------------------
+   4. PRACTICAL PROCESS SECTION
+   When present, make it a clean single professional block.
+   --------------------------------------------------------- */
+
+.reference-page .topic-deep-dive .topic-process,
+.reference-page .topic-deep-dive .process-flow,
+.reference-page .topic-deep-dive .practice-flow{
+  width:100%;
+  box-sizing:border-box;
+}
+
+/* ---------------------------------------------------------
+   5. PREVENT LEGACY NARROW WRAPPERS
+   --------------------------------------------------------- */
+
+.reference-page .topic-deep-dive .topic-intro-grid,
+.reference-page .topic-deep-dive .topic-illustration,
+.reference-page .topic-deep-dive .topic-anchor-nav{
+  max-width:none;
+}
+
+@media(max-width:520px){
+  .reference-page .topic-intro-grid{
+    width:calc(100% - 28px) !important;
+  }
+
+  .reference-page .topic-deep-dive .topic-illustration{
+    width:calc(100% - 28px);
+  }
+}
+
+/* =========================================================
+   FINAL GLOBAL COMPONENT CORRECTION
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   A. REMOVE LEGACY DUPLICATE PROCESS VISUAL
+   The old imm-ref-visual duplicates the newer
+   .topic-illustration component.
+   --------------------------------------------------------- */
+
+.reference-page .imm-ref-visual{
+  display:none !important;
+}
+
+/* ---------------------------------------------------------
+   B. FINAL INTRO LAYOUT
+   Force the two cards to occupy the complete available
+   content width.
+   --------------------------------------------------------- */
+
+.reference-page .topic-intro-grid{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(250px,320px) !important;
+  grid-auto-flow:row !important;
+  align-items:stretch !important;
+  justify-content:stretch !important;
+  width:min(1120px,calc(100% - 40px)) !important;
+  max-width:1120px !important;
+  margin:-42px auto 26px !important;
+  padding:0 !important;
+  gap:18px !important;
+  box-sizing:border-box !important;
+}
+
+.reference-page .topic-intro-grid > div{
+  display:block !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:none !important;
+  margin:0 !important;
+  box-sizing:border-box !important;
+  align-self:stretch !important;
+}
+
+.reference-page .topic-intro-grid > div:first-child{
+  grid-column:1 !important;
+}
+
+.reference-page .topic-intro-grid > .topic-quick{
+  grid-column:2 !important;
+}
+
+@media(max-width:899px){
+
+  .reference-page .topic-intro-grid{
+    grid-template-columns:minmax(0,1fr) !important;
+    width:calc(100% - 32px) !important;
+    max-width:none !important;
+    margin:-25px auto 20px !important;
+  }
+
+  .reference-page .topic-intro-grid > div:first-child,
+  .reference-page .topic-intro-grid > .topic-quick{
+    grid-column:1 !important;
+    width:100% !important;
+  }
+}
+
+@media(max-width:520px){
+
+  .reference-page .topic-intro-grid{
+    width:calc(100% - 28px) !important;
+  }
+}
+
+/* =========================================================
+   INTRO CARD — FINAL RESPONSIVE FIX
+   ========================================================= */
+
+/* Desktop */
+.reference-page .topic-intro-grid{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) 300px !important;
+  width:calc(100% - 40px) !important;
+  max-width:1120px !important;
+  gap:18px !important;
+  box-sizing:border-box !important;
+}
+
+.reference-page .topic-intro-grid > div{
+  display:block !important;
+  position:relative !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:none !important;
+  box-sizing:border-box !important;
+  margin:0 !important;
+  overflow:visible !important;
+}
+
+/* ---------------------------------------------------------
+   TABLET + MOBILE
+   Do not use a competing grid here.
+   Stack the cards vertically.
+   --------------------------------------------------------- */
+
+@media screen and (max-width:1100px){
+
+  .reference-page .topic-intro-grid{
+    display:block !important;
+    width:calc(100% - 32px) !important;
+    max-width:none !important;
+    margin:-25px auto 20px !important;
+    padding:0 !important;
+  }
+
+  .reference-page .topic-intro-grid > div,
+  .reference-page .topic-intro-grid > div:first-child,
+  .reference-page .topic-intro-grid > .topic-quick{
+    display:block !important;
+    width:100% !important;
+    min-width:0 !important;
+    max-width:none !important;
+    margin:0 0 14px !important;
+    box-sizing:border-box !important;
+    grid-column:auto !important;
+    grid-row:auto !important;
+    float:none !important;
+  }
+
+  .reference-page .topic-intro-grid > .topic-quick{
+    margin-bottom:0 !important;
+  }
+
+  .reference-page .topic-intro-grid .topic-kicker{
+    display:block !important;
+    white-space:normal !important;
+  }
+
+  .reference-page .topic-intro-grid .topic-quick span,
+  .reference-page .topic-intro-grid .topic-quick b,
+  .reference-page .topic-intro-grid .topic-quick strong{
+    display:block !important;
+    white-space:normal !important;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width:520px){
+
+  .reference-page .topic-intro-grid{
+    width:calc(100% - 28px) !important;
+  }
+
+  .reference-page .topic-intro-grid > div{
+    padding:22px !important;
+  }
+}
+
+/* =========================================================
+   REMOVE LEGACY STANDALONE PROCESS FLOW
+   Keep only the professional topic-illustration flow.
+   ========================================================= */
+
+.reference-page .imm-ref-flow{
+  display:none !important;
+}
+
+/* =========================================================
+   FINAL — REMOVE LEGACY STANDALONE STEP ROWS
+   Preserve all other legacy reference content.
+   ========================================================= */
+
+.reference-page .imm-reference-expansion > .imm-ref-step{
+  display:none !important;
+}
+
+/* =========================================================
+   GLOBAL REFERENCE CARD SHADOW — ALL TOPIC PAGES
+   Keep the Topic Illustration visually consistent with the
+   other professional reference cards.
+   ========================================================= */
+
+.reference-page .topic-deep-dive .topic-illustration,
+.reference-page .topic-deep-dive .reference-v8-intro > div,
+.reference-page .topic-deep-dive .topic-intro-grid > div {
+  box-shadow: 0 8px 24px rgba(20,55,50,.08) !important;
+}
+
