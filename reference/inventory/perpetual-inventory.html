@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Perpetual Inventory | Industrial Materials Management</title>
+<meta name="description" content="Perpetual inventory: continuous stock recording, controls, ERP integration, cycle counting, reconciliation, KPIs, risks and industrial application.">
+<link rel="stylesheet" href="../../assets/css/upgrade.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="../../index.html">Industrial Materials Management</a>
+    <nav>
+      <a href="../../index.html">Home</a> ·
+      <a href="../inventory/index.html">Inventory</a> ·
+      <a href="../erp/index.html">ERP</a> ·
+      <a href="../kpi/index.html">KPIs</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+<article>
+<p><a href="../inventory/index.html">Inventory Reference</a> / Perpetual Inventory</p>
+<h1>Perpetual Inventory</h1>
+<p><strong>Perpetual inventory</strong> is a continuous inventory-control system in which receipts, issues, transfers, returns and approved adjustments update the recorded stock balance as transactions occur. Its purpose is to maintain a reliable, current inventory position rather than waiting for a periodic physical count to reveal discrepancies.</p>
+
+<h2>Background &amp; Emergence</h2>
+<p>Perpetual inventory became increasingly important as industrial organisations moved from simple stores ledgers to multi-location warehouses, ERP-based transaction processing, barcode identification and tighter working-capital controls. Modern manufacturing requires stock visibility between physical counts, particularly for production-critical, high-value and regulated materials.</p>
+
+<h2>Operational Need &amp; Significance</h2>
+<p>A perpetual system supports production continuity, purchasing decisions, material availability and financial control by keeping the book balance continuously updated. It helps detect transaction errors earlier and reduces dependence on a single annual or periodic physical verification.</p>
+
+<h2>Methodology &amp; Operational Workflow</h2>
+<ol>
+<li>Establish a controlled material master: item code, description, UOM, location, valuation and relevant batch/serial attributes.</li>
+<li>Record every authorised receipt against the appropriate document and quantity.</li>
+<li>Complete inspection/quarantine and put-away controls where applicable.</li>
+<li>Post issues, returns, transfers and other movements against authorised documents.</li>
+<li>Maintain the running balance: <strong>Closing Book Stock = Opening Book Stock + Receipts − Issues ± Approved Adjustments</strong>.</li>
+<li>Perform cycle counts and investigate variances instead of waiting for annual physical inventory.</li>
+<li>Reconcile physical, ERP and supporting records; approve and document adjustments.</li>
+</ol>
+
+<h2>ERP / SAP MM Integration</h2>
+<p>In an ERP environment, perpetual inventory depends on disciplined material-master governance and timely transaction posting. Goods receipts, goods issues, stock transfers, returns and approved adjustments should update the relevant stock records through controlled movement transactions. Batch and serial controls, valuation, reservations and integration with purchasing and production should be applied according to the material and business process.</p>
+
+<h2>Industrial Application</h2>
+<p>The method is applicable to manufacturing stores, MRO warehouses, spare-parts depots, process plants, project stores and distribution environments. Counting intensity and transaction controls should reflect item criticality, value, movement frequency, lead time and operational risk.</p>
+
+<h2>Cycle Counting &amp; Physical Verification</h2>
+<p>Perpetual inventory does not eliminate physical verification. Instead, physical verification becomes a continuous control mechanism. ABC classification, criticality, movement frequency and historical variance can be used to determine counting frequency. Discrepancies should be traced to transaction timing, identification, UOM, location, quantity, damage, scrap, unauthorised movement or master-data errors.</p>
+
+<h2>Controls</h2>
+<ul>
+<li>Unique material identification and controlled bin/location records.</li>
+<li>Authorisation for receipts, issues, transfers, returns and adjustments.</li>
+<li>Transaction posting on the same day wherever operationally practical.</li>
+<li>Restricted adjustment authority with reason codes and approval trail.</li>
+<li>Regular cycle counts and documented variance investigation.</li>
+<li>Reconciliation between physical stock, ERP balances and relevant documents.</li>
+<li>Exception reporting for negative stock, unusual adjustments and unresolved discrepancies.</li>
+</ul>
+
+<h2>KPIs &amp; Management Review</h2>
+<ul>
+<li>Inventory accuracy %</li>
+<li>Cycle-count compliance %</li>
+<li>Stock adjustment rate</li>
+<li>Negative-stock exceptions</li>
+<li>Transaction-posting timeliness</li>
+<li>Stock-out rate for critical materials</li>
+<li>Inventory turnover and stock coverage</li>
+</ul>
+
+<h2>Benefits &amp; Strategic Impact</h2>
+<p>When supported by accurate master data and disciplined transactions, perpetual inventory improves inventory visibility, inventory accuracy, replenishment decisions, working-capital control, auditability and production readiness. It also creates a stronger data foundation for MRP, min-max planning, safety-stock review and inventory-performance analysis.</p>
+
+<h2>Potential Drawbacks, Risks &amp; Mitigation</h2>
+<p>The system can become unreliable when transactions are delayed, material identification is poor, UOM conversions are wrong, physical movements bypass documentation or users post inaccurate adjustments. These risks are mitigated through standard work, training, identification controls, exception alerts, cycle counting and periodic governance audits. <strong>Perpetual inventory is only as reliable as the transaction discipline and master data supporting it.</strong></p>
+
+<h2>Practical Industrial Example</h2>
+<p>A plant stores critical maintenance spares across several bins. A bearing is received, inspected and put away; the receipt updates the ERP balance. When maintenance issues the bearing, the authorised goods issue reduces book stock immediately. A later cycle count finds one additional physical unit missing from the recorded balance. Investigation traces the difference to an emergency issue that was physically made but posted later. The corrective action is not merely to adjust stock; the store establishes an emergency-issue procedure requiring immediate document creation and same-shift posting.</p>
+
+<h2>Management Decision Guide</h2>
+<ul>
+<li>Use perpetual control where stock accuracy and availability materially affect operations or financial control.</li>
+<li>Increase counting frequency for high-value, critical, fast-moving or historically inaccurate items.</li>
+<li>Do not treat an ERP balance as automatically correct; validate the transaction trail.</li>
+<li>Investigate recurring variances at process level rather than repeatedly adjusting stock.</li>
+</ul>
+
+<h2>Related Topics</h2>
+<p>
+<a href="inventory-accuracy.html">Inventory Accuracy</a> ·
+<a href="cycle-counting.html">Cycle Counting</a> ·
+<a href="inventory-reconciliation.html">Inventory Reconciliation</a> ·
+<a href="physical-inventory.html">Physical Inventory</a> ·
+<a href="../erp/erp-data-reconciliation.html">ERP Data Reconciliation</a> ·
+<a href="../erp/material-document.html">Material Document</a> ·
+<a href="../kpi/inventory-accuracy-kpi.html">Inventory Accuracy KPI</a>
+</p>
+</article>
+</main>
+<footer class="container"><p>Industrial Materials Management — Pardeep Chopra</p></footer>
+</body>
+</html>
