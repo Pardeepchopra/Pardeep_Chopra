@@ -1393,3 +1393,64 @@ body:not(.home-page) .approved-infographic-frame img{
     overflow-y:auto !important;
   }
 }
+
+
+/* ============================================================
+   PROFESSIONAL HORIZONTAL OVERVIEW CARDS
+   Site-wide applicable management/topic overview panels.
+   Desktop/tablet: heading on the left, explanation on the right.
+   Mobile: compact two-column row, then single column on very small screens.
+   ============================================================ */
+
+body:not(.home-page) .imm-overview-grid{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:14px !important;
+  margin-bottom:28px !important;
+}
+
+body:not(.home-page) .imm-overview-grid article{
+  display:grid !important;
+  grid-template-columns:minmax(210px,28%) minmax(0,1fr) !important;
+  column-gap:28px !important;
+  align-items:start !important;
+  width:100% !important;
+  min-width:0 !important;
+  padding:20px 24px !important;
+  box-sizing:border-box !important;
+}
+
+body:not(.home-page) .imm-overview-grid article h3{
+  margin:0 !important;
+  font-size:1.05rem !important;
+  line-height:1.35 !important;
+}
+
+body:not(.home-page) .imm-overview-grid article p{
+  margin:0 !important;
+  min-width:0 !important;
+  line-height:1.65 !important;
+}
+
+@media(max-width:700px){
+  body:not(.home-page) .imm-overview-grid article{
+    grid-template-columns:minmax(120px,34%) minmax(0,1fr) !important;
+    column-gap:16px !important;
+    padding:16px 17px !important;
+  }
+
+  body:not(.home-page) .imm-overview-grid article h3{
+    font-size:1rem !important;
+  }
+
+  body:not(.home-page) .imm-overview-grid article p{
+    font-size:.9rem !important;
+  }
+}
+
+@media(max-width:430px){
+  body:not(.home-page) .imm-overview-grid article{
+    grid-template-columns:1fr !important;
+    row-gap:7px !important;
+  }
+}
