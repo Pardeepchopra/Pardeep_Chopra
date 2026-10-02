@@ -37,7 +37,7 @@ jobs:
 
           site.mkdir()
 
-          excluded = {".git", ".github", "_site"}
+          excluded = {".git", ".github", "_site", "_archive"}
 
           for item in root.iterdir():
               if item.name in excluded:
