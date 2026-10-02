@@ -1,3 +1,4 @@
+@import url("theme-industrial.css");
 .menu-drop.is-open>.menu-panel{display:block}
 .menu-drop.is-open>.menu-trigger{background:#e7eeea;color:#145f57}
 .menu-trigger:focus-visible,.menu-panel a:focus-visible,.btn:focus-visible,.flow-node:focus-visible,.card-link-area:focus-visible{outline:3px solid #2f7d73;outline-offset:2px}
