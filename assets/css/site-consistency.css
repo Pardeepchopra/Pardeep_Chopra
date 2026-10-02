@@ -1454,3 +1454,342 @@ body:not(.home-page) .imm-overview-grid article p{
     row-gap:7px !important;
   }
 }
+
+
+/* ============================================================
+   INDUSTRIAL REFERENCE THEME — HORIZONTAL / PROFESSIONAL SYSTEM
+   Visual direction: supplied Industrial Materials Management theme.
+   Applied site-wide to applicable internal pages.
+   Content is unchanged.
+   ============================================================ */
+
+:root{
+  --imm-theme-green:#064f43;
+  --imm-theme-green-dark:#043b33;
+  --imm-theme-green-2:#0b6b5d;
+  --imm-theme-ink:#173332;
+  --imm-theme-muted:#526362;
+  --imm-theme-line:#d7e2df;
+  --imm-theme-paper:#f7f9f8;
+  --imm-theme-card:#ffffff;
+  --imm-theme-soft:#edf5f2;
+  --imm-theme-accent:#0b6b5d;
+}
+
+/* ---------- GLOBAL PAGE SURFACE ---------- */
+body:not(.home-page){
+  background:#f7f9f8 !important;
+  color:var(--imm-theme-ink) !important;
+}
+
+body:not(.home-page) .imm-global-header{
+  background:var(--imm-theme-green) !important;
+  border-bottom:0 !important;
+  box-shadow:0 3px 14px rgba(0,55,47,.14) !important;
+}
+
+body:not(.home-page) .imm-global-header-inner{
+  min-height:64px !important;
+  width:min(1280px,94%) !important;
+  padding:11px 0 !important;
+  gap:14px !important;
+}
+
+body:not(.home-page) .imm-global-brand strong{
+  color:#fff !important;
+  font-size:20px !important;
+  letter-spacing:.45px !important;
+}
+
+body:not(.home-page) .imm-global-brand small{
+  color:rgba(255,255,255,.78) !important;
+}
+
+body:not(.home-page) .imm-global-nav a{
+  color:#fff !important;
+  font-weight:600 !important;
+}
+
+body:not(.home-page) .imm-global-nav a:hover{
+  color:#d9eee9 !important;
+}
+
+/* ---------- HERO / PAGE IDENTITY ---------- */
+body:not(.home-page) .reference-page .reference-hero,
+body:not(.home-page) main.reference-page > .reference-hero{
+  background:linear-gradient(135deg,var(--imm-theme-green-dark),var(--imm-theme-green)) !important;
+  color:#fff !important;
+  padding:38px 0 34px !important;
+  border:0 !important;
+}
+
+body:not(.home-page) .reference-page .reference-hero .home-wrap{
+  width:min(1280px,94%) !important;
+}
+
+body:not(.home-page) .reference-page .reference-hero h1{
+  color:#fff !important;
+  font-size:clamp(32px,4.4vw,54px) !important;
+  line-height:1.08 !important;
+  letter-spacing:-.8px !important;
+}
+
+body:not(.home-page) .reference-page .reference-hero p{
+  color:rgba(255,255,255,.9) !important;
+  max-width:920px !important;
+  font-size:16px !important;
+  line-height:1.6 !important;
+}
+
+body:not(.home-page) .reference-page .reference-hero .home-wrap:before{
+  color:#a8d9d0 !important;
+}
+
+/* ---------- FEATURED TOPIC VISUAL ---------- */
+body:not(.home-page) .reference-page .site-topic-visual,
+body:not(.home-page) main.reference-page > .site-topic-visual{
+  width:min(1280px,94%) !important;
+  max-width:1280px !important;
+  margin:0 auto 30px !important;
+  padding:0 !important;
+  background:#123f39 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:0 8px 25px rgba(0,45,39,.12) !important;
+  overflow:hidden !important;
+}
+
+body:not(.home-page) .reference-page .site-topic-visual img{
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  height:300px !important;
+  max-height:300px !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  opacity:.96 !important;
+}
+
+@media(max-width:700px){
+  body:not(.home-page) .reference-page .site-topic-visual img{
+    height:190px !important;
+    max-height:190px !important;
+  }
+}
+
+/* ---------- BREADCRUMB / PAGE CONTEXT ---------- */
+body:not(.home-page) .breadcrumb,
+body:not(.home-page) .breadcrumbs,
+body:not(.home-page) .reference-breadcrumb{
+  color:#566866 !important;
+  font-size:13px !important;
+}
+
+body:not(.home-page) .breadcrumb a,
+body:not(.home-page) .breadcrumbs a,
+body:not(.home-page) .reference-breadcrumb a{
+  color:var(--imm-theme-green-2) !important;
+}
+
+/* ---------- CONTENT SECTIONS ---------- */
+body:not(.home-page) .reference-section,
+body:not(.home-page) .imm-panel,
+body:not(.home-page) .imm-ref-box,
+body:not(.home-page) .topic-deep-dive,
+body:not(.home-page) .article{
+  background:#fff !important;
+  border:1px solid var(--imm-theme-line) !important;
+  box-shadow:0 3px 14px rgba(24,55,51,.035) !important;
+  border-radius:2px !important;
+}
+
+body:not(.home-page) .reference-section h2,
+body:not(.home-page) .imm-panel h2,
+body:not(.home-page) .imm-ref-box h2,
+body:not(.home-page) .topic-deep-dive h2,
+body:not(.home-page) .article h2{
+  color:var(--imm-theme-green-dark) !important;
+  font-weight:800 !important;
+}
+
+body:not(.home-page) .reference-section h3,
+body:not(.home-page) .imm-panel h3,
+body:not(.home-page) .imm-ref-box h3,
+body:not(.home-page) .topic-deep-dive h3,
+body:not(.home-page) .article h3{
+  color:var(--imm-theme-green-2) !important;
+}
+
+/* ---------- HORIZONTAL INFORMATION ROWS ---------- */
+body:not(.home-page) .imm-overview-grid{
+  display:grid !important;
+  grid-template-columns:1fr !important;
+  gap:12px !important;
+}
+
+body:not(.home-page) .imm-overview-grid article{
+  display:grid !important;
+  grid-template-columns:minmax(210px,27%) minmax(0,1fr) !important;
+  gap:26px !important;
+  align-items:start !important;
+  padding:19px 23px !important;
+  background:#fff !important;
+  border:1px solid var(--imm-theme-line) !important;
+  border-left:4px solid var(--imm-theme-green-2) !important;
+  box-shadow:0 3px 12px rgba(24,55,51,.035) !important;
+}
+
+body:not(.home-page) .imm-overview-grid article h3{
+  margin:0 !important;
+  color:var(--imm-theme-green-dark) !important;
+  font-size:18px !important;
+  line-height:1.3 !important;
+}
+
+body:not(.home-page) .imm-overview-grid article p{
+  margin:0 !important;
+  color:#465856 !important;
+  font-size:14px !important;
+  line-height:1.7 !important;
+}
+
+/* ---------- GENERAL CONTENT CARDS ---------- */
+body:not(.home-page) .reference-card,
+body:not(.home-page) .imm-card,
+body:not(.home-page) .topic-card,
+body:not(.home-page) .card{
+  background:#fff !important;
+  border:1px solid var(--imm-theme-line) !important;
+  box-shadow:0 3px 12px rgba(24,55,51,.035) !important;
+  border-radius:2px !important;
+}
+
+body:not(.home-page) .reference-card h2,
+body:not(.home-page) .reference-card h3,
+body:not(.home-page) .imm-card h3,
+body:not(.home-page) .topic-card h3{
+  color:var(--imm-theme-green-dark) !important;
+}
+
+body:not(.home-page) .reference-card:hover,
+body:not(.home-page) .imm-card:hover,
+body:not(.home-page) .topic-card:hover{
+  border-color:#b7d1ca !important;
+  box-shadow:0 7px 18px rgba(24,55,51,.07) !important;
+}
+
+/* ---------- TABLES — INDUSTRIAL REPORT STYLE ---------- */
+body:not(.home-page) table{
+  background:#fff !important;
+  border-collapse:collapse !important;
+  border:1px solid var(--imm-theme-line) !important;
+}
+
+body:not(.home-page) th{
+  background:var(--imm-theme-green) !important;
+  color:#fff !important;
+  border-color:#276e63 !important;
+  font-weight:800 !important;
+}
+
+body:not(.home-page) td{
+  border-color:var(--imm-theme-line) !important;
+  color:#405351 !important;
+}
+
+body:not(.home-page) tbody tr:nth-child(even){
+  background:#f6f9f8 !important;
+}
+
+/* ---------- FORMULA / CALCULATION BOXES ---------- */
+body:not(.home-page) .formula,
+body:not(.home-page) .formula-box,
+body:not(.home-page) .calculation-box{
+  background:#edf6f3 !important;
+  border:1px solid #c7ddd7 !important;
+  border-left:4px solid var(--imm-theme-green-2) !important;
+  color:var(--imm-theme-green-dark) !important;
+  padding:18px 20px !important;
+  border-radius:2px !important;
+  overflow:auto !important;
+}
+
+/* ---------- PRACTICAL / DECISION / NOTE CALLOUTS ---------- */
+body:not(.home-page) .imm-case,
+body:not(.home-page) .topic-decision,
+body:not(.home-page) .topic-review,
+body:not(.home-page) .note,
+body:not(.home-page) .callout,
+body:not(.home-page) .takeaway,
+body:not(.home-page) .practical-tip{
+  background:#f1f7f5 !important;
+  border-left:4px solid var(--imm-theme-green-2) !important;
+  border-top:1px solid #d5e5e0 !important;
+  border-right:1px solid #d5e5e0 !important;
+  border-bottom:1px solid #d5e5e0 !important;
+  border-radius:2px !important;
+}
+
+/* ---------- PROCESS / CONTROL FLOWS ---------- */
+body:not(.home-page) .imm-flow-step,
+body:not(.home-page) .imm-ref-step,
+body:not(.home-page) .control-grid > div,
+body:not(.home-page) .control-item{
+  background:#f1f7f5 !important;
+  border-color:#cbded9 !important;
+  color:var(--imm-theme-green-dark) !important;
+}
+
+/* ---------- RELATED TOPICS ---------- */
+body:not(.home-page) .imm-related a,
+body:not(.home-page) .imm-ref-card{
+  background:#fff !important;
+  border-color:var(--imm-theme-line) !important;
+}
+
+body:not(.home-page) .imm-related a strong,
+body:not(.home-page) .imm-ref-card a,
+body:not(.home-page) .imm-ref-card strong{
+  color:var(--imm-theme-green-2) !important;
+}
+
+/* ---------- LINK SYSTEM ---------- */
+body:not(.home-page) main a:not(.btn):not(.home-btn):not(.imm-global-brand){
+  color:var(--imm-theme-green-2) !important;
+}
+
+body:not(.home-page) main a:not(.btn):not(.home-btn):not(.imm-global-brand):hover{
+  color:var(--imm-theme-green-dark) !important;
+}
+
+/* ---------- FOOTER ---------- */
+body:not(.home-page) .imm-site-footer{
+  background:var(--imm-theme-green) !important;
+  color:#d8e8e4 !important;
+  width:min(1280px,94%) !important;
+  padding:22px 24px 26px !important;
+  border:0 !important;
+  margin:38px auto 0 !important;
+  box-sizing:border-box !important;
+}
+
+body:not(.home-page) .imm-site-footer a{
+  color:#fff !important;
+}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:700px){
+  body:not(.home-page) .imm-overview-grid article{
+    grid-template-columns:1fr !important;
+    gap:7px !important;
+    padding:16px 17px !important;
+  }
+
+  body:not(.home-page) .imm-overview-grid article h3{
+    font-size:17px !important;
+  }
+
+  body:not(.home-page) .imm-overview-grid article p{
+    font-size:14px !important;
+  }
+}
