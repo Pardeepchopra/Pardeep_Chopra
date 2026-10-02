@@ -156,3 +156,64 @@ html body:not(.home-page) section.reference-hero [class*=kicker],html body:not(.
   html body:not(.home-page) section.reference-hero h1{font-size:1.35rem!important}
 }
 @media(max-width:600px){.imm-global-brand,.identity{padding-right:56px!important;box-sizing:border-box}}
+
+
+/* ============================================================
+   FIXED SITE HEADER + MENU — ALL PAGES
+   Header remains visible while page content scrolls underneath.
+   ============================================================ */
+
+html{
+  scroll-padding-top:76px !important;
+}
+
+body{
+  padding-top:0 !important;
+}
+
+/* Home and internal-page global headers */
+.imm-global-header,
+.site-header{
+  position:sticky !important;
+  top:0 !important;
+  z-index:100000 !important;
+  width:100% !important;
+}
+
+/* Keep header contents stable while scrolling */
+.imm-global-header-inner,
+.site-nav{
+  position:relative !important;
+  z-index:100001 !important;
+}
+
+/* Menu bar remains part of the fixed/sticky header */
+.imm-global-nav,
+.main-menu,
+.nav-links{
+  position:relative !important;
+  z-index:100002 !important;
+}
+
+/* Dropdowns must appear above page content */
+.imm-global-nav .menu-panel,
+.main-menu .menu-panel,
+.nav-links .menu-panel{
+  z-index:100003 !important;
+}
+
+/* Do not let page content paint above the header */
+body:not(.home-page) main,
+body.home-page main{
+  position:relative !important;
+  z-index:1 !important;
+}
+
+/* On mobile, preserve the sticky header while menus can scroll sideways */
+@media(max-width:900px){
+  .imm-global-header,
+  .site-header{
+    position:sticky !important;
+    top:0 !important;
+  }
+}
