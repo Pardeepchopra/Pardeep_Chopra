@@ -3,15 +3,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="site-root" content="../">
 <title>FIFO, LIFO &amp; FEFO | Industrial Materials Management</title>
-<meta name="description" content="FIFO, LIFO and FEFO are stock-rotation rules that determine which inventory should be issued first. FIFO prioritizes the oldest receipt, LIFO the most…">
+<meta name="description" content="A comprehensive guide to inventory valuation, stock rotation and inventory control: FIFO, LIFO and FEFO explained with worked examples, financial effects, accounting standards, practice problems and a glossary.">
 <link rel="canonical" href="https://materialsmanagement.pages.dev/stores/fifo-lifo-and-fefo">
 <meta name="theme-color" content="#0b4a2b">
 <meta property="og:type" content="article"><meta property="og:site_name" content="Industrial Materials Management">
-<meta property="og:title" content="FIFO, LIFO &amp; FEFO | Industrial Materials Management"><meta property="og:description" content="FIFO, LIFO and FEFO are stock-rotation rules that determine which inventory should be issued first. FIFO prioritizes the oldest receipt, LIFO the most…">
+<meta property="og:title" content="FIFO, LIFO &amp; FEFO | Industrial Materials Management"><meta property="og:description" content="A comprehensive guide to inventory valuation, stock rotation and inventory control: FIFO, LIFO and FEFO explained with worked examples, financial effects, accounting standards, practice problems and a glossary.">
 <meta property="og:url" content="https://materialsmanagement.pages.dev/stores/fifo-lifo-and-fefo"><meta name="twitter:card" content="summary">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/site.css?v=2026-10-03">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "FIFO, LIFO & FEFO", "description": "FIFO, LIFO and FEFO are stock-rotation rules that determine which inventory should be issued first. FIFO prioritizes the oldest receipt, LIFO the most…", "author": {"@type": "Person", "name": "Pardeep Chopra"}, "mainEntityOfPage": "https://materialsmanagement.pages.dev/stores/fifo-lifo-and-fefo", "publisher": {"@type": "Organization", "name": "Industrial Materials Management"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "FIFO, LIFO & FEFO", "description": "A comprehensive guide to inventory valuation, stock rotation and inventory control: FIFO, LIFO and FEFO explained with worked examples, financial effects, accounting standards, practice problems and a glossary.", "author": {"@type": "Person", "name": "Pardeep Chopra"}, "mainEntityOfPage": "https://materialsmanagement.pages.dev/stores/fifo-lifo-and-fefo", "publisher": {"@type": "Organization", "name": "Industrial Materials Management"}}</script>
+<link rel="stylesheet" href="../assets/page-bin.css">
+<link rel="stylesheet" href="../assets/page-fifo.css">
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap">
@@ -22,237 +24,1129 @@
 <nav class="hdr-nav" aria-label="Main"><a href="../index.html">Home</a><a href="../stores/" class="on">Stores</a><a href="../inventory/">Inventory</a><a href="../purchase/">Purchase</a><a href="../planning/">Planning</a><a href="../materials/">Materials</a><a href="../erp/">ERP &amp; MIS</a><a href="../control-systems/">Control Systems</a><a href="../lean/">Lean &amp; MRO</a><a href="../kpi/">KPIs</a><a href="../tools/">Tools</a><a href="../templates/">Templates</a><a href="../cases/">Case Studies</a><a href="../mro/">MRO Spares</a><a class="more" href="../sitemap.html">Site map</a></nav>
 </div><div class="progress"><i></i></div></header>
 <div class="search-ov" role="dialog" aria-modal="true" aria-label="Search topics"><div class="search-box"><input type="search" placeholder="Search 431 topics…" autocomplete="off" aria-label="Search topics"><div class="search-res"></div></div></div>
-<main id="main" style="--accent:#168a49">
-<section class="hero hero-page"><div class="wrap"><div class="crumbs"><a href="../index.html">Home</a> › <a href="../stores/">Stores</a> › FIFO, LIFO &amp; FEFO</div><h1>FIFO, LIFO &amp; FEFO</h1>
-<div class="chips"><a class="chip y" style="text-decoration:none" href="../stores/">Stores</a><span class="chip">⏱ 12 min read</span><span class="chip">25 parts</span></div></div></section>
-<div class="wrap layout"><aside><details class="toc" open><summary>On this page · 25 parts</summary><ol><li><a href="#fundamental-1">1. Fundamental</a></li><li><a href="#meaning-and-operating-context-1">2. Meaning and Operating Context</a></li><li><a href="#principle-1">3. Principle</a></li><li><a href="#objectives-and-purpose-1">4. Objectives and Purpose</a></li><li><a href="#importance-and-significance-1">5. Importance and Significance</a></li><li><a href="#characteristics-of-a-well-controlled-process-1">6. Characteristics of a Well-Controlled Process</a></li><li><a href="#relationship-with-different-functions-of-industry-1">7. Relationship with Different Functions of Industry</a></li><li><a href="#need-in-industry-1">8. Need in Industry</a></li><li><a href="#methodologies-and-practical-approaches-1">9. Methodologies and Practical Approaches</a></li><li><a href="#underlying-theories-and-concepts-1">10. Underlying Theories and Concepts</a></li><li><a href="#quantitative-measures-1">11. Quantitative Measures</a></li><li><a href="#performance-measures-and-kpis-1">12. Performance Measures and KPIs</a></li><li><a href="#process-flow-1">13. Process Flow</a></li><li><a href="#general-problems-and-practical-solutions-1">14. General Problems and Practical Solutions</a></li><li><a href="#optimization-techniques-1">15. Optimization Techniques</a></li><li><a href="#advancements-and-modern-practices-1">16. Advancements and Modern Practices</a></li><li><a href="#safety-and-compliance-1">17. Safety and Compliance</a></li><li><a href="#ethics-and-professional-conduct-1">18. Ethics and Professional Conduct</a></li><li><a href="#risk-errors-and-mistakes-1">19. Risk, Errors and Mistakes</a></li><li><a href="#detailed-industrial-case-study-1">20. Detailed Industrial Case Study</a></li><li><a href="#practical-examples-1">21. Practical Examples</a></li><li><a href="#review-and-control-checklist-1">22. Review and Control Checklist</a></li><li><a href="#responsibilities-1">23. Responsibilities</a></li><li><a href="#limitations-and-conditions-1">24. Limitations and Conditions</a></li><li><a href="#management-review-questions-1">25. Management Review Questions</a></li></ol></details></aside>
-<article class="article"><div class="lead-box"><p>FIFO, LIFO and FEFO are stock-rotation rules that determine which inventory should be issued first. FIFO prioritizes the oldest receipt, LIFO the most recently received stock where policy and material characteristics permit it, and FEFO the stock with the earliest expiry or shelf-life date.</p>
-<p>FIFO, LIFO &amp; FEFO should be understood as an operating discipline rather than as an isolated activity. Its quality depends on the interaction of physical material, information, transactions, people, equipment, suppliers and decisions. The practical objective is to create a controlled flow in which the required material outcome is achieved with appropriate service, cost, accuracy, safety and traceability.</p></div>
-<section class="sec" id="fundamental-1"><h2><span class="num">1</span>Fundamental</h2>
-<p>The fundamental idea is to control the variables that can change the outcome of FIFO, LIFO &amp; FEFO. These normally include quantity, timing, identity, condition, location, ownership/status, demand, supply, cost and information quality. A strong process makes these variables visible, defines what is acceptable, establishes what happens when the result falls outside the expected condition, and ensures that the exception is not simply passed to the next department.</p>
-</section>
-<section class="sec" id="meaning-and-operating-context-1"><h2><span class="num">2</span>Meaning and Operating Context</h2>
-<p>In industrial practice, FIFO, LIFO &amp; FEFO sits within an interconnected materials cycle. A decision made in one function can change inventory, purchase workload, production continuity, maintenance readiness, working capital or ERP accuracy elsewhere. The topic therefore has to be interpreted in the context of the complete material flow rather than only the activity performed by one department.</p>
-<p>The correct operating context is determined by material characteristics, demand behavior, consequence of non-availability, replenishment lead time, storage conditions, transaction architecture, supplier capability and the level of control justified by risk.</p>
-</section>
-<section class="sec" id="principle-1"><h2><span class="num">3</span>Principle</h2>
-<ul class="checks"><li>Control the cause before correcting the symptom.</li><li>Use the simplest control that reliably prevents or detects the important failure mode.</li><li>Make the physical and system status of material agree as closely and as quickly as practical.</li><li>Use differentiated control where material value, criticality, variability or consequence differs materially.</li><li>Close the feedback loop by measuring results and changing the process when evidence supports improvement.</li></ul>
-</section>
-<section class="sec" id="objectives-and-purpose-1"><h2><span class="num">4</span>Objectives and Purpose</h2>
-<ul class="checks"><li>Create a clear and repeatable method for managing FIFO, LIFO &amp; FEFO.</li><li>Maintain material availability without allowing avoidable inventory, transaction, handling or administrative waste.</li><li>Make responsibilities, decision triggers and control points visible to the people who execute the process.</li><li>Generate reliable information for stores, purchase, planning, production, maintenance, finance and management decisions.</li></ul>
-</section>
-<section class="sec" id="importance-and-significance-1"><h2><span class="num">5</span>Importance and Significance</h2>
-<p>Effective FIFO, LIFO &amp; FEFO contributes to operational continuity because materials are rarely independent of production, maintenance, quality, finance and customer commitments. When the discipline is strong, the organization can identify what is required, act before a constraint becomes critical, and make decisions using consistent information.</p>
-<p>The significance of poor control is equally important. Failures can appear as shortages, excess inventory, obsolete stock, duplicate purchasing, unplanned expediting, incorrect valuation, lost material, production interruption, maintenance delay, supplier conflict or misleading management reports. The visible symptom may occur in a different department from the original cause.</p>
-</section>
-<section class="sec" id="characteristics-of-a-well-controlled-process-1"><h2><span class="num">6</span>Characteristics of a Well-Controlled Process</h2>
-<ul class="checks"><li>Defined scope and clear process boundary.</li><li>Identifiable inputs, outputs and decision points.</li><li>Traceable records or transactions appropriate to the activity.</li><li>Explicit ownership and escalation for exceptions.</li><li>Measurable performance rather than purely subjective judgment.</li><li>Ability to operate consistently during routine and abnormal conditions.</li></ul>
-</section>
-<section class="sec" id="relationship-with-different-functions-of-industry-1"><h2><span class="num">7</span>Relationship with Different Functions of Industry</h2>
-<div class="table-wrap"><table>
+<main id="main" class="bl-page ff-page" style="--accent:#168a49">
+<section class="hero hero-page bl-hero ff-hero"><div class="wrap bl-hero-grid"><div>
+<div class="crumbs"><a href="../index.html">Home</a> › <a href="../stores/">Stores</a> › FIFO, LIFO &amp; FEFO</div>
+<h1>FIFO, LIFO &amp; FEFO</h1>
+<p class="bl-sub-title">FIFO, LIFO, and FEFO: A Comprehensive Guide to Inventory Valuation, Stock Rotation, and Inventory Control</p>
+<div class="chips"><a class="chip y" style="text-decoration:none" href="../stores/">Stores</a><span class="chip">⏱ 42 min read</span><span class="chip">19 chapters</span><span class="chip">18 tables</span><span class="chip">8 practice problems</span><span class="chip">A–Z glossary</span></div>
+</div><div class="bl-art"><svg viewBox="0 0 520 300" role="img" aria-label="FIFO issues the oldest stock first, LIFO the newest, FEFO the one that expires first">
+<defs><linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#eaf8ec"/></linearGradient></defs>
+<rect width="520" height="300" rx="18" fill="url(#fg)"/>
+<g font-family="Segoe UI,system-ui,Arial,sans-serif" font-weight="800" text-anchor="middle">
+<g transform="translate(14 14)"><rect width="156" height="272" rx="14" fill="#fff" stroke="#c9ecd3" stroke-width="2"/><rect width="156" height="34" rx="14" fill="#168a49"/><rect y="20" width="156" height="14" fill="#168a49"/>
+<text x="78" y="23" font-size="16" fill="#fff">FIFO</text>
+<text x="78" y="62" font-size="10.5" fill="#4d6657">First-In, First-Out</text>
+<rect x="14" y="92" width="34" height="34" rx="5" fill="#ffc61a"/><rect x="52" y="92" width="34" height="34" rx="5" fill="#8fd14f"/><rect x="90" y="92" width="34" height="34" rx="5" fill="#34bf73"/>
+<g font-size="12" fill="#0b4a2b"><text x="31" y="114">$10</text><text x="69" y="114">$12</text><text x="107" y="114">$14</text></g>
+<path d="M20 150h104" stroke="#168a49" stroke-width="3" stroke-dasharray="5 4"/><path d="M118 144l9 6-9 6" fill="none" stroke="#168a49" stroke-width="3"/>
+<text x="78" y="86" font-size="9.5" fill="#168a49">oldest</text><text x="140" y="86" font-size="9.5" fill="#4d6657">newest</text>
+<rect x="20" y="176" width="116" height="38" rx="10" fill="#e4f6e8"/><text x="78" y="199" font-size="12" fill="#0b4a2b">oldest cost out first</text>
+<text x="78" y="244" font-size="10.5" fill="#4d6657">queue</text></g>
+<g transform="translate(182 14)"><rect width="156" height="272" rx="14" fill="#fff" stroke="#ffeba8" stroke-width="2"/><rect width="156" height="34" rx="14" fill="#d9890a"/><rect y="20" width="156" height="14" fill="#d9890a"/>
+<text x="78" y="23" font-size="16" fill="#fff">LIFO</text>
+<text x="78" y="62" font-size="10.5" fill="#4d6657">Last-In, First-Out</text>
+<rect x="38" y="154" width="80" height="26" rx="5" fill="#ffc61a"/><rect x="38" y="124" width="80" height="26" rx="5" fill="#8fd14f"/><rect x="38" y="94" width="80" height="26" rx="5" fill="#34bf73"/>
+<g font-size="12" fill="#0b4a2b"><text x="78" y="172">$10</text><text x="78" y="142">$12</text><text x="78" y="112">$14</text></g>
+<path d="M78 90V72" stroke="#d9890a" stroke-width="3"/><path d="M71 78l7-9 7 9" fill="none" stroke="#d9890a" stroke-width="3"/>
+<rect x="20" y="190" width="116" height="38" rx="10" fill="#fff1d6"/><text x="78" y="213" font-size="12" fill="#6b4300">newest cost out first</text>
+<text x="78" y="248" font-size="10.5" fill="#4d6657">stack</text></g>
+<g transform="translate(350 14)"><rect width="156" height="272" rx="14" fill="#fff" stroke="#d8efb8" stroke-width="2"/><rect width="156" height="34" rx="14" fill="#5a9e1c"/><rect y="20" width="156" height="14" fill="#5a9e1c"/>
+<text x="78" y="23" font-size="16" fill="#fff">FEFO</text>
+<text x="78" y="62" font-size="10.5" fill="#4d6657">First-Expired, First-Out</text>
+<rect x="18" y="96" width="56" height="48" rx="6" fill="#ffc61a"/><rect x="82" y="96" width="56" height="48" rx="6" fill="#8fd14f"/>
+<rect x="26" y="108" width="40" height="18" rx="3" fill="#fff"/><rect x="90" y="108" width="40" height="18" rx="3" fill="#fff"/>
+<g font-size="9.5" fill="#0b4a2b"><text x="46" y="121">Jun 30</text><text x="110" y="121">Dec 31</text></g>
+<g font-size="10" fill="#4d6657"><text x="46" y="160">Batch B</text><text x="110" y="160">Batch A</text></g>
+<path d="M46 86V80" stroke="#5a9e1c" stroke-width="3"/><text x="46" y="76" font-size="10" fill="#5a9e1c">first out</text>
+<rect x="20" y="182" width="116" height="38" rx="10" fill="#eef8dd"/><text x="78" y="205" font-size="12" fill="#2f5a05">earliest expiry first</text>
+<text x="78" y="248" font-size="10.5" fill="#4d6657">shelf life</text></g>
+</g></svg></div></div></section>
+<div class="wrap layout"><aside><details class="toc bl-toc" open><summary>On this page · 20 sections</summary><ol><li><a href="#s1"><span>1</span>Introduction to Inventory Management</a></li><li><a href="#s2"><span>2</span>Why Inventory Valuation Matters</a></li><li><a href="#s3"><span>3</span>Understanding FIFO, LIFO, and FEFO</a></li><li><a href="#s4"><span>4</span>FIFO—First-In, First-Out</a></li><li><a href="#s5"><span>5</span>LIFO—Last-In, First-Out</a></li><li><a href="#s6"><span>6</span>FEFO—First-Expired, First-Out</a></li><li><a href="#s7"><span>7</span>Perpetual and Periodic Inventory Systems</a></li><li><a href="#s8"><span>8</span>Financial Effects of FIFO, LIFO, and FEFO</a></li><li><a href="#s9"><span>9</span>Inflation and Deflation Scenarios</a></li><li><a href="#s10"><span>10</span>Detailed Comparison of FIFO, LIFO, and FEFO</a></li><li><a href="#s11"><span>11</span>Advantages and Disadvantages in Practice</a></li><li><a href="#s12"><span>12</span>Related Inventory Concepts</a></li><li><a href="#s13"><span>13</span>Industry Applications</a></li><li><a href="#s14"><span>14</span>Accounting Standards and Regulatory Considerations</a></li><li><a href="#s15"><span>15</span>Practical Implementation</a></li><li><a href="#s16"><span>16</span>Audit and Internal-Control Considerations</a></li><li><a href="#s17"><span>17</span>Practice Problems with Solutions</a></li><li><a href="#s18"><span>18</span>Decision Guide</a></li><li><a href="#s19"><span>19</span>Key Takeaways</a></li><li><a href="#s20"><span>A–Z</span>Glossary</a></li></ol></details></aside>
+<article class="article bl-article">
+<section class="ff-guide"><h2>Inside this guide<small>Table of Contents</small></h2><ol><li style="--c:#168a49"><a href="#s1"><b>1</b>Introduction to Inventory Management</a></li><li style="--c:#e0a400"><a href="#s2"><b>2</b>Why Inventory Valuation Matters</a></li><li style="--c:#6aa820"><a href="#s3"><b>3</b>Understanding the Three Methods</a></li><li style="--c:#d9890a"><a href="#s4"><b>4</b>FIFO: First-In, First-Out</a></li><li style="--c:#0e9f6e"><a href="#s5"><b>5</b>LIFO: Last-In, First-Out</a></li><li style="--c:#c98a00"><a href="#s6"><b>6</b>FEFO: First-Expired, First-Out</a></li><li style="--c:#168a49"><a href="#s7"><b>7</b>Perpetual and Periodic Inventory Systems</a></li><li style="--c:#e0a400"><a href="#s8"><b>8</b>Financial Effects of FIFO, LIFO, and FEFO</a></li><li style="--c:#6aa820"><a href="#s9"><b>9</b>Inflation and Deflation Scenarios</a></li><li style="--c:#d9890a"><a href="#s10"><b>10</b>Comparison of FIFO, LIFO, and FEFO</a></li><li style="--c:#0e9f6e"><a href="#s11"><b>11</b>Advantages and Disadvantages</a></li><li style="--c:#c98a00"><a href="#s12"><b>12</b>Related Inventory Concepts</a></li><li style="--c:#168a49"><a href="#s13"><b>13</b>Industry Applications</a></li><li style="--c:#e0a400"><a href="#s15"><b>14</b>Practical Implementation</a></li><li style="--c:#6aa820"><a href="#s16"><b>15</b>Audit and Internal-Control Considerations</a></li><li style="--c:#d9890a"><a href="#s17"><b>16</b>Practice Problems with Solutions</a></li><li style="--c:#0e9f6e"><a href="#s20"><b>17</b>Glossary</a></li><li style="--c:#c98a00"><span><b>18</b>References</span></li></ol></section>
+<section class="bl-sec ff-ch" id="s1" style="--c:#168a49"><header class="bl-sec-h"><span class="big" aria-hidden="true">01</span><h2><span class="num">1</span><span class="ch">Chapter 1:</span> Introduction to Inventory Management</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s1-1"><h3><span class="sn">1.1</span>Meaning of Inventory</h3><p>Inventory consists of goods and materials that a business:</p>
+<ul class="bl-ul "><li>Holds for sale to customers</li><li>Uses in the production of goods</li><li>Consumes while providing services</li><li>Keeps as raw materials, work in progress, or finished products</li></ul>
+<p>For a retailer, inventory may include clothing, food, electronics, or household goods. For a manufacturer, inventory may include raw materials, partially completed products, and finished goods. For a hospital or pharmacy, inventory may include medicines, medical supplies, and laboratory materials.</p>
+<p>Inventory is usually classified into three major categories:</p>
+<div class="bl-factors"><div class="bl-fcard" style="--c:#168a49"><h4>Raw Materials</h4><p>Raw materials are inputs that have not yet entered the production process. Examples include:</p>
+<ul class="bl-ul "><li>Steel used to manufacture automobiles</li><li>Flour used in a bakery</li><li>Fabric used by a clothing manufacturer</li><li>Active pharmaceutical ingredients used to produce medicine</li></ul></div><div class="bl-fcard" style="--c:#e0a400"><h4>Work in Progress</h4><p>Work-in-progress inventory consists of goods that have entered production but are not yet complete.</p>
+<p>For example, an automobile partly assembled on a factory floor is work in progress.</p></div><div class="bl-fcard" style="--c:#6aa820"><h4>Finished Goods</h4><p>Finished goods are completed products that are ready for sale or distribution.</p>
+<p>Examples include:</p>
+<ul class="bl-ul "><li>Packaged food in a supermarket warehouse</li><li>Completed laptops awaiting shipment</li><li>Bottled medicine in a pharmaceutical distribution center</li></ul></div></div></div>
+<div class="bl-sub" id="s1-2"><h3><span class="sn">1.2</span>Inventory Management</h3><p>Inventory management is the process of planning, purchasing, receiving, storing, tracking, protecting, and issuing inventory.</p>
+<p>Effective inventory management attempts to balance two risks:</p>
+<ol class="bl-ol "><li><strong>Holding too much inventory</strong></li><li><strong>Holding too little inventory</strong></li></ol>
+<p>Excessive inventory can result in:</p>
+<ul class="bl-ul "><li>Storage costs</li><li>Insurance costs</li><li>Damage</li><li>Theft</li><li>Obsolescence</li><li>Expired products</li><li>Cash being tied up in stock</li></ul>
+<p>Insufficient inventory can result in:</p>
+<ul class="bl-ul "><li>Lost sales</li><li>Production interruptions</li><li>Customer dissatisfaction</li><li>Emergency purchasing</li><li>Higher transportation costs</li><li>Damage to the business’s reputation</li></ul>
+<p>Inventory methods such as FIFO, LIFO, and FEFO help organizations decide which units should be issued or sold and how inventory costs should be measured.</p></div>
+<div class="bl-sub" id="s1-3"><h3><span class="sn">1.3</span>Inventory Flow and Cost Flow</h3><p>There are two related but different ideas:</p>
+<div class="bl-factors wide"><div class="bl-fcard" style="--c:#168a49"><h4>Physical Flow</h4><p>Physical flow refers to the actual movement of goods through a warehouse or production facility.</p>
+<p>For example, older food may physically be sold before newer food.</p></div><div class="bl-fcard" style="--c:#d9890a"><h4>Cost Flow</h4><p>Cost flow refers to the accounting assumption used to determine which inventory costs are assigned to:</p>
+<ul class="bl-ul "><li>Cost of goods sold</li><li>Ending inventory</li></ul>
+<p>The accounting cost flow does not always match the physical movement of goods.</p>
+<p>For example, a business may physically sell its oldest products first but use a weighted-average cost method for financial reporting.</p>
+<p>This distinction is especially important for LIFO. Under LIFO, the latest costs are assigned to cost of goods sold, even though the business may physically sell older products first.</p></div></div></div></div></section>
+<section class="bl-sec ff-ch" id="s2" style="--c:#e0a400"><header class="bl-sec-h"><span class="big" aria-hidden="true">02</span><h2><span class="num">2</span><span class="ch">Chapter 2:</span> Why Inventory Valuation Matters</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s2-1"><h3><span class="sn">2.1</span>Inventory as an Asset</h3><p>Inventory is normally reported as a current asset on the statement of financial position, also called the balance sheet.</p>
+<p>The basic inventory relationship is:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>Formula</figcaption><div class="bl-math"><math display="block" aria-label="Beginning Inventory + Purchases - Cost of Goods Sold = Ending Inventory"><mtext>Beginning Inventory</mtext><mo>+</mo><mtext>Purchases</mtext><mo>−</mo><mtext>Cost of Goods Sold</mtext><mo>=</mo><mtext>Ending Inventory</mtext></math></div></figure>
+<p>Rearranged:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>Cost of Goods Sold</figcaption><div class="bl-math"><math display="block" aria-label="Cost of Goods Sold = Beginning Inventory + Purchases - Ending Inventory"><mtext>Cost of Goods Sold</mtext><mo>=</mo><mtext>Beginning Inventory</mtext><mo>+</mo><mtext>Purchases</mtext><mo>−</mo><mtext>Ending Inventory</mtext></math></div></figure>
+<p>Inventory valuation determines the amount reported for both ending inventory and cost of goods sold.</p></div>
+<div class="bl-sub" id="s2-2"><h3><span class="sn">2.2</span>Effect on Profit</h3><p>The basic gross-profit formula is:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>Gross Profit</figcaption><div class="bl-math"><math display="block" aria-label="Gross Profit = Sales Revenue - Cost of Goods Sold"><mtext>Gross Profit</mtext><mo>=</mo><mtext>Sales Revenue</mtext><mo>−</mo><mtext>Cost of Goods Sold</mtext></math></div></figure>
+<p>If cost of goods sold increases, gross profit decreases.</p>
+<p>If cost of goods sold decreases, gross profit increases.</p>
+<p>Therefore, the selected inventory method can affect:</p>
+<ul class="bl-ul "><li>Gross profit</li><li>Operating profit</li><li>Income before tax</li><li>Net income</li><li>Earnings per share</li><li>Taxable income</li><li>Inventory reported on the balance sheet</li></ul></div>
+<div class="bl-sub" id="s2-3"><h3><span class="sn">2.3</span>Effect on Taxes</h3><p>Inventory methods can affect taxes because taxable income is often influenced by reported cost of goods sold.</p>
+<p>When prices are rising:</p>
+<ul class="bl-ul "><li>LIFO generally produces higher cost of goods sold.</li><li>Higher cost of goods sold generally produces lower taxable income.</li><li>Lower taxable income may result in lower current income taxes.</li></ul>
+<p>When prices are falling, the effect may be reversed.</p>
+<p>Tax rules are jurisdiction-specific. A business must follow the tax laws applicable to its country and should obtain professional tax advice before selecting an inventory method for tax reporting.</p></div>
+<div class="bl-sub" id="s2-4"><h3><span class="sn">2.4</span>Effect on Decision-Making</h3><p>Inventory valuation affects business decisions such as:</p>
+<ul class="bl-ul "><li>Product pricing</li><li>Purchasing</li><li>Budgeting</li><li>Performance measurement</li><li>Profit distribution</li><li>Loan applications</li><li>Investment analysis</li><li>Warehouse planning</li></ul>
+<p>If inventory is overstated, assets and profit may appear higher than they actually are. If inventory is understated, reported profit and assets may appear lower.</p>
+<p>Reliable valuation is therefore important for managers, investors, lenders, tax authorities, auditors, and other users of financial statements.</p></div>
+<div class="bl-sub" id="s2-5"><h3><span class="sn">2.5</span>Inventory Valuation and the Lower-of-Cost Principle</h3><p>Inventory should generally not be reported at an amount greater than the economic benefits expected to be received from selling or using it.</p>
+<p>Under many accounting frameworks, inventory is measured at the lower of:</p>
+<ul class="bl-ul "><li>Cost</li><li>Net realizable value</li></ul>
+<p>Net realizable value is generally the estimated selling price less the estimated costs of completion and sale.</p>
+<p>For example, assume inventory originally cost 10,000 dollars. Because of damage, it can now be sold for 8,500 dollars after selling costs. If the applicable accounting rules require a write-down, the inventory may need to be reported at 8,500 dollars rather than 10,000 dollars.</p></div></div></section>
+<section class="bl-sec ff-ch" id="s3" style="--c:#6aa820"><header class="bl-sec-h"><span class="big" aria-hidden="true">03</span><h2><span class="num">3</span><span class="ch">Chapter 3:</span> Understanding FIFO, LIFO, and FEFO</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s3-1"><h3><span class="sn">3.1</span>FIFO</h3><div class="ff-def" style="--c:#168a49"><div class="acr">FIFO</div><div class="exp"><small>FIFO means</small><b>First-In, First-Out</b></div></div><div class="ff-def-body" style="--c:#168a49"><p>The FIFO assumption is that the earliest units purchased or produced are assigned to cost of goods sold first.</p><p>The units remaining in ending inventory are generally the most recently purchased or produced units.</p><p>FIFO often resembles the physical movement of goods, particularly for products that can deteriorate or become obsolete.</p></div></div>
+<div class="bl-sub" id="s3-2"><h3><span class="sn">3.2</span>LIFO</h3><div class="ff-def" style="--c:#d9890a"><div class="acr">LIFO</div><div class="exp"><small>LIFO means</small><b>Last-In, First-Out</b></div></div><div class="ff-def-body" style="--c:#d9890a"><p>The LIFO assumption is that the latest units purchased or produced are assigned to cost of goods sold first.</p><p>The units remaining in ending inventory generally reflect older costs.</p><p>LIFO is an accounting cost-flow method. It does not require the physical movement of goods to follow a last-in, first-out pattern.</p></div></div>
+<div class="bl-sub" id="s3-3"><h3><span class="sn">3.3</span>FEFO</h3><div class="ff-def" style="--c:#5a9e1c"><div class="acr">FEFO</div><div class="exp"><small>FEFO means</small><b>First-Expired, First-Out</b></div></div><div class="ff-def-body" style="--c:#5a9e1c"><p>Under FEFO, the products with the earliest expiration dates are issued or sold first, regardless of when they were received.</p><p>FEFO is primarily an operational inventory-rotation method rather than a general financial-accounting valuation method.</p><p>For example, a medicine received in March may expire in September, while a medicine received in February may expire in December. Under FEFO, the March shipment would be issued first because it expires earlier.</p></div></div>
+<div class="bl-sub" id="s3-4"><h3><span class="sn">3.4</span>Main Difference Between the Methods</h3><div class="bl-table-wrap"><div class="bl-table ff-t c3"><table>
 <thead>
 <tr>
-<th><strong>Industrial interface</strong></th>
-<th><strong>Practical relationship</strong></th>
+<th><strong>Method</strong></th>
+<th><strong>Main basis for issuing or assigning units</strong></th>
+<th><strong>Primary purpose</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Stores / Warehouse</td>
-<td>FIFO, LIFO &amp; FEFO influences stores and warehouse operations through requirements, timing, material status, information, cost or exceptions.</td>
+<td>FIFO</td>
+<td>Earliest purchase or production date</td>
+<td>Cost-flow assumption and stock rotation</td>
 </tr>
 <tr>
-<td>Purchase / Procurement</td>
-<td>FIFO, LIFO &amp; FEFO influences procurement and sourcing through requirements, timing, material status, information, cost or exceptions.</td>
+<td>LIFO</td>
+<td>Latest purchase or production date</td>
+<td>Cost-flow assumption</td>
 </tr>
 <tr>
-<td>Planning</td>
-<td>FIFO, LIFO &amp; FEFO influences production planning through requirements, timing, material status, information, cost or exceptions.</td>
-</tr>
-<tr>
-<td>Production / Operations</td>
-<td>FIFO, LIFO &amp; FEFO influences production and maintenance material issue through requirements, timing, material status, information, cost or exceptions.</td>
-</tr>
-<tr>
-<td>Maintenance / Engineering</td>
-<td>FIFO, LIFO &amp; FEFO influences maintenance reliability through requirements, timing, material status, information, cost or exceptions.</td>
-</tr>
-<tr>
-<td>Finance / Cost Control</td>
-<td>FIFO, LIFO &amp; FEFO influences commercial control and finance through requirements, timing, material status, information, cost or exceptions.</td>
-</tr>
-<tr>
-<td>Quality / Inspection</td>
-<td>FIFO, LIFO &amp; FEFO influences quality acceptance and material status through requirements, timing, material status, information, cost or exceptions.</td>
-</tr>
-<tr>
-<td>Management</td>
-<td>FIFO, LIFO &amp; FEFO influences management reporting through requirements, timing, material status, information, cost or exceptions.</td>
+<td>FEFO</td>
+<td>Earliest expiration date</td>
+<td>Physical stock rotation and safety</td>
 </tr>
 </tbody>
-</table></div>
-<p>The exact strength of each interface depends on the topic. The important management principle is that handoffs should be explicit: the sending function should provide complete information, the receiving function should confirm what was accepted, and unresolved exceptions should have an identified owner.</p>
-</section>
-<section class="sec" id="need-in-industry-1"><h2><span class="num">8</span>Need in Industry</h2>
-<p>Industrial environments require FIFO, LIFO &amp; FEFO because material decisions are exposed to uncertainty, physical constraints and commercial consequences. Demand can change, suppliers can delay, material can deteriorate, specifications can be misunderstood and transactions can be posted late or incorrectly. A defined method reduces dependence on memory and individual judgment while still allowing expert intervention for abnormal cases.</p>
-</section>
-<section class="sec" id="methodologies-and-practical-approaches-1"><h2><span class="num">9</span>Methodologies and Practical Approaches</h2>
-<ul class="checks"><li>Define the process boundary and the business outcome before selecting controls.</li><li>Segment items, transactions or suppliers by value, criticality, variability and risk instead of applying one rule to everything.</li><li>Use standard work for routine activities and an explicit exception path for abnormal conditions.</li><li>Use trend analysis and ageing to identify problems before they become operational failures.</li></ul>
-</section>
-<section class="sec" id="underlying-theories-and-concepts-1"><h2><span class="num">10</span>Underlying Theories and Concepts</h2>
-<p>Control-and-feedback principle: A useful materials process operates as a feedback loop: a requirement or trigger creates an action, the result is measured, deviations are investigated, and the process parameters are adjusted where evidence shows that change is required.</p>
-</section>
-<section class="sec" id="quantitative-measures-1"><h2><span class="num">11</span>Quantitative Measures</h2>
-<p>Where numerical control is useful for FIFO, LIFO &amp; FEFO, define a stable unit of measure, period, population and calculation boundary. Typical measurements include quantity, value, elapsed time, frequency, percentage, rate, variance, ageing, utilization, availability or compliance. The selected measure should answer a management question rather than exist only because the data is available.</p>
-</section>
-<section class="sec" id="performance-measures-and-kpis-1"><h2><span class="num">12</span>Performance Measures and KPIs</h2>
-<div class="table-wrap"><table>
+</table></div></div>
+<p>FIFO and LIFO are commonly discussed in financial accounting. FEFO is most important for warehouse operations, product safety, and expiration control.</p></div></div></section>
+<section class="bl-sec ff-ch ff-m-fifo" id="s4" style="--c:#168a49"><header class="bl-sec-h"><span class="big" aria-hidden="true">04</span><h2><span class="num">4</span><span class="ch">Chapter 4:</span> FIFO—First-In, First-Out</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s4-1"><h3><span class="sn">4.1</span>Definition</h3><p>FIFO assumes that the first units purchased are the first units sold or issued.</p>
+<p>Under FIFO:</p>
+<ul class="bl-ul "><li>Older costs are transferred to cost of goods sold first.</li><li>Newer costs remain in ending inventory.</li><li>Ending inventory often approximates current replacement cost when prices are rising.</li></ul></div>
+<div class="bl-sub" id="s4-2"><h3><span class="sn">4.2</span>Basic FIFO Example</h3><p>Assume the following inventory transactions:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c4"><table>
 <thead>
 <tr>
-<th><strong>KPI / Measure</strong></th>
+<th><strong>Transaction</strong></th>
+<th><strong>Units</strong></th>
+<th><strong>Unit cost</strong></th>
+<th><strong>Total cost</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beginning inventory</td>
+<td>100</td>
+<td>10 dollars</td>
+<td>1,000 dollars</td>
+</tr>
+<tr>
+<td>Purchase 1</td>
+<td>200</td>
+<td>12 dollars</td>
+<td>2,400 dollars</td>
+</tr>
+<tr>
+<td>Purchase 2</td>
+<td>150</td>
+<td>14 dollars</td>
+<td>2,100 dollars</td>
+</tr>
+<tr>
+<td>Total available</td>
+<td>450</td>
+<td>—</td>
+<td>5,500 dollars</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>Assume the business sells 300 units.</p>
+<ol class="bl-timeline ff-steps"><li class="st" style="--c:#168a49"><span class="pn">1</span><div class="pc"><small>Step 1</small><h4>Assign the oldest units to cost of goods sold</h4><p>The first 100 units come from beginning inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="100 × 10 = 1,000"><mn>100</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>1,000</mn></math></div>
+<p>The next 200 units come from Purchase 1:</p>
+<div class="ff-calc"><math display="block" aria-label="200 × 12 = 2,400"><mn>200</mn><mo>×</mo><mn>12</mn><mo>=</mo><mn>2,400</mn></math></div></div></li><li class="st" style="--c:#e0a400"><span class="pn">2</span><div class="pc"><small>Step 2</small><h4>Calculate FIFO cost of goods sold</h4><figure class="bl-formula"><figcaption><span>ƒ</span>FIFO Cost of Goods Sold</figcaption><div class="bl-math"><math display="block" aria-label="FIFO Cost of Goods Sold = 1,000 + 2,400 = 3,400"><mtext>FIFO Cost of Goods Sold</mtext><mo>=</mo><mn>1,000</mn><mo>+</mo><mn>2,400</mn><mo>=</mo><mn>3,400</mn></math></div></figure></div></li><li class="st" style="--c:#6aa820"><span class="pn">3</span><div class="pc"><small>Step 3</small><h4>Calculate ending inventory</h4><p>The remaining 150 units come from Purchase 2:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 14 = 2,100"><mn>150</mn><mo>×</mo><mn>14</mn><mo>=</mo><mn>2,100</mn></math></div></div></li><li class="st res"><span class="pn">✓</span><div class="pc"><small>Outcome</small><h4>Result</h4><div class="bl-table-wrap"><div class="bl-table ff-t c2"><table>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th><strong>Amount</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cost of goods sold</td>
+<td>3,400 dollars</td>
+</tr>
+<tr>
+<td>Ending inventory</td>
+<td>2,100 dollars</td>
+</tr>
+<tr>
+<td>Total inventory cost accounted for</td>
+<td>5,500 dollars</td>
+</tr>
+</tbody>
+</table></div></div></div></li></ol></div>
+<div class="bl-sub" id="s4-3"><h3><span class="sn">4.3</span>FIFO Stores Ledger</h3><p>A stores ledger records receipts, issues, and balances.</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c4"><table style="width:100%;">
+<thead>
+<tr>
+<th><strong>Date</strong></th>
+<th><strong>Receipt</strong></th>
+<th><strong>Issue</strong></th>
+<th><strong>Balance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beginning</td>
+<td>100 units at 10 dollars = 1,000 dollars</td>
+<td>—</td>
+<td>100 units at 10 dollars</td>
+</tr>
+<tr>
+<td>Purchase 1</td>
+<td>200 units at 12 dollars = 2,400 dollars</td>
+<td>—</td>
+<td>100 units at 10 dollars; 200 units at 12 dollars</td>
+</tr>
+<tr>
+<td>Sale</td>
+<td>—</td>
+<td>100 units at 10 dollars and 200 units at 12 dollars = 3,400 dollars</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Purchase 2</td>
+<td>150 units at 14 dollars = 2,100 dollars</td>
+<td>—</td>
+<td>150 units at 14 dollars</td>
+</tr>
+</tbody>
+</table></div></div></div>
+<div class="bl-sub" id="s4-4"><h3><span class="sn">4.4</span>FIFO Under a Perpetual System</h3><p>A perpetual inventory system updates inventory records after every purchase and sale.</p>
+<p>Assume:</p>
+<ul class="bl-ul "><li>Beginning inventory: 100 units at 10 dollars</li><li>Purchase: 200 units at 12 dollars</li><li>Sale: 150 units</li><li>Purchase: 150 units at 14 dollars</li><li>Sale: 150 units</li></ul>
+<h4 class="bl-h4">FIFO perpetual calculation</h4>
+<h4 class="bl-h4">Opening balance</h4><p>100 units at 10 dollars:</p>
+<div class="ff-calc"><math display="block" aria-label="100 × 10 = 1,000"><mn>100</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>1,000</mn></math></div>
+<h4 class="bl-h4">First purchase</h4><p>200 units at 12 dollars:</p>
+<div class="ff-calc"><math display="block" aria-label="200 × 12 = 2,400"><mn>200</mn><mo>×</mo><mn>12</mn><mo>=</mo><mn>2,400</mn></math></div>
+<p>Inventory layers:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:50%"><i class="lb" aria-hidden="true"></i><span>100 units at 10 dollars</span></li><li class="layer" style="--c:#e0a400;--w:100%"><i class="lb" aria-hidden="true"></i><span>200 units at 12 dollars</span></li></ul>
+<h4 class="bl-h4">First sale of 150 units</h4><p>FIFO issues:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>100 units at 10 dollars</span></li><li class="layer" style="--c:#e0a400;--w:50%"><i class="lb" aria-hidden="true"></i><span>50 units at 12 dollars</span></li></ul>
+<p>Cost of first sale:</p>
+<div class="ff-calc"><math display="block" aria-label="(100 × 10) + (50 × 12) = 1,000 + 600 = 1,600"><mo>(</mo><mn>100</mn><mo>×</mo><mn>10</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>50</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>=</mo><mn>1,000</mn><mo>+</mo><mn>600</mn><mo>=</mo><mn>1,600</mn></math></div>
+<p>Remaining inventory:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>150 units at 12 dollars</span></li></ul>
+<h4 class="bl-h4">Second purchase</h4><p>150 units at 14 dollars are added.</p>
+<p>Inventory layers:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>150 units at 12 dollars</span></li><li class="layer" style="--c:#e0a400;--w:100%"><i class="lb" aria-hidden="true"></i><span>150 units at 14 dollars</span></li></ul>
+<h4 class="bl-h4">Second sale of 150 units</h4><p>FIFO issues all 150 units at 12 dollars:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 12 = 1,800"><mn>150</mn><mo>×</mo><mn>12</mn><mo>=</mo><mn>1,800</mn></math></div>
+<h4 class="bl-h4">Final FIFO results</h4><p>Total cost of goods sold:</p>
+<div class="ff-calc"><code>1,600 + 1,800 = 3,400</code></div>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 14 = 2,100"><mn>150</mn><mo>×</mo><mn>14</mn><mo>=</mo><mn>2,100</mn></math></div></div>
+<div class="bl-sub" id="s4-5"><h3><span class="sn">4.5</span>FIFO Under a Periodic System</h3><p>A periodic inventory system calculates cost of goods sold at the end of the accounting period.</p>
+<p>Using the same data:</p>
+<ul class="bl-ul "><li>Total units available: 450</li><li>Units sold: 300</li><li>Units remaining: 150</li><li>Total cost available: 5,500 dollars</li></ul>
+<p>Under periodic FIFO, the 300 units sold are assigned the oldest costs:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:50%"><i class="lb" aria-hidden="true"></i><span>100 units at 10 dollars</span></li><li class="layer" style="--c:#e0a400;--w:100%"><i class="lb" aria-hidden="true"></i><span>200 units at 12 dollars</span></li></ul>
+<p>Cost of goods sold:</p>
+<div class="ff-calc"><math display="block" aria-label="(100 × 10) + (200 × 12) = 3,400"><mo>(</mo><mn>100</mn><mo>×</mo><mn>10</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>200</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>=</mo><mn>3,400</mn></math></div>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 14 = 2,100"><mn>150</mn><mo>×</mo><mn>14</mn><mo>=</mo><mn>2,100</mn></math></div>
+<p>In this particular example, periodic and perpetual FIFO produce the same result. That will not always happen. The result can differ when purchases and sales occur at several different dates and quantities.</p></div>
+<div class="bl-sub" id="s4-6"><h3><span class="sn">4.6</span>Advantages of FIFO</h3><p>FIFO has several advantages:</p>
+<ul class="bl-ul pro"><li>It is intuitive and easy to explain.</li><li>It often reflects the physical movement of perishable goods.</li><li>Ending inventory is usually based on recent costs.</li><li>It is permitted under IFRS and US GAAP.</li><li>It reduces the risk of leaving old, potentially obsolete stock in storage.</li><li>It is widely supported by accounting and inventory software.</li><li>It normally avoids unusual negative or outdated inventory layers.</li></ul></div>
+<div class="bl-sub" id="s4-7"><h3><span class="sn">4.7</span>Disadvantages of FIFO</h3><p>FIFO also has limitations:</p>
+<ul class="bl-ul cross"><li>During inflation, it may produce lower cost of goods sold.</li><li>During inflation, it may produce higher reported profit.</li><li>Higher reported profit can result in higher current taxes.</li><li>Profit may be overstated because older, cheaper costs are matched with current sales prices.</li><li>It may not reflect current replacement cost in cost of goods sold.</li></ul></div>
+<div class="bl-sub" id="s4-8"><h3><span class="sn">4.8</span>Real-World Uses of FIFO</h3><p>FIFO is especially suitable for:</p>
+<ul class="bl-ul "><li>Fresh food</li><li>Dairy products</li><li>Medicines</li><li>Cosmetics</li><li>Batteries</li><li>Chemicals</li><li>Fashion products</li><li>Electronic products that become obsolete</li><li>General retail merchandise</li></ul>
+<p>A warehouse may use FIFO physically even when the accounting system uses a different valuation method.</p></div></div></section>
+<section class="bl-sec ff-ch ff-m-lifo" id="s5" style="--c:#d9890a"><header class="bl-sec-h"><span class="big" aria-hidden="true">05</span><h2><span class="num">5</span><span class="ch">Chapter 5:</span> LIFO—Last-In, First-Out</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s5-1"><h3><span class="sn">5.1</span>Definition</h3><p>LIFO assumes that the most recently purchased or produced units are assigned to cost of goods sold first.</p>
+<p>Under LIFO:</p>
+<ul class="bl-ul "><li>Recent costs are matched with current sales revenue.</li><li>Older costs remain in ending inventory.</li><li>During inflation, cost of goods sold is usually higher than under FIFO.</li><li>During inflation, ending inventory is usually lower than under FIFO.</li></ul></div>
+<div class="bl-sub" id="s5-2"><h3><span class="sn">5.2</span>Basic LIFO Example</h3><p>Use the same inventory information:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c4"><table>
+<thead>
+<tr>
+<th><strong>Transaction</strong></th>
+<th><strong>Units</strong></th>
+<th><strong>Unit cost</strong></th>
+<th><strong>Total cost</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beginning inventory</td>
+<td>100</td>
+<td>10 dollars</td>
+<td>1,000 dollars</td>
+</tr>
+<tr>
+<td>Purchase 1</td>
+<td>200</td>
+<td>12 dollars</td>
+<td>2,400 dollars</td>
+</tr>
+<tr>
+<td>Purchase 2</td>
+<td>150</td>
+<td>14 dollars</td>
+<td>2,100 dollars</td>
+</tr>
+<tr>
+<td>Total available</td>
+<td>450</td>
+<td>—</td>
+<td>5,500 dollars</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>Assume the business sells 300 units.</p>
+<ol class="bl-timeline ff-steps"><li class="st" style="--c:#168a49"><span class="pn">1</span><div class="pc"><small>Step 1</small><h4>Assign the newest units to cost of goods sold</h4><p>The most recent 150 units are assigned first:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 14 = 2,100"><mn>150</mn><mo>×</mo><mn>14</mn><mo>=</mo><mn>2,100</mn></math></div>
+<p>The business still needs to assign 150 units. These come from the 200 units purchased at 12 dollars:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 12 = 1,800"><mn>150</mn><mo>×</mo><mn>12</mn><mo>=</mo><mn>1,800</mn></math></div></div></li><li class="st" style="--c:#e0a400"><span class="pn">2</span><div class="pc"><small>Step 2</small><h4>Calculate LIFO cost of goods sold</h4><figure class="bl-formula"><figcaption><span>ƒ</span>LIFO Cost of Goods Sold</figcaption><div class="bl-math"><math display="block" aria-label="LIFO Cost of Goods Sold = 2,100 + 1,800 = 3,900"><mtext>LIFO Cost of Goods Sold</mtext><mo>=</mo><mn>2,100</mn><mo>+</mo><mn>1,800</mn><mo>=</mo><mn>3,900</mn></math></div></figure></div></li><li class="st" style="--c:#6aa820"><span class="pn">3</span><div class="pc"><small>Step 3</small><h4>Calculate ending inventory</h4><p>The remaining inventory consists of:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#e0a400;--w:50%"><i class="lb" aria-hidden="true"></i><span>50 units at 12 dollars</span></li><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>100 units at 10 dollars</span></li></ul>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="(50 × 12) + (100 × 10) = 600 + 1,000 = 1,600"><mo>(</mo><mn>50</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>100</mn><mo>×</mo><mn>10</mn><mo>)</mo><mo>=</mo><mn>600</mn><mo>+</mo><mn>1,000</mn><mo>=</mo><mn>1,600</mn></math></div></div></li><li class="st res"><span class="pn">✓</span><div class="pc"><small>Outcome</small><h4>Result</h4><div class="bl-table-wrap"><div class="bl-table ff-t c2"><table>
+<thead>
+<tr>
+<th><strong>Item</strong></th>
+<th><strong>Amount</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cost of goods sold</td>
+<td>3,900 dollars</td>
+</tr>
+<tr>
+<td>Ending inventory</td>
+<td>1,600 dollars</td>
+</tr>
+<tr>
+<td>Total inventory cost accounted for</td>
+<td>5,500 dollars</td>
+</tr>
+</tbody>
+</table></div></div></div></li></ol></div>
+<div class="bl-sub" id="s5-3"><h3><span class="sn">5.3</span>LIFO Stores Ledger</h3><div class="bl-table-wrap"><div class="bl-table ff-t c4"><table style="width:100%;">
+<thead>
+<tr>
+<th><strong>Date</strong></th>
+<th><strong>Receipt</strong></th>
+<th><strong>Issue</strong></th>
+<th><strong>Balance</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beginning</td>
+<td>100 units at 10 dollars = 1,000 dollars</td>
+<td>—</td>
+<td>100 units at 10 dollars</td>
+</tr>
+<tr>
+<td>Purchase 1</td>
+<td>200 units at 12 dollars = 2,400 dollars</td>
+<td>—</td>
+<td>100 units at 10 dollars; 200 units at 12 dollars</td>
+</tr>
+<tr>
+<td>Purchase 2</td>
+<td>150 units at 14 dollars = 2,100 dollars</td>
+<td>—</td>
+<td>100 units at 10 dollars; 200 units at 12 dollars; 150 units at 14 dollars</td>
+</tr>
+<tr>
+<td>Sale</td>
+<td>—</td>
+<td>150 units at 14 dollars and 150 units at 12 dollars = 3,900 dollars</td>
+<td>100 units at 10 dollars; 50 units at 12 dollars</td>
+</tr>
+</tbody>
+</table></div></div></div>
+<div class="bl-sub" id="s5-4"><h3><span class="sn">5.4</span>LIFO Under a Perpetual System</h3><p>Assume:</p>
+<ul class="bl-ul "><li>Beginning inventory: 100 units at 10 dollars</li><li>Purchase: 200 units at 12 dollars</li><li>Sale: 150 units</li><li>Purchase: 150 units at 14 dollars</li><li>Sale: 150 units</li></ul>
+<h4 class="bl-h4">First sale</h4><p>After the first purchase, inventory consists of:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:50%"><i class="lb" aria-hidden="true"></i><span>100 units at 10 dollars</span></li><li class="layer" style="--c:#e0a400;--w:100%"><i class="lb" aria-hidden="true"></i><span>200 units at 12 dollars</span></li></ul>
+<p>Under perpetual LIFO, the first sale of 150 units uses the newest available layer:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 12 = 1,800"><mn>150</mn><mo>×</mo><mn>12</mn><mo>=</mo><mn>1,800</mn></math></div>
+<p>Remaining inventory:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>100 units at 10 dollars</span></li><li class="layer" style="--c:#e0a400;--w:50%"><i class="lb" aria-hidden="true"></i><span>50 units at 12 dollars</span></li></ul>
+<h4 class="bl-h4">Second purchase</h4><p>Add 150 units at 14 dollars.</p>
+<p>Inventory consists of:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:67%"><i class="lb" aria-hidden="true"></i><span>100 units at 10 dollars</span></li><li class="layer" style="--c:#e0a400;--w:33%"><i class="lb" aria-hidden="true"></i><span>50 units at 12 dollars</span></li><li class="layer" style="--c:#6aa820;--w:100%"><i class="lb" aria-hidden="true"></i><span>150 units at 14 dollars</span></li></ul>
+<h4 class="bl-h4">Second sale</h4><p>The second sale of 150 units uses the newest layer:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 14 = 2,100"><mn>150</mn><mo>×</mo><mn>14</mn><mo>=</mo><mn>2,100</mn></math></div>
+<h4 class="bl-h4">Perpetual LIFO results</h4><p>Total cost of goods sold:</p>
+<div class="ff-calc"><code>1,800 + 2,100 = 3,900</code></div>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="(100 × 10) + (50 × 12) = 1,000 + 600 = 1,600"><mo>(</mo><mn>100</mn><mo>×</mo><mn>10</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>50</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>=</mo><mn>1,000</mn><mo>+</mo><mn>600</mn><mo>=</mo><mn>1,600</mn></math></div></div>
+<div class="bl-sub" id="s5-5"><h3><span class="sn">5.5</span>Periodic LIFO</h3><p>Under periodic LIFO, all purchases for the period are considered together at the end of the period.</p>
+<p>The 300 units sold are assigned the newest costs:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#e0a400;--w:100%"><i class="lb" aria-hidden="true"></i><span>150 units at 14 dollars</span></li><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>150 units at 12 dollars</span></li></ul>
+<p>Cost of goods sold:</p>
+<div class="ff-calc"><math display="block" aria-label="(150 × 14) + (150 × 12) = 2,100 + 1,800 = 3,900"><mo>(</mo><mn>150</mn><mo>×</mo><mn>14</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>150</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>=</mo><mn>2,100</mn><mo>+</mo><mn>1,800</mn><mo>=</mo><mn>3,900</mn></math></div>
+<p>Ending inventory:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#e0a400;--w:50%"><i class="lb" aria-hidden="true"></i><span>50 units at 12 dollars</span></li><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>100 units at 10 dollars</span></li></ul>
+<p>Ending inventory value:</p>
+<div class="ff-calc"><math display="block" aria-label="(50 × 12) + (100 × 10) = 1,600"><mo>(</mo><mn>50</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>100</mn><mo>×</mo><mn>10</mn><mo>)</mo><mo>=</mo><mn>1,600</mn></math></div></div>
+<div class="bl-sub" id="s5-6"><h3><span class="sn">5.6</span>Advantages of LIFO</h3><ul class="bl-ul pro"><li>During inflation, it generally matches recent costs with current sales revenue.</li><li>During inflation, it generally produces higher cost of goods sold.</li><li>Higher cost of goods sold may reduce taxable income under systems that permit LIFO.</li><li>It may provide a more current measure of operating margin.</li><li>It can be useful for commodities with interchangeable units and frequently changing costs.</li></ul></div>
+<div class="bl-sub" id="s5-7"><h3><span class="sn">5.7</span>Disadvantages of LIFO</h3><ul class="bl-ul cross"><li>It is prohibited by IFRS.</li><li>It is permitted under US GAAP only subject to applicable requirements.</li><li>Ending inventory may contain very old costs.</li><li>Reported inventory may be understated during inflation.</li><li>LIFO layers can create complicated records.</li><li>Liquidating old LIFO layers can produce unusual increases in reported profit.</li><li>It usually does not represent the physical flow of goods.</li><li>Comparisons with companies using FIFO may be difficult.</li><li>It may require additional disclosures and reconciliation.</li></ul></div>
+<div class="bl-sub" id="s5-8"><h3><span class="sn">5.8</span>LIFO Liquidation</h3><p>A LIFO liquidation occurs when a business sells more units than it replaces, causing older LIFO layers to be released into cost of goods sold.</p>
+<p>Suppose a company has:</p>
+<ul class="bl-ul "><li>100 units at 10 dollars</li><li>100 units at 12 dollars</li><li>Current sales require 250 units</li></ul>
+<p>If no new inventory is purchased, the business must use the old 10-dollar layer for part of the sale. Because those costs are lower than current replacement costs, cost of goods sold may be unusually low and profit may be unusually high.</p>
+<p>LIFO liquidation can therefore make current-period profit appear stronger even though the business has reduced its inventory.</p></div>
+<div class="bl-sub" id="s5-9"><h3><span class="sn">5.9</span>Real-World Uses of LIFO</h3><p>LIFO may be used in some US businesses dealing with:</p>
+<ul class="bl-ul "><li>Oil and gas products</li><li>Metals</li><li>Construction materials</li><li>Industrial commodities</li><li>Homogeneous goods with changing costs</li></ul>
+<p>However, businesses handling food, medicines, and other perishable products normally should not use LIFO as a physical stock-rotation method.</p></div></div></section>
+<section class="bl-sec ff-ch ff-m-fefo" id="s6" style="--c:#5a9e1c"><header class="bl-sec-h"><span class="big" aria-hidden="true">06</span><h2><span class="num">6</span><span class="ch">Chapter 6:</span> FEFO—First-Expired, First-Out</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s6-1"><h3><span class="sn">6.1</span>Definition</h3><p>FEFO means First-Expired, First-Out.</p>
+<p>Under FEFO, inventory is issued according to expiration date rather than receipt date or purchase cost.</p>
+<p>The product with the earliest expiration date is selected first.</p></div>
+<div class="bl-sub" id="s6-2"><h3><span class="sn">6.2</span>FEFO Example</h3><p>A pharmacy has the following medicine batches:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c5"><table>
+<thead>
+<tr>
+<th><strong>Batch</strong></th>
+<th><strong>Receipt date</strong></th>
+<th><strong>Expiration date</strong></th>
+<th><strong>Quantity</strong></th>
+<th><strong>Unit cost</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>January 5</td>
+<td>September 30</td>
+<td>100</td>
+<td>8 dollars</td>
+</tr>
+<tr>
+<td>B</td>
+<td>January 20</td>
+<td>July 31</td>
+<td>80</td>
+<td>9 dollars</td>
+</tr>
+<tr>
+<td>C</td>
+<td>February 10</td>
+<td>December 31</td>
+<td>120</td>
+<td>10 dollars</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>Although Batch A was received first, Batch B expires first.</p>
+<p>Under FEFO, the issue sequence is:</p>
+<ol class="bl-ol "><li>Batch B</li><li>Batch A</li><li>Batch C</li></ol>
+<p>If the pharmacy issues 150 units:</p>
+<ul class="bl-ul "><li>80 units come from Batch B</li><li>70 units come from Batch A</li></ul>
+<p>The operational issue cost depends on the accounting valuation method selected.</p>
+<p>If specific identification is used:</p>
+<div class="ff-calc"><math display="block" aria-label="(80 × 9) + (70 × 8) = 720 + 560 = 1,280"><mo>(</mo><mn>80</mn><mo>×</mo><mn>9</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>70</mn><mo>×</mo><mn>8</mn><mo>)</mo><mo>=</mo><mn>720</mn><mo>+</mo><mn>560</mn><mo>=</mo><mn>1,280</mn></math></div>
+<p>If weighted average is used, the issue may be recorded using the applicable average unit cost instead.</p></div>
+<div class="bl-sub" id="s6-3"><h3><span class="sn">6.3</span>FEFO Is Not Normally a Separate Accounting Valuation Method</h3><p>FEFO answers this question:</p>
+<p>Which physical units should be issued first?</p>
+<p>Accounting valuation answers this question:</p>
+<p>Which costs should be assigned to goods sold and ending inventory?</p>
+<p>A company can therefore:</p>
+<ul class="bl-ul "><li>Physically issue goods using FEFO</li><li>Value inventory using FIFO</li><li>Value inventory using weighted average</li><li>Use specific identification for traceable batches</li></ul>
+<p>This combination is common in pharmaceuticals, food distribution, chemicals, and medical supplies.</p></div>
+<div class="bl-sub" id="s6-4"><h3><span class="sn">6.4</span>Why FEFO Is Important</h3><p>FEFO helps reduce:</p>
+<ul class="bl-ul "><li>Expired inventory</li><li>Product waste</li><li>Customer safety risks</li><li>Product recalls</li><li>Regulatory violations</li><li>Emergency disposal costs</li><li>Losses from obsolete stock</li></ul>
+<p>It is especially important when products have different expiration dates.</p></div>
+<div class="bl-sub" id="s6-5"><h3><span class="sn">6.5</span>FEFO and Shelf Life</h3><p>Shelf life is the period during which a product remains suitable for use or sale.</p>
+<p>A warehouse should monitor:</p>
+<ul class="bl-ul "><li>Manufacturing date</li><li>Receipt date</li><li>Expiration date</li><li>Lot or batch number</li><li>Remaining shelf life</li><li>Storage conditions</li><li>Required minimum shelf life at shipment</li></ul>
+<p>For example, a customer may require that a product have at least six months of remaining shelf life when delivered. The warehouse system must identify whether a batch meets that requirement.</p></div>
+<div class="bl-sub" id="s6-6"><h3><span class="sn">6.6</span>FEFO Advantages</h3><ol class="bl-ol "><li>Reduces expiration-related losses.</li><li>Supports product safety.</li><li>Is appropriate for medicines and food.</li><li>Helps organizations comply with regulatory requirements.</li><li>Improves customer satisfaction.</li><li>Supports recall management.</li><li>Makes batch-level stock control more effective.</li></ol></div>
+<div class="bl-sub" id="s6-7"><h3><span class="sn">6.7</span>FEFO Disadvantages</h3><ol class="bl-ol "><li>It requires accurate expiration-date records.</li><li>It may require advanced warehouse software.</li><li>Warehouse staff need training.</li><li>Products may need to be rearranged frequently.</li><li>The earliest-expiring item may be located behind newer items.</li><li>It does not, by itself, determine financial inventory valuation.</li><li>Incorrect data entry can cause unsafe or inefficient issuing decisions.</li></ol></div>
+<div class="bl-sub" id="s6-8"><h3><span class="sn">6.8</span>FEFO Versus FIFO</h3><p>FIFO selects the earliest received goods.</p>
+<p>FEFO selects the goods that will expire first.</p>
+<p>These methods produce the same result only when the oldest received goods also have the earliest expiration dates.</p>
+<p>For example:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c3"><table>
+<thead>
+<tr>
+<th><strong>Batch</strong></th>
+<th><strong>Receipt date</strong></th>
+<th><strong>Expiration date</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>January 1</td>
+<td>December 31</td>
+</tr>
+<tr>
+<td>B</td>
+<td>February 1</td>
+<td>June 30</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>FIFO would issue Batch A first. FEFO would issue Batch B first.</p>
+<p>In this situation, FEFO is safer because Batch B will expire earlier.</p></div></div></section>
+<section class="bl-sec ff-ch" id="s7" style="--c:#168a49"><header class="bl-sec-h"><span class="big" aria-hidden="true">07</span><h2><span class="num">7</span><span class="ch">Chapter 7:</span> Perpetual and Periodic Inventory Systems</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s7-1"><h3><span class="sn">7.1</span>Perpetual Inventory System</h3><p>A perpetual system updates inventory records continuously.</p>
+<p>Each transaction may update:</p>
+<ul class="bl-ul "><li>Quantity on hand</li><li>Inventory cost</li><li>Cost of goods sold</li><li>Inventory layers</li><li>Batch or lot information</li></ul>
+<div class="ff-duo"><div class="bl-pane adv"><h4>Advantages</h4><ul class="bl-ul "><li>Provides current inventory information</li><li>Supports automated reorder points</li><li>Helps detect shortages</li><li>Supports detailed management reporting</li><li>Works well with barcode and RFID systems</li><li>Is useful for high-value or regulated goods</li></ul></div><div class="bl-pane dis"><h4>Disadvantages</h4><ul class="bl-ul cross"><li>Costs more to implement</li><li>Requires reliable technology</li><li>Depends on accurate transaction recording</li><li>Still requires physical counts for verification</li></ul></div></div></div>
+<div class="bl-sub" id="s7-2"><h3><span class="sn">7.2</span>Periodic Inventory System</h3><p>A periodic system does not update the accounting inventory balance after every sale.</p>
+<p>Instead, the business performs a physical count at the end of the period.</p>
+<p>The formula is:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>Cost of Goods Sold</figcaption><div class="bl-math"><math display="block" aria-label="Cost of Goods Sold = Beginning Inventory + Purchases - Ending Inventory"><mtext>Cost of Goods Sold</mtext><mo>=</mo><mtext>Beginning Inventory</mtext><mo>+</mo><mtext>Purchases</mtext><mo>−</mo><mtext>Ending Inventory</mtext></math></div></figure>
+<div class="ff-duo"><div class="bl-pane adv"><h4>Advantages</h4><ul class="bl-ul "><li>Simpler to operate</li><li>Less expensive for small businesses</li><li>Requires less transaction-level technology</li><li>Can be appropriate for low-volume operations</li></ul></div><div class="bl-pane dis"><h4>Disadvantages</h4><ul class="bl-ul cross"><li>Current inventory may not be known during the period</li><li>Theft and damage may be discovered late</li><li>Detailed batch tracking is difficult</li><li>Cost of goods sold is calculated only after counting and valuation</li><li>Less suitable for medicines, perishable food, and regulated products</li></ul></div></div></div>
+<div class="bl-sub" id="s7-3"><h3><span class="sn">7.3</span>Perpetual and Periodic Example</h3><p>Assume:</p>
+<ul class="bl-ul "><li>Beginning inventory: 100 units at 10 dollars</li><li>Purchase 1: 200 units at 12 dollars</li><li>Sale 1: 150 units</li><li>Purchase 2: 150 units at 14 dollars</li><li>Sale 2: 150 units</li></ul>
+<p>Total units sold are 300.</p>
+<p>Under perpetual FIFO:</p>
+<ul class="bl-ul "><li>First sale: 100 units at 10 dollars and 50 units at 12 dollars</li><li>Second sale: 150 units at 12 dollars</li><li>Total cost of goods sold: 3,400 dollars</li></ul>
+<p>Under periodic FIFO:</p>
+<ul class="bl-ul "><li>Total units sold are assigned using the oldest costs available at the end of the period</li><li>100 units at 10 dollars and 200 units at 12 dollars</li><li>Total cost of goods sold: 3,400 dollars</li></ul>
+<p>In other transaction patterns, the results may differ because a perpetual system calculates cost at each sale while a periodic system calculates cost after considering all purchases for the period.</p></div></div></section>
+<section class="bl-sec ff-ch" id="s8" style="--c:#e0a400"><header class="bl-sec-h"><span class="big" aria-hidden="true">08</span><h2><span class="num">8</span><span class="ch">Chapter 8:</span> Financial Effects of FIFO, LIFO, and FEFO</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s8-1"><h3><span class="sn">8.1</span>General Assumptions</h3><p>The following comparison assumes:</p>
+<ul class="bl-ul "><li>Prices are rising.</li><li>The same physical units are available.</li><li>The same number of units is sold.</li><li>There are no inventory write-downs.</li><li>FIFO and LIFO are used as accounting cost-flow assumptions.</li><li>FEFO is being used for physical stock rotation.</li></ul></div>
+<div class="bl-sub" id="s8-2"><h3><span class="sn">8.2</span>Numerical Comparison</h3><p>Assume:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c3"><table>
+<thead>
+<tr>
+<th><strong>Inventory layer</strong></th>
+<th><strong>Quantity</strong></th>
+<th><strong>Unit cost</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beginning inventory</td>
+<td>100</td>
+<td>10 dollars</td>
+</tr>
+<tr>
+<td>Purchase 1</td>
+<td>200</td>
+<td>12 dollars</td>
+</tr>
+<tr>
+<td>Purchase 2</td>
+<td>150</td>
+<td>14 dollars</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>450</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>Units sold: 300.</p>
+<div class="ff-methods"><div class="ff-mcard" style="--c:#168a49"><h4>FIFO</h4><p>Cost of goods sold:</p>
+<div class="ff-calc"><math display="block" aria-label="(100 × 10) + (200 × 12) = 3,400"><mo>(</mo><mn>100</mn><mo>×</mo><mn>10</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>200</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>=</mo><mn>3,400</mn></math></div>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 14 = 2,100"><mn>150</mn><mo>×</mo><mn>14</mn><mo>=</mo><mn>2,100</mn></math></div></div><div class="ff-mcard" style="--c:#d9890a"><h4>LIFO</h4><p>Cost of goods sold:</p>
+<div class="ff-calc"><math display="block" aria-label="(150 × 14) + (150 × 12) = 3,900"><mo>(</mo><mn>150</mn><mo>×</mo><mn>14</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>150</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>=</mo><mn>3,900</mn></math></div>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="(50 × 12) + (100 × 10) = 1,600"><mo>(</mo><mn>50</mn><mo>×</mo><mn>12</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>100</mn><mo>×</mo><mn>10</mn><mo>)</mo><mo>=</mo><mn>1,600</mn></math></div></div><div class="ff-mcard" style="--c:#e0a400"><h4>Weighted average</h4><p>Total cost available:</p>
+<div class="ff-calc"><code>1,000 + 2,400 + 2,100 = 5,500</code></div>
+<p>Average cost per unit:</p>
+<div class="ff-calc"><math display="block" aria-label="(5,500) ÷ (450) ≈ 12.22"><mfrac><mrow><mn>5,500</mn></mrow><mrow><mn>450</mn></mrow></mfrac><mo>≈</mo><mn>12.22</mn></math></div>
+<p>Cost of goods sold:</p>
+<div class="ff-calc"><math display="block" aria-label="300 × 12.22 ≈ 3,666.67"><mn>300</mn><mo>×</mo><mn>12.22</mn><mo>≈</mo><mn>3,666.67</mn></math></div>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="150 × 12.22 ≈ 1,833.33"><mn>150</mn><mo>×</mo><mn>12.22</mn><mo>≈</mo><mn>1,833.33</mn></math></div></div></div></div>
+<div class="bl-sub" id="s8-3"><h3><span class="sn">8.3</span>Gross-Profit Comparison</h3><p>Assume sales revenue is 6,000 dollars.</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c4"><table>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><strong>Cost of goods sold</strong></th>
+<th><strong>Gross profit</strong></th>
+<th><strong>Ending inventory</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIFO</td>
+<td>3,400 dollars</td>
+<td>2,600 dollars</td>
+<td>2,100 dollars</td>
+</tr>
+<tr>
+<td>Weighted average</td>
+<td>Approximately 3,666.67 dollars</td>
+<td>Approximately 2,333.33 dollars</td>
+<td>Approximately 1,833.33 dollars</td>
+</tr>
+<tr>
+<td>LIFO</td>
+<td>3,900 dollars</td>
+<td>2,100 dollars</td>
+<td>1,600 dollars</td>
+</tr>
+</tbody>
+</table></div></div><figure class="ff-bars"><figcaption>Visual summary of the table above (in dollars)</figcaption><div class="bgrid"><div class="bgrp"><h5>Cost of goods sold</h5><div class="brow"><span class="bl">FIFO</span><span class="bt"><i style="--w:87%;--c:#168a49"></i></span><b>3,400</b></div><div class="brow"><span class="bl">Weighted average</span><span class="bt"><i style="--w:94%;--c:#e0a400"></i></span><b>≈ 3,666.67</b></div><div class="brow"><span class="bl">LIFO</span><span class="bt"><i style="--w:100%;--c:#d9890a"></i></span><b>3,900</b></div></div><div class="bgrp"><h5>Gross profit</h5><div class="brow"><span class="bl">FIFO</span><span class="bt"><i style="--w:100%;--c:#168a49"></i></span><b>2,600</b></div><div class="brow"><span class="bl">Weighted average</span><span class="bt"><i style="--w:90%;--c:#e0a400"></i></span><b>≈ 2,333.33</b></div><div class="brow"><span class="bl">LIFO</span><span class="bt"><i style="--w:81%;--c:#d9890a"></i></span><b>2,100</b></div></div><div class="bgrp"><h5>Ending inventory</h5><div class="brow"><span class="bl">FIFO</span><span class="bt"><i style="--w:100%;--c:#168a49"></i></span><b>2,100</b></div><div class="brow"><span class="bl">Weighted average</span><span class="bt"><i style="--w:87%;--c:#e0a400"></i></span><b>≈ 1,833.33</b></div><div class="brow"><span class="bl">LIFO</span><span class="bt"><i style="--w:76%;--c:#d9890a"></i></span><b>1,600</b></div></div></div></figure>
+<p>Under rising prices:</p>
+<ul class="bl-ul "><li>FIFO generally reports the highest gross profit.</li><li>LIFO generally reports the lowest gross profit.</li><li>Weighted average generally falls between FIFO and LIFO.</li></ul></div>
+<div class="bl-sub" id="s8-4"><h3><span class="sn">8.4</span>Effect on the Income Statement</h3><p>The inventory method affects:</p>
+<ul class="bl-ul "><li>Cost of goods sold</li><li>Gross profit</li><li>Operating income</li><li>Income before tax</li><li>Net income</li></ul>
+<p>Under rising prices, FIFO generally results in:</p>
+<ul class="bl-ul "><li>Lower cost of goods sold</li><li>Higher gross profit</li><li>Higher income before tax</li><li>Higher current income tax, assuming tax rules follow the financial result</li></ul>
+<p>LIFO generally results in:</p>
+<ul class="bl-ul "><li>Higher cost of goods sold</li><li>Lower gross profit</li><li>Lower income before tax</li><li>Potentially lower current income tax where permitted</li></ul></div>
+<div class="bl-sub" id="s8-5"><h3><span class="sn">8.5</span>Effect on the Balance Sheet</h3><p>Under rising prices:</p>
+<ul class="bl-ul "><li>FIFO ending inventory is usually higher.</li><li>LIFO ending inventory is usually lower.</li><li>A higher inventory balance increases reported current assets.</li><li>A lower inventory balance decreases reported current assets.</li></ul>
+<p>The choice may affect:</p>
+<ul class="bl-ul "><li>Working capital</li><li>Current ratio</li><li>Inventory turnover</li><li>Debt covenants</li><li>Asset-based lending</li><li>Return-on-assets calculations</li></ul></div>
+<div class="bl-sub" id="s8-6"><h3><span class="sn">8.6</span>Effect on Cash Flow</h3><p>Inventory methods usually do not change the amount of cash paid to suppliers. However, they can affect cash indirectly through taxes.</p>
+<p>Under rising prices, LIFO may produce lower taxable income where permitted. This may reduce current tax payments and increase operating cash flow in the short term.</p>
+<p>The total tax effect over the entire life of the inventory may differ from the current-period effect.</p></div></div></section>
+<section class="bl-sec ff-ch" id="s9" style="--c:#6aa820"><header class="bl-sec-h"><span class="big" aria-hidden="true">09</span><h2><span class="num">9</span><span class="ch">Chapter 9:</span> Inflation and Deflation Scenarios</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s9-1"><h3><span class="sn">9.1</span>Inflation</h3><p>Inflation occurs when the general price level increases over time.</p>
+<p>Example purchase costs:</p>
+<ul class="bl-ul "><li>First purchase: 10 dollars per unit</li><li>Second purchase: 12 dollars per unit</li><li>Third purchase: 14 dollars per unit</li></ul>
+<p>Under inflation:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c4"><table>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><strong>Expected cost of goods sold</strong></th>
+<th><strong>Expected ending inventory</strong></th>
+<th><strong>Expected gross profit</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIFO</td>
+<td>Lower</td>
+<td>Higher</td>
+<td>Higher</td>
+</tr>
+<tr>
+<td>LIFO</td>
+<td>Higher</td>
+<td>Lower</td>
+<td>Lower</td>
+</tr>
+<tr>
+<td>Weighted average</td>
+<td>Middle</td>
+<td>Middle</td>
+<td>Middle</td>
+</tr>
+</tbody>
+</table></div></div></div>
+<div class="bl-sub" id="s9-2"><h3><span class="sn">9.2</span>Why FIFO Profit Is Usually Higher During Inflation</h3><p>FIFO assigns older, cheaper costs to cost of goods sold. Current sales revenue is therefore matched with relatively low costs.</p>
+<p>This increases reported gross profit.</p>
+<p>However, the company may need to pay more than the recorded cost to replace the inventory it has sold. Thus, FIFO profit may not reflect the full economic cost of replacing inventory.</p></div>
+<div class="bl-sub" id="s9-3"><h3><span class="sn">9.3</span>Why LIFO May Reduce Taxes During Inflation</h3><p>LIFO assigns newer, higher costs to cost of goods sold. This usually reduces accounting profit.</p>
+<p>Where tax rules permit LIFO and the financial and tax methods are aligned, the lower profit may reduce current taxable income.</p>
+<p>The benefit is often described as a tax-timing benefit rather than a permanent elimination of tax.</p></div>
+<div class="bl-sub" id="s9-4"><h3><span class="sn">9.4</span>Deflation</h3><p>Deflation occurs when prices decline over time.</p>
+<p>Example purchase costs:</p>
+<ul class="bl-ul "><li>First purchase: 14 dollars per unit</li><li>Second purchase: 12 dollars per unit</li><li>Third purchase: 10 dollars per unit</li></ul>
+<p>Under deflation:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c4"><table>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><strong>Expected cost of goods sold</strong></th>
+<th><strong>Expected ending inventory</strong></th>
+<th><strong>Expected gross profit</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FIFO</td>
+<td>Higher</td>
+<td>Lower</td>
+<td>Lower</td>
+</tr>
+<tr>
+<td>LIFO</td>
+<td>Lower</td>
+<td>Higher</td>
+<td>Higher</td>
+</tr>
+<tr>
+<td>Weighted average</td>
+<td>Middle</td>
+<td>Middle</td>
+<td>Middle</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>Under deflation, LIFO may report higher profit because it assigns newer, cheaper costs to cost of goods sold.</p></div>
+<div class="bl-sub" id="s9-5"><h3><span class="sn">9.5</span>Inventory Method and Economic Reality</h3><p>No inventory method perfectly measures economic profit under all price conditions.</p>
+<p>For management purposes, businesses may also monitor:</p>
+<ul class="bl-ul "><li>Replacement-cost margins</li><li>Current-cost income</li><li>Inventory holding gains</li><li>Stock turnover</li><li>Gross margin return on inventory investment</li></ul>
+<p>These measures can supplement financial-statement inventory figures.</p></div></div></section>
+<section class="bl-sec ff-ch" id="s10" style="--c:#d9890a"><header class="bl-sec-h"><span class="big" aria-hidden="true">10</span><h2><span class="num">10</span><span class="ch">Chapter 10:</span> Detailed Comparison of FIFO, LIFO, and FEFO</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s10-1"><h3><span class="sn">10.1</span>Summary Comparison</h3><div class="bl-table-wrap"><div class="bl-table ff-t c4"><table>
+<thead>
+<tr>
+<th><strong>Feature</strong></th>
+<th class="m-fifo"><strong>FIFO</strong></th>
+<th class="m-lifo"><strong>LIFO</strong></th>
+<th class="m-fefo"><strong>FEFO</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full name</td>
+<td>First-In, First-Out</td>
+<td>Last-In, First-Out</td>
+<td>First-Expired, First-Out</td>
+</tr>
+<tr>
+<td>Main basis</td>
+<td>Receipt or production date</td>
+<td>Most recent cost layer</td>
+<td>Expiration date</td>
+</tr>
+<tr>
+<td>Main purpose</td>
+<td>Cost flow and stock rotation</td>
+<td>Accounting cost flow</td>
+<td>Physical stock rotation</td>
+</tr>
+<tr>
+<td>Uses expiration dates?</td>
+<td>Not necessarily</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Financial accounting method?</td>
+<td>Yes</td>
+<td>Yes, where permitted</td>
+<td>Usually no</td>
+</tr>
+<tr>
+<td>Common under IFRS?</td>
+<td>Yes</td>
+<td>No</td>
+<td>Operationally yes</td>
+</tr>
+<tr>
+<td>Common under US GAAP?</td>
+<td>Yes</td>
+<td>Yes, subject to requirements</td>
+<td>Operationally yes</td>
+</tr>
+<tr>
+<td>Best for perishable goods?</td>
+<td>Often</td>
+<td>No for physical handling</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Ending inventory in inflation</td>
+<td>Usually higher</td>
+<td>Usually lower</td>
+<td>Depends on accounting valuation</td>
+</tr>
+<tr>
+<td>COGS in inflation</td>
+<td>Usually lower</td>
+<td>Usually higher</td>
+<td>Depends on accounting valuation</td>
+</tr>
+<tr>
+<td>Prevents expiration?</td>
+<td>Only if dates match receipt order</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table></div></div></div>
+<div class="bl-sub" id="s10-2"><h3><span class="sn">10.2</span>Operational Versus Accounting Comparison</h3><div class="bl-table-wrap"><div class="bl-table ff-t c4"><table>
+<thead>
+<tr>
+<th><strong>Question</strong></th>
+<th class="m-fifo"><strong>FIFO</strong></th>
+<th class="m-lifo"><strong>LIFO</strong></th>
+<th class="m-fefo"><strong>FEFO</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Which goods are physically issued first?</td>
+<td>Oldest received</td>
+<td>Newest received under the assumption</td>
+<td>Earliest expiration</td>
+</tr>
+<tr>
+<td>Which costs are assigned to COGS?</td>
+<td>Oldest costs</td>
+<td>Newest costs</td>
+<td>Determined by selected accounting method</td>
+</tr>
+<tr>
+<td>Which products remain in stock?</td>
+<td>Newest cost layers</td>
+<td>Oldest cost layers</td>
+<td>Products with later expiration dates</td>
+</tr>
+<tr>
+<td>Does it require lot tracking?</td>
+<td>Helpful</td>
+<td>Helpful but not always necessary</td>
+<td>Essential</td>
+</tr>
+<tr>
+<td>Is it designed for product safety?</td>
+<td>Partly</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table></div></div></div></div></section>
+<section class="bl-sec ff-ch" id="s11" style="--c:#0e9f6e"><header class="bl-sec-h"><span class="big" aria-hidden="true">11</span><h2><span class="num">11</span><span class="ch">Chapter 11:</span> Advantages and Disadvantages in Practice</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s11-1"><h3><span class="sn">11.1</span>FIFO</h3><div class="ff-duo"><div class="bl-pane adv"><h4>Advantages</h4><ul class="bl-ul "><li>Simple and understandable</li><li>Accepted under major accounting frameworks</li><li>Useful for perishable goods</li><li>Ending inventory reflects recent prices</li><li>Easy to integrate with warehouse procedures</li><li>Reduces the likelihood of old inventory layers</li></ul></div><div class="bl-pane dis"><h4>Disadvantages</h4><ul class="bl-ul cross"><li>Can increase reported profit during inflation</li><li>Can increase current tax expense where taxable income follows financial income</li><li>May not match current replacement costs in cost of goods sold</li><li>Can make performance look better than the business’s replacement economics</li></ul></div></div></div>
+<div class="bl-sub" id="s11-2"><h3><span class="sn">11.2</span>LIFO</h3><div class="ff-duo"><div class="bl-pane adv"><h4>Advantages</h4><ul class="bl-ul "><li>Matches recent costs with current revenue during inflation</li><li>May reduce taxable income where permitted</li><li>Can provide a useful margin measure for certain commodities</li><li>May be suitable for homogeneous, interchangeable inventory</li></ul></div><div class="bl-pane dis"><h4>Disadvantages</h4><ul class="bl-ul cross"><li>Prohibited under IFRS</li><li>Complex to administer</li><li>May leave outdated costs in ending inventory</li><li>Can cause LIFO liquidation effects</li><li>Reduces comparability with FIFO users</li><li>Does not support safe physical stock rotation</li><li>Can produce a low inventory value during inflation</li></ul></div></div></div>
+<div class="bl-sub" id="s11-3"><h3><span class="sn">11.3</span>FEFO</h3><div class="ff-duo"><div class="bl-pane adv"><h4>Advantages</h4><ul class="bl-ul "><li>Protects customers and patients</li><li>Reduces expired stock</li><li>Supports recalls and traceability</li><li>Appropriate for food, medicine, and chemicals</li><li>Improves warehouse discipline</li><li>Can reduce waste and disposal costs</li></ul></div><div class="bl-pane dis"><h4>Disadvantages</h4><ul class="bl-ul cross"><li>Requires accurate expiry information</li><li>Depends on lot and batch tracking</li><li>May require specialized software</li><li>Can increase warehouse handling</li><li>Does not automatically determine accounting cost</li><li>Requires clear procedures for damaged or recalled inventory</li></ul></div></div></div></div></section>
+<section class="bl-sec ff-ch" id="s12" style="--c:#c98a00"><header class="bl-sec-h"><span class="big" aria-hidden="true">12</span><h2><span class="num">12</span><span class="ch">Chapter 12:</span> Related Inventory Concepts</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s12-1"><h3><span class="sn">12.1</span>Weighted-Average Cost</h3><p>Weighted-average cost assigns an average cost to units available for sale.</p>
+<p>The average cost formula is:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>Weighted-Average Cost per Unit</figcaption><div class="bl-math"><math display="block" aria-label="Weighted-Average Cost per Unit = (Total Cost of Units Available) ÷ (Total Units Available)"><mtext>Weighted-Average Cost per Unit</mtext><mo>=</mo><mfrac><mrow><mtext>Total Cost of Units Available</mtext></mrow><mrow><mtext>Total Units Available</mtext></mrow></mfrac></math></div></figure>
+<p>Using the earlier example:</p>
+<div class="ff-calc"><math display="block" aria-label="(5,500) ÷ (450) ≈ 12.22"><mfrac><mrow><mn>5,500</mn></mrow><mrow><mn>450</mn></mrow></mfrac><mo>≈</mo><mn>12.22</mn></math></div>
+<p>Weighted average smooths price changes and usually produces results between FIFO and LIFO.</p>
+<div class="ff-duo"><div class="bl-pane adv"><h4>Advantages</h4><ul class="bl-ul "><li>Simple for interchangeable goods</li><li>Reduces the impact of extreme price changes</li><li>Permitted under IFRS and US GAAP</li><li>Suitable for large volumes of similar products</li></ul></div><div class="bl-pane dis"><h4>Disadvantages</h4><ul class="bl-ul cross"><li>May not reflect actual unit costs</li><li>Can obscure recent cost changes</li><li>Requires consistent calculation procedures</li></ul>
+<p>Weighted average may be calculated:</p>
+<ul class="bl-ul cross"><li>Periodically</li><li>After each purchase under a moving-average system</li></ul></div></div></div>
+<div class="bl-sub" id="s12-2"><h3><span class="sn">12.2</span>Specific Identification</h3><p>Specific identification assigns the actual cost of each identifiable unit to the unit sold.</p>
+<p>It is suitable when items are:</p>
+<ul class="bl-ul "><li>High-value</li><li>Unique</li><li>Easily traceable</li><li>Not interchangeable</li></ul>
+<p>Examples include:</p>
+<ul class="bl-ul "><li>Automobiles</li><li>Jewelry</li><li>Custom machinery</li><li>Real estate</li><li>Aircraft</li><li>Artwork</li></ul>
+<p>Specific identification is less suitable for large quantities of identical low-value products because tracking each item may be impractical.</p></div>
+<div class="bl-sub" id="s12-3"><h3><span class="sn">12.3</span>Just-in-Time Inventory</h3><p>Just-in-time, or JIT, inventory management attempts to receive materials shortly before they are needed in production or sale.</p>
+<div class="ff-duo"><div class="bl-pane adv"><h4>Benefits</h4><ul class="bl-ul "><li>Reduces storage costs</li><li>Reduces capital tied up in inventory</li><li>Reduces obsolescence</li><li>Encourages efficient supplier relationships</li><li>Can improve production flow</li></ul></div><div class="bl-pane dis"><h4>Risks</h4><ul class="bl-ul cross"><li>Supplier delays can stop production</li><li>Transportation problems can create shortages</li><li>Quality problems may have immediate effects</li><li>Natural disasters and geopolitical events can disrupt supply</li></ul>
+<p>JIT does not replace FIFO, LIFO, or FEFO. A company using JIT still needs an accounting method and physical stock-rotation procedure.</p></div></div></div>
+<div class="bl-sub" id="s12-4"><h3><span class="sn">12.4</span>Batch and Lot Tracking</h3><p>A batch or lot is a group of products made or received under similar conditions.</p>
+<p>Lot tracking records information such as:</p>
+<ul class="bl-ul "><li>Supplier</li><li>Purchase order</li><li>Manufacturing date</li><li>Expiration date</li><li>Quantity</li><li>Storage location</li><li>Quality status</li><li>Customer shipment</li><li>Recall status</li></ul>
+<p>Batch tracking is essential in:</p>
+<ul class="bl-ul "><li>Pharmaceuticals</li><li>Food production</li><li>Chemicals</li><li>Medical devices</li><li>Cosmetics</li><li>Aerospace components</li></ul></div>
+<div class="bl-sub" id="s12-5"><h3><span class="sn">12.5</span>Perishables</h3><p>Perishable goods lose value or become unsafe over time.</p>
+<p>Examples include:</p>
+<ul class="bl-ul "><li>Fresh fruit</li><li>Meat</li><li>Dairy</li><li>Vaccines</li><li>Blood products</li><li>Prepared meals</li></ul>
+<p>Perishable inventory usually requires:</p>
+<ul class="bl-ul "><li>FEFO rotation</li><li>Temperature monitoring</li><li>Expiration alerts</li><li>Quality inspections</li><li>Short replenishment cycles</li><li>Disposal procedures</li></ul></div>
+<div class="bl-sub" id="s12-6"><h3><span class="sn">12.6</span>Obsolescence</h3><p>Obsolescence occurs when inventory loses value because it is no longer useful, fashionable, compatible, or saleable.</p>
+<p>Examples include:</p>
+<ul class="bl-ul "><li>Outdated mobile-phone components</li><li>Seasonal clothing</li><li>Old computer parts</li><li>Products replaced by a new model</li><li>Printed materials with obsolete information</li></ul>
+<p>FIFO can reduce the risk of obsolescence when older products are physically sold first. FEFO can reduce the risk when the primary concern is expiration.</p></div>
+<div class="bl-sub" id="s12-7"><h3><span class="sn">12.7</span>Safety Stock</h3><p>Safety stock is additional inventory held to protect against:</p>
+<ul class="bl-ul "><li>Demand uncertainty</li><li>Supplier delays</li><li>Transportation disruption</li><li>Production variability</li><li>Forecasting errors</li></ul>
+<p>Safety stock must still be controlled for age, expiration, and obsolescence.</p></div>
+<div class="bl-sub" id="s12-8"><h3><span class="sn">12.8</span>Reorder Point</h3><p>A reorder point is the inventory level at which a new order should be placed.</p>
+<p>A basic formula is:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>Reorder Point</figcaption><div class="bl-math"><math display="block" aria-label="Reorder Point = Expected Demand During Lead Time + Safety Stock"><mtext>Reorder Point</mtext><mo>=</mo><mtext>Expected Demand During Lead Time</mtext><mo>+</mo><mtext>Safety Stock</mtext></math></div></figure>
+<p>For example, if average daily demand is 50 units, supplier lead time is 6 days, and safety stock is 100 units:</p>
+<div class="ff-calc"><math display="block" aria-label="(50 × 6) + 100 = 400  units"><mo>(</mo><mn>50</mn><mo>×</mo><mn>6</mn><mo>)</mo><mo>+</mo><mn>100</mn><mo>=</mo><mn>400</mn><mtext>&#160;units</mtext></math></div>
+<p>The business may place a new order when inventory reaches 400 units.</p></div></div></section>
+<section class="bl-sec ff-ch" id="s13" style="--c:#168a49"><header class="bl-sec-h"><span class="big" aria-hidden="true">13</span><h2><span class="num">13</span><span class="ch">Chapter 13:</span> Industry Applications</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s13-1"><h3><span class="sn">13.1</span>Pharmacies and Hospitals</h3><p>Pharmacies and hospitals commonly use FEFO because medicines may have:</p>
+<ul class="bl-ul "><li>Expiration dates</li><li>Batch numbers</li><li>Storage requirements</li><li>Recall risks</li><li>Patient-safety implications</li></ul>
+<p>A pharmacy may use:</p>
+<ul class="bl-ul "><li>FEFO for physical issuing</li><li>Specific identification for controlled or high-value products</li><li>FIFO or weighted average for financial valuation</li><li>Barcode scanning for batch verification</li></ul>
+<p>A medicine should not be issued merely because it is physically closest to the warehouse worker. The system should identify the appropriate batch and confirm its expiration and quality status.</p></div>
+<div class="bl-sub" id="s13-2"><h3><span class="sn">13.2</span>Food and Beverage</h3><p>Food businesses often use FEFO or FIFO.</p>
+<p>FEFO is especially important when batches have different shelf lives. FIFO may be suitable where production and expiration dates generally follow receipt order.</p>
+<p>Food businesses should monitor:</p>
+<ul class="bl-ul "><li>Use-by dates</li><li>Best-before dates</li><li>Temperature</li><li>Allergen information</li><li>Supplier lots</li><li>Product recalls</li><li>Damaged packaging</li></ul></div>
+<div class="bl-sub" id="s13-3"><h3><span class="sn">13.3</span>Oil and Gas</h3><p>Oil and gas businesses may hold large quantities of interchangeable commodities and supplies.</p>
+<p>Possible methods include:</p>
+<ul class="bl-ul "><li>LIFO under US GAAP, where appropriate</li><li>FIFO</li><li>Weighted average</li><li>Specific identification for major equipment</li><li>Batch or tank-level tracking for quality and regulatory purposes</li></ul>
+<p>Oil and gas companies must distinguish between:</p>
+<ul class="bl-ul "><li>Accounting valuation</li><li>Physical measurement</li><li>Product quality</li><li>Tank movements</li><li>Ownership rights</li></ul></div>
+<div class="bl-sub" id="s13-4"><h3><span class="sn">13.4</span>Electronics</h3><p>Electronics are vulnerable to technological obsolescence.</p>
+<p>A product received first may not be the product that becomes obsolete first. Therefore, electronics companies may use:</p>
+<ul class="bl-ul "><li>FIFO for physical stock rotation</li><li>FEFO-like procedures for warranty or shelf-life limitations</li><li>Specific identification for high-value items</li><li>Serial-number tracking</li><li>Weighted average for interchangeable components</li></ul>
+<p>Serial-number tracking is important for:</p>
+<ul class="bl-ul "><li>Warranty claims</li><li>Returns</li><li>Product recalls</li><li>Theft prevention</li><li>Customer service</li><li>Regulatory compliance</li></ul></div>
+<div class="bl-sub" id="s13-5"><h3><span class="sn">13.5</span>Manufacturing</h3><p>Manufacturers may use different approaches for different inventory classes:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c2"><table>
+<thead>
+<tr>
+<th><strong>Inventory class</strong></th>
+<th><strong>Possible method</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw materials</td>
+<td>FIFO or weighted average</td>
+</tr>
+<tr>
+<td>Work in progress</td>
+<td>Actual or standard cost</td>
+</tr>
+<tr>
+<td>Finished goods</td>
+<td>FIFO, weighted average, or LIFO where permitted</td>
+</tr>
+<tr>
+<td>Unique machinery</td>
+<td>Specific identification</td>
+</tr>
+<tr>
+<td>Expiring chemicals</td>
+<td>FEFO for physical issue</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>A single company may use more than one operational method while maintaining a consistent accounting policy for similar inventories.</p></div></div></section>
+<section class="bl-sec ff-ch" id="s14" style="--c:#e0a400"><header class="bl-sec-h"><span class="big" aria-hidden="true">14</span><h2><span class="num">14</span><span class="ch">Chapter 14:</span> Accounting Standards and Regulatory Considerations</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s14-1"><h3><span class="sn">14.1</span>IFRS and IAS 2</h3><p>IAS 2, <em>Inventories</em>, provides guidance for inventory recognition and measurement under International Financial Reporting Standards.</p>
+<p>IAS 2 generally permits:</p>
+<ul class="bl-ul "><li>Specific identification for items that are not ordinarily interchangeable</li><li>FIFO</li><li>Weighted-average cost for ordinarily interchangeable items</li></ul>
+<p>IAS 2 prohibits the use of LIFO for inventory valuation.</p>
+<p>IAS 2 also addresses:</p>
+<ul class="bl-ul "><li>Costs included in inventory</li><li>Net realizable value</li><li>Write-downs</li><li>Reversal of certain write-downs</li><li>Expense recognition</li><li>Disclosure requirements</li></ul></div>
+<div class="bl-sub" id="s14-2"><h3><span class="sn">14.2</span>US GAAP</h3><p>US Generally Accepted Accounting Principles permit several inventory cost-flow methods, including:</p>
+<ul class="bl-ul "><li>FIFO</li><li>LIFO</li><li>Weighted average</li><li>Specific identification when appropriate</li></ul>
+<p>The method must be applied consistently and supported by reliable records.</p>
+<p>US GAAP also contains requirements concerning:</p>
+<ul class="bl-ul "><li>Lower-of-cost-or-market rules in certain circumstances</li><li>Lower-of-cost-and-net-realizable-value rules</li><li>Disclosure of accounting policies</li><li>LIFO liquidation</li><li>Inventory write-downs</li></ul>
+<p>The precise requirements depend on the facts and the applicable accounting guidance.</p></div>
+<div class="bl-sub" id="s14-3"><h3><span class="sn">14.3</span>LIFO Conformity Rule</h3><p>In the United States, the LIFO conformity rule generally requires that if a company uses LIFO for income-tax purposes, it must also use LIFO for financial reporting purposes for the same inventory, subject to applicable legal requirements.</p>
+<p>This rule limits the ability of a business to use:</p>
+<ul class="bl-ul "><li>LIFO for tax reporting</li><li>FIFO for financial reporting</li></ul>
+<p>The purpose is to prevent a company from obtaining the tax benefits of LIFO while reporting higher profits and inventory values using FIFO in its financial statements.</p>
+<p>Tax rules can be complex and should be reviewed with a qualified tax professional.</p></div>
+<div class="bl-sub" id="s14-4"><h3><span class="sn">14.4</span>LIFO Reserve</h3><p>The LIFO reserve measures the difference between inventory valued under LIFO and inventory valued under another method, often FIFO.</p>
+<p>A common formula is:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>LIFO Reserve</figcaption><div class="bl-math"><math display="block" aria-label="LIFO Reserve = FIFO Inventory - LIFO Inventory"><mtext>LIFO Reserve</mtext><mo>=</mo><mtext>FIFO Inventory</mtext><mo>−</mo><mtext>LIFO Inventory</mtext></math></div></figure>
+<p>Using the earlier example:</p>
+<div class="ff-calc"><code>2,100 - 1,600 = 500</code></div>
+<p>The LIFO reserve is 500 dollars.</p>
+<p>If the LIFO reserve increases, LIFO cost of goods sold is generally higher than FIFO cost of goods sold for the period.</p>
+<p>A company using LIFO may disclose information that permits users to compare its inventory with a non-LIFO basis.</p></div>
+<div class="bl-sub" id="s14-5"><h3><span class="sn">14.5</span>Financial-Statement Effects of the LIFO Reserve</h3><p>A simplified relationship is:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>FIFO Cost of Goods Sold</figcaption><div class="bl-math"><math display="block" aria-label="FIFO Cost of Goods Sold = LIFO Cost of Goods Sold - Increase in LIFO Reserve"><mtext>FIFO Cost of Goods Sold</mtext><mo>=</mo><mtext>LIFO Cost of Goods Sold</mtext><mo>−</mo><mtext>Increase in LIFO Reserve</mtext></math></div></figure>
+<p>If the LIFO reserve increases by 500 dollars:</p>
+<ul class="bl-ul "><li>LIFO cost of goods sold is generally 500 dollars higher than FIFO cost of goods sold.</li><li>LIFO gross profit is generally 500 dollars lower than FIFO gross profit before tax effects.</li><li>LIFO inventory is generally 500 dollars lower than FIFO inventory.</li></ul>
+<p>This conversion is simplified and may require adjustment for tax effects and other accounting details.</p></div>
+<div class="bl-sub" id="s14-6"><h3><span class="sn">14.6</span>Consistency and Disclosure</h3><p>A business should apply its inventory method consistently to inventories of a similar nature and use.</p>
+<p>Financial statements should generally disclose:</p>
+<ul class="bl-ul "><li>The accounting policy used for inventory</li><li>The carrying amount of inventory</li><li>The amount recognized as expense</li><li>Write-downs and reversals where applicable</li><li>Significant classifications</li><li>LIFO information where required</li></ul></div></div></section>
+<section class="bl-sec ff-ch" id="s15" style="--c:#6aa820"><header class="bl-sec-h"><span class="big" aria-hidden="true">15</span><h2><span class="num">15</span><span class="ch">Chapter 15:</span> Practical Implementation</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s15-1"><h3><span class="sn">15.1</span>Establish a Written Inventory Policy</h3><p>An inventory policy should state:</p>
+<ul class="bl-ul "><li>Which valuation method is used</li><li>Which products use FIFO, LIFO, or weighted average</li><li>Whether FEFO is used operationally</li><li>How damaged goods are handled</li><li>How expired goods are handled</li><li>How returns are recorded</li><li>How stock counts are performed</li><li>Who approves adjustments</li><li>How inventory write-downs are reviewed</li></ul></div>
+<div class="bl-sub" id="s15-2"><h3><span class="sn">15.2</span>Select Appropriate Software</h3><p>Inventory software or an enterprise resource planning system should support:</p>
+<ul class="bl-ul "><li>Perpetual quantity records</li><li>Cost layers</li><li>Purchase receipts</li><li>Sales issues</li><li>Batch and lot numbers</li><li>Expiration dates</li><li>Serial numbers</li><li>Barcode scanning</li><li>Stock transfers</li><li>Cycle counts</li><li>Reorder points</li><li>Audit trails</li><li>User permissions</li><li>Financial integration</li></ul>
+<p>The software should be configured so that operational issuing rules do not unintentionally conflict with the accounting policy.</p></div>
+<div class="bl-sub" id="s15-3"><h3><span class="sn">15.3</span>Barcode and RFID Systems</h3><p>Barcodes and radio-frequency identification systems can improve inventory control.</p>
+<p>A barcode may identify:</p>
+<ul class="bl-ul "><li>Product</li><li>Quantity</li><li>Batch</li><li>Lot</li><li>Expiration date</li><li>Location</li></ul>
+<p>RFID can allow items to be identified without direct line-of-sight scanning.</p>
+<p>Technology helps reduce manual errors but does not eliminate the need for:</p>
+<ul class="bl-ul "><li>Staff training</li><li>Physical verification</li><li>Data validation</li><li>System maintenance</li><li>Exception reporting</li></ul></div>
+<div class="bl-sub" id="s15-4"><h3><span class="sn">15.4</span>Warehouse Layout</h3><p>A good warehouse layout supports the selected rotation method.</p>
+<p>For FIFO:</p>
+<ul class="bl-ul "><li>Place older receipts where they can be selected first.</li><li>Use clear receiving dates.</li><li>Avoid placing new inventory in front of older inventory.</li></ul>
+<p>For FEFO:</p>
+<ul class="bl-ul "><li>Organize products by expiration date.</li><li>Use visible date labels.</li><li>Create separate locations for short-dated stock.</li><li>Prevent expired stock from being available for sale.</li></ul></div>
+<div class="bl-sub" id="s15-5"><h3><span class="sn">15.5</span>Receiving Procedures</h3><p>When inventory arrives, staff should verify:</p>
+<ul class="bl-ul "><li>Product code</li><li>Quantity</li><li>Purchase order</li><li>Supplier</li><li>Batch or lot number</li><li>Manufacturing date</li><li>Expiration date</li><li>Packaging condition</li><li>Temperature, if applicable</li><li>Quality status</li></ul>
+<p>The receiving record should be entered promptly into the inventory system.</p></div>
+<div class="bl-sub" id="s15-6"><h3><span class="sn">15.6</span>Handling Returns</h3><p>Returned goods should not automatically be returned to available inventory.</p>
+<p>The business should determine whether the goods are:</p>
+<ul class="bl-ul "><li>Unopened and saleable</li><li>Damaged</li><li>Expired</li><li>Contaminated</li><li>Recalled</li><li>In need of inspection</li><li>Eligible for resale</li></ul>
+<p>Each return should be assigned the correct batch, lot, serial number, and cost information.</p></div>
+<div class="bl-sub" id="s15-7"><h3><span class="sn">15.7</span>Handling Expired or Obsolete Inventory</h3><p>Expired or obsolete inventory should be:</p>
+<ol class="bl-ol "><li>Identified</li><li>Segregated</li><li>Blocked from sale</li><li>Evaluated for write-down</li><li>Approved for disposal, return, or alternative use</li><li>Removed from the accounting records when appropriate</li></ol>
+<p>A warehouse system should prevent expired products from being selected for customer orders.</p></div>
+<div class="bl-sub" id="s15-8"><h3><span class="sn">15.8</span>Cycle Counting</h3><p>Cycle counting involves counting selected inventory regularly rather than waiting for one annual count.</p>
+<p>High-risk or high-value items may be counted more frequently.</p>
+<p>A cycle-count program should consider:</p>
+<ul class="bl-ul "><li>Value</li><li>Usage</li><li>Theft risk</li><li>Expiration risk</li><li>Regulatory importance</li><li>Historical error rates</li></ul></div></div></section>
+<section class="bl-sec ff-ch" id="s16" style="--c:#d9890a"><header class="bl-sec-h"><span class="big" aria-hidden="true">16</span><h2><span class="num">16</span><span class="ch">Chapter 16:</span> Audit and Internal-Control Considerations</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s16-1"><h3><span class="sn">16.1</span>Existence</h3><p>Auditors need evidence that recorded inventory actually exists.</p>
+<p>Useful procedures include:</p>
+<ul class="bl-ul "><li>Physical observation</li><li>Test counts</li><li>Warehouse inspection</li><li>Reconciliation to inventory records</li><li>Confirmation with third-party warehouses</li></ul></div>
+<div class="bl-sub" id="s16-2"><h3><span class="sn">16.2</span>Completeness</h3><p>All inventory owned by the business should be included.</p>
+<p>Auditors may examine:</p>
+<ul class="bl-ul "><li>Receiving reports</li><li>Purchase invoices</li><li>Shipping documents</li><li>Goods-in-transit records</li><li>Consignment arrangements</li><li>Cutoff around the reporting date</li></ul></div>
+<div class="bl-sub" id="s16-3"><h3><span class="sn">16.3</span>Rights and Obligations</h3><p>A business must determine whether it owns the inventory.</p>
+<p>Inventory may be:</p>
+<ul class="bl-ul "><li>Held on consignment</li><li>Stored for another company</li><li>Purchased but not yet received</li><li>Sold but still in the warehouse</li><li>Subject to retention-of-title clauses</li></ul>
+<p>Ownership terms can affect whether inventory belongs on the company’s balance sheet.</p></div>
+<div class="bl-sub" id="s16-4"><h3><span class="sn">16.4</span>Valuation</h3><p>Auditors evaluate whether:</p>
+<ul class="bl-ul "><li>The correct method was applied</li><li>Unit costs agree with invoices</li><li>Cost layers are accurate</li><li>Standard costs are periodically reviewed</li><li>Damaged inventory is written down</li><li>Expired inventory is excluded or written down</li><li>Net realizable value is reasonable</li></ul></div>
+<div class="bl-sub" id="s16-5"><h3><span class="sn">16.5</span>Cutoff</h3><p>Cutoff ensures that purchases and sales are recorded in the correct accounting period.</p>
+<p>Important documents include:</p>
+<ul class="bl-ul "><li>Last goods-received note before year-end</li><li>First goods-received note after year-end</li><li>Last shipping document before year-end</li><li>First shipping document after year-end</li><li>Purchase invoices</li><li>Sales invoices</li></ul>
+<p>Incorrect cutoff can overstate or understate both purchases and inventory.</p></div>
+<div class="bl-sub" id="s16-6"><h3><span class="sn">16.6</span>Inventory Counts</h3><p>A physical count should include procedures for:</p>
+<ul class="bl-ul "><li>Counting teams</li><li>Independent review</li><li>Damaged goods</li><li>Obsolete goods</li><li>Expired products</li><li>Goods in transit</li><li>Goods held for others</li><li>Count sheets</li><li>Variance investigation</li><li>Final reconciliation</li></ul></div>
+<div class="bl-sub" id="s16-7"><h3><span class="sn">16.7</span>IT Controls</h3><p>Important technology controls include:</p>
+<ul class="bl-ul "><li>User access restrictions</li><li>Approval for cost changes</li><li>Audit logs</li><li>Backup procedures</li><li>Change-management controls</li><li>Interface reconciliations</li><li>Master-data controls</li><li>Barcode validation</li><li>Expiration-date alerts</li></ul></div></div></section>
+<section class="bl-sec ff-ch" id="s17" style="--c:#0e9f6e"><header class="bl-sec-h"><span class="big" aria-hidden="true">17</span><h2><span class="num">17</span><span class="ch">Chapter 17:</span> Practice Problems with Solutions</h2></header><div class="bl-sec-b"><div class="ff-probs"><article class="ff-prob" id="p1"><header><span class="pn">1</span><div><small>Problem 1</small><h4>FIFO Periodic Inventory</h4></div></header><div class="q"><p>A business has:</p>
+<ul class="bl-ul "><li>Beginning inventory: 200 units at 5 dollars</li><li>Purchase: 300 units at 6 dollars</li><li>Purchase: 100 units at 8 dollars</li><li>Units sold: 400</li></ul>
+<p>Calculate FIFO cost of goods sold and ending inventory.</p></div><div class="sol"><h5><span>●</span>Solution</h5><p>Total units available:</p>
+<div class="ff-calc"><code>200 + 300 + 100 = 600</code></div>
+<p>Ending units:</p>
+<div class="ff-calc"><code>600 - 400 = 200</code></div>
+<p>Under FIFO, the first 400 units sold are:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>200 units at 5 dollars</span></li><li class="layer" style="--c:#e0a400;--w:100%"><i class="lb" aria-hidden="true"></i><span>200 units at 6 dollars</span></li></ul>
+<p>Cost of goods sold:</p>
+<div class="ff-calc"><math display="block" aria-label="(200 × 5) + (200 × 6) = 1,000 + 1,200 = 2,200"><mo>(</mo><mn>200</mn><mo>×</mo><mn>5</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>200</mn><mo>×</mo><mn>6</mn><mo>)</mo><mo>=</mo><mn>1,000</mn><mo>+</mo><mn>1,200</mn><mo>=</mo><mn>2,200</mn></math></div>
+<p>Ending inventory:</p>
+<ul class="bl-ul "><li>Remaining 100 units at 6 dollars</li><li>100 units at 8 dollars</li></ul>
+<div class="ff-calc"><math display="block" aria-label="(100 × 6) + (100 × 8) = 600 + 800 = 1,400"><mo>(</mo><mn>100</mn><mo>×</mo><mn>6</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>100</mn><mo>×</mo><mn>8</mn><mo>)</mo><mo>=</mo><mn>600</mn><mo>+</mo><mn>800</mn><mo>=</mo><mn>1,400</mn></math></div></div><div class="ans"><h5><span>✓</span>Answer</h5><ul class="bl-ul dot"><li>FIFO cost of goods sold: 2,200 dollars</li><li>FIFO ending inventory: 1,400 dollars</li></ul></div></article><article class="ff-prob" id="p2"><header><span class="pn">2</span><div><small>Problem 2</small><h4>LIFO Periodic Inventory</h4></div></header><div class="q"><p>Using the data from Problem 1, calculate LIFO cost of goods sold and ending inventory.</p></div><div class="sol"><h5><span>●</span>Solution</h5><p>Under LIFO, the newest units are assigned to cost of goods sold first.</p>
+<p>The 400 units sold consist of:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#e0a400;--w:33%"><i class="lb" aria-hidden="true"></i><span>100 units at 8 dollars</span></li><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>300 units at 6 dollars</span></li></ul>
+<p>Cost of goods sold:</p>
+<div class="ff-calc"><math display="block" aria-label="(100 × 8) + (300 × 6) = 800 + 1,800 = 2,600"><mo>(</mo><mn>100</mn><mo>×</mo><mn>8</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>300</mn><mo>×</mo><mn>6</mn><mo>)</mo><mo>=</mo><mn>800</mn><mo>+</mo><mn>1,800</mn><mo>=</mo><mn>2,600</mn></math></div>
+<p>Ending inventory consists of:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:100%"><i class="lb" aria-hidden="true"></i><span>200 units at 5 dollars</span></li></ul>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="200 × 5 = 1,000"><mn>200</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>1,000</mn></math></div></div><div class="ans"><h5><span>✓</span>Answer</h5><ul class="bl-ul dot"><li>LIFO cost of goods sold: 2,600 dollars</li><li>LIFO ending inventory: 1,000 dollars</li></ul></div></article><article class="ff-prob" id="p3"><header><span class="pn">3</span><div><small>Problem 3</small><h4>Weighted-Average Cost</h4></div></header><div class="q"><p>A business has:</p>
+<ul class="bl-ul layers"><li class="layer" style="--c:#168a49;--w:33%"><i class="lb" aria-hidden="true"></i><span>100 units at 20 dollars</span></li><li class="layer" style="--c:#e0a400;--w:100%"><i class="lb" aria-hidden="true"></i><span>300 units at 24 dollars</span></li><li class="layer" style="--c:#6aa820;--w:33%"><i class="lb" aria-hidden="true"></i><span>100 units at 30 dollars</span></li></ul>
+<p>It sells 250 units.</p>
+<p>Calculate the weighted-average cost, cost of goods sold, and ending inventory.</p></div><div class="sol"><h5><span>●</span>Solution</h5><p>Total units:</p>
+<div class="ff-calc"><code>100 + 300 + 100 = 500</code></div>
+<p>Total cost:</p>
+<div class="ff-calc"><math display="block" aria-label="(100 × 20) + (300 × 24) + (100 × 30)"><mo>(</mo><mn>100</mn><mo>×</mo><mn>20</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>300</mn><mo>×</mo><mn>24</mn><mo>)</mo><mo>+</mo><mo>(</mo><mn>100</mn><mo>×</mo><mn>30</mn><mo>)</mo></math></div>
+<div class="ff-calc"><code>= 2,000 + 7,200 + 3,000 = 12,200</code></div>
+<p>Weighted-average cost per unit:</p>
+<div class="ff-calc"><math display="block" aria-label="(12,200) ÷ (500) = 24.40"><mfrac><mrow><mn>12,200</mn></mrow><mrow><mn>500</mn></mrow></mfrac><mo>=</mo><mn>24.40</mn></math></div>
+<p>Cost of goods sold:</p>
+<div class="ff-calc"><math display="block" aria-label="250 × 24.40 = 6,100"><mn>250</mn><mo>×</mo><mn>24.40</mn><mo>=</mo><mn>6,100</mn></math></div>
+<p>Ending inventory:</p>
+<div class="ff-calc"><math display="block" aria-label="250 × 24.40 = 6,100"><mn>250</mn><mo>×</mo><mn>24.40</mn><mo>=</mo><mn>6,100</mn></math></div></div><div class="ans"><h5><span>✓</span>Answer</h5><ul class="bl-ul dot"><li>Average cost per unit: 24.40 dollars</li><li>Cost of goods sold: 6,100 dollars</li><li>Ending inventory: 6,100 dollars</li></ul></div></article><article class="ff-prob" id="p4"><header><span class="pn">4</span><div><small>Problem 4</small><h4>FEFO Selection</h4></div></header><div class="q"><p>A warehouse has the following batches:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c3"><table>
+<thead>
+<tr>
+<th><strong>Batch</strong></th>
+<th><strong>Expiration date</strong></th>
+<th><strong>Quantity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>October 31</td>
+<td>500</td>
+</tr>
+<tr>
+<td>B</td>
+<td>August 31</td>
+<td>300</td>
+</tr>
+<tr>
+<td>C</td>
+<td>December 31</td>
+<td>400</td>
+</tr>
+<tr>
+<td>D</td>
+<td>September 30</td>
+<td>200</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>The warehouse must issue 700 units. Which batches should be issued under FEFO?</p></div><div class="sol"><h5><span>●</span>Solution</h5><p>Arrange batches by earliest expiration:</p>
+<ol class="bl-ol "><li>Batch B: August 31, 300 units</li><li>Batch D: September 30, 200 units</li><li>Batch A: October 31, 500 units</li><li>Batch C: December 31, 400 units</li></ol>
+<p>Issue:</p>
+<ul class="bl-ul "><li>300 units from Batch B</li><li>200 units from Batch D</li><li>200 units from Batch A</li></ul></div><div class="ans"><h5><span>✓</span>Answer</h5><p>The warehouse should issue:</p>
+<ul class="bl-ul dot"><li>All 300 units from Batch B</li><li>All 200 units from Batch D</li><li>200 units from Batch A</li></ul></div></article><article class="ff-prob" id="p5"><header><span class="pn">5</span><div><small>Problem 5</small><h4>Inflation and Gross Profit</h4></div></header><div class="q"><p>A company sells goods for 10,000 dollars. Under FIFO, cost of goods sold is 6,000 dollars. Under LIFO, cost of goods sold is 6,800 dollars.</p>
+<p>Calculate gross profit under each method and explain the difference.</p></div><div class="sol"><h5><span>●</span>Solution</h5><p>FIFO gross profit:</p>
+<div class="ff-calc"><code>10,000 - 6,000 = 4,000</code></div>
+<p>LIFO gross profit:</p>
+<div class="ff-calc"><code>10,000 - 6,800 = 3,200</code></div>
+<p>Difference:</p>
+<div class="ff-calc"><code>4,000 - 3,200 = 800</code></div></div><div class="ans"><h5><span>✓</span>Answer</h5><ul class="bl-ul dot"><li>FIFO gross profit: 4,000 dollars</li><li>LIFO gross profit: 3,200 dollars</li><li>FIFO profit is higher by 800 dollars</li></ul>
+<p>This result is consistent with rising prices because LIFO assigns more recent, higher costs to cost of goods sold.</p></div></article><article class="ff-prob" id="p6"><header><span class="pn">6</span><div><small>Problem 6</small><h4>LIFO Reserve</h4></div></header><div class="q"><p>A company reports inventory of 4,200 dollars under FIFO and 3,500 dollars under LIFO. Calculate the LIFO reserve.</p></div><div class="sol"><h5><span>●</span>Solution</h5><figure class="bl-formula"><figcaption><span>ƒ</span>LIFO Reserve</figcaption><div class="bl-math"><math display="block" aria-label="LIFO Reserve = 4,200 - 3,500 = 700"><mtext>LIFO Reserve</mtext><mo>=</mo><mn>4,200</mn><mo>−</mo><mn>3,500</mn><mo>=</mo><mn>700</mn></math></div></figure></div><div class="ans"><h5><span>✓</span>Answer</h5><p>The LIFO reserve is 700 dollars.</p></div></article><article class="ff-prob" id="p7"><header><span class="pn">7</span><div><small>Problem 7</small><h4>Reorder Point</h4></div></header><div class="q"><p>Average daily demand is 80 units. Supplier lead time is 5 days. Safety stock is 150 units.</p>
+<p>Calculate the reorder point.</p></div><div class="sol"><h5><span>●</span>Solution</h5><div class="ff-calc"><math display="block" aria-label="(80 × 5) + 150 = 400 + 150 = 550"><mo>(</mo><mn>80</mn><mo>×</mo><mn>5</mn><mo>)</mo><mo>+</mo><mn>150</mn><mo>=</mo><mn>400</mn><mo>+</mo><mn>150</mn><mo>=</mo><mn>550</mn></math></div></div><div class="ans"><h5><span>✓</span>Answer</h5><p>The reorder point is 550 units.</p></div></article><article class="ff-prob" id="p8"><header><span class="pn">8</span><div><small>Problem 8</small><h4>Choosing Between FIFO and FEFO</h4></div></header><div class="q"><p>A food distributor receives:</p>
+<ul class="bl-ul "><li>500 cartons in March that expire in December</li><li>500 cartons in April that expire in September</li></ul>
+<p>Which cartons should be issued first under FIFO and FEFO?</p></div><div class="sol"><h5><span>●</span>Solution</h5><p>Under FIFO, the March cartons are issued first because they were received first.</p>
+<p>Under FEFO, the April cartons are issued first because they expire earlier.</p></div><div class="ans"><h5><span>✓</span>Answer</h5><ul class="bl-ul dot"><li>FIFO: March cartons</li><li>FEFO: April cartons</li></ul>
+<p>FEFO is the safer method because it reduces the risk of expiration.</p></div></article></div></div></section>
+<section class="bl-sec ff-ch" id="s18" style="--c:#c98a00"><header class="bl-sec-h"><span class="big" aria-hidden="true">18</span><h2><span class="num">18</span><span class="ch">Chapter 18:</span> Decision Guide</h2></header><div class="bl-sec-b"><div class="bl-sub" id="s18-1"><h3><span class="sn">18.1</span>When FIFO May Be Appropriate</h3><p>Choose FIFO when:</p>
+<ul class="bl-ul "><li>Products are perishable</li><li>Older products should be sold first</li><li>Compliance with IFRS is required</li><li>Ending inventory should reflect recent costs</li><li>The business wants a simple and widely understood method</li></ul></div>
+<div class="bl-sub" id="s18-2"><h3><span class="sn">18.2</span>When LIFO May Be Appropriate</h3><p>Consider LIFO only when:</p>
+<ul class="bl-ul "><li>The applicable accounting framework permits it</li><li>The business operates in a jurisdiction where it is allowed</li><li>The business has suitable interchangeable inventory</li><li>The tax and financial-reporting consequences are understood</li><li>The business can maintain reliable LIFO records</li><li>Management understands the effect of old inventory layers</li></ul>
+<p>LIFO should not be used as a physical rotation method for food, medicine, or other products that can expire.</p></div>
+<div class="bl-sub" id="s18-3"><h3><span class="sn">18.3</span>When FEFO Is Essential</h3><p>Use FEFO when:</p>
+<ul class="bl-ul "><li>Products expire</li><li>Product safety is important</li><li>Batches have different expiration dates</li><li>Recalls must be managed</li><li>Regulations require traceability</li><li>Waste from expiration would be costly</li></ul></div>
+<div class="bl-sub" id="s18-4"><h3><span class="sn">18.4</span>Combining Methods</h3><p>A business may use different methods for different purposes:</p>
+<div class="bl-table-wrap"><div class="bl-table ff-t c2"><table>
+<thead>
+<tr>
 <th><strong>Purpose</strong></th>
-<th><strong>Typical interpretation</strong></th>
+<th><strong>Possible approach</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Accuracy</td>
-<td>Measure the relevant operating condition</td>
-<td>Investigate trend, target gap and significant exceptions; do not interpret the number without its definition and boundary.</td>
+<td>Physical issue of medicines</td>
+<td>FEFO</td>
 </tr>
 <tr>
-<td>Timeliness</td>
-<td>Measure the relevant operating condition</td>
-<td>Investigate trend, target gap and significant exceptions; do not interpret the number without its definition and boundary.</td>
+<td>Financial valuation under IFRS</td>
+<td>FIFO or weighted average</td>
 </tr>
 <tr>
-<td>Availability / service</td>
-<td>Measure the relevant operating condition</td>
-<td>Investigate trend, target gap and significant exceptions; do not interpret the number without its definition and boundary.</td>
+<td>Unique machinery</td>
+<td>Specific identification</td>
 </tr>
 <tr>
-<td>Cost / value</td>
-<td>Measure the relevant operating condition</td>
-<td>Investigate trend, target gap and significant exceptions; do not interpret the number without its definition and boundary.</td>
+<td>US tax reporting for permitted inventory</td>
+<td>LIFO</td>
 </tr>
 <tr>
-<td>Exception or compliance rate</td>
-<td>Measure the relevant operating condition</td>
-<td>Investigate trend, target gap and significant exceptions; do not interpret the number without its definition and boundary.</td>
+<td>General warehouse rotation</td>
+<td>FIFO</td>
+</tr>
+<tr>
+<td>High-volume identical products</td>
+<td>Weighted average</td>
 </tr>
 </tbody>
-</table></div>
-<p>A KPI should have an owner, calculation definition, source data, review frequency, target or expected range where meaningful, escalation rule and corrective-action mechanism. Measures should not be optimized in isolation when improving one number can damage service, quality, safety or total cost.</p>
-</section>
-<section class="sec" id="process-flow-1"><h2><span class="num">13</span>Process Flow</h2>
-<div class="flow" role="list"><span class="step" role="listitem"><b>1</b>Requirement / Trigger</span><span class="arr" aria-hidden="true">→</span><span class="step" role="listitem"><b>2</b>Validate Information</span><span class="arr" aria-hidden="true">→</span><span class="step" role="listitem"><b>3</b>Execute Controlled Activity</span><span class="arr" aria-hidden="true">→</span><span class="step" role="listitem"><b>4</b>Record Transaction</span><span class="arr" aria-hidden="true">→</span><span class="step" role="listitem"><b>5</b>Check Result</span><span class="arr" aria-hidden="true">→</span><span class="step" role="listitem"><b>6</b>Resolve Exceptions</span><span class="arr" aria-hidden="true">→</span><span class="step" role="listitem"><b>7</b>Review Performance</span><span class="arr" aria-hidden="true">→</span><span class="step" role="listitem"><b>8</b>Improve</span></div>
-</section>
-<section class="sec" id="general-problems-and-practical-solutions-1"><h2><span class="num">14</span>General Problems and Practical Solutions</h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th><strong>Common problem</strong></th>
-<th><strong>Practical solution</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Inconsistent execution between shifts or departments</td>
-<td>Define standard work, decision rules and minimum transaction requirements; train users and review exceptions.</td>
-</tr>
-<tr>
-<td>Incomplete or inaccurate data</td>
-<td>Make critical fields mandatory, validate entries, reconcile source records and assign data ownership.</td>
-</tr>
-<tr>
-<td>Late identification of exceptions</td>
-<td>Use trigger-based alerts, ageing reports, exception queues and defined escalation times.</td>
-</tr>
-<tr>
-<td>Local optimization at the expense of the end-to-end process</td>
-<td>Measure the complete material flow and include downstream effects in decisions.</td>
-</tr>
-<tr>
-<td>No closure of recurring issues</td>
-<td>Assign an accountable owner, due date, root-cause method and effectiveness check.</td>
-</tr>
-</tbody>
-</table></div>
-</section>
-<section class="sec" id="optimization-techniques-1"><h2><span class="num">15</span>Optimization Techniques</h2>
-<ul class="checks"><li>Remove unnecessary handoffs and duplicate data entry.</li><li>Use exception-based management so scarce expert time is focused on high-risk deviations.</li><li>Segment controls according to value, criticality, variability and consequence instead of imposing identical controls on every item.</li><li>Automate repeatable calculations, alerts and reconciliations where data quality is sufficient.</li><li>Review parameters from actual performance and change them through controlled decisions rather than informal overrides.</li></ul>
-</section>
-<section class="sec" id="advancements-and-modern-practices-1"><h2><span class="num">16</span>Advancements and Modern Practices</h2>
-<p>Modern industrial practice increasingly connects FIFO, LIFO &amp; FEFO with ERP transactions, barcode or RFID identification where justified, mobile execution, analytics, exception dashboards, automated alerts, supplier collaboration and controlled master-data workflows. The technology should be selected after the process is understood; automation of a poorly defined process can simply make errors occur faster.</p>
-<ul class="checks"><li>Use event-based alerts for approaching due dates, unusual consumption, ageing, variance or control failure.</li><li>Use integrated master data so the same item, supplier, unit, location and status are interpreted consistently.</li><li>Use historical data to identify recurring exceptions, seasonal behavior and parameter drift.</li><li>Use workflow approval and electronic evidence for decisions that require authorization.</li></ul>
-</section>
-<section class="sec" id="safety-and-compliance-1"><h2><span class="num">17</span>Safety and Compliance</h2>
-<ul class="checks"><li>Use safe handling practices appropriate to the material, packaging, equipment and storage environment.</li><li>Maintain clear segregation where material status, hazard, ownership, quality disposition or destination requires it.</li><li>Do not bypass mandatory inspection, authorization or transaction controls merely to accelerate the process.</li></ul>
-</section>
-<section class="sec" id="ethics-and-professional-conduct-1"><h2><span class="num">18</span>Ethics and Professional Conduct</h2>
-<ul class="checks"><li>Use objective facts and complete information when making or recording material decisions.</li><li>Do not manipulate quantities, dates, specifications, performance measures or records to make a result appear better than it is.</li><li>Separate legitimate commercial confidentiality from concealment of relevant facts.</li><li>Declare conflicts of interest and follow the organization's authorization and segregation-of-duty requirements.</li><li>Treat suppliers, internal users and control functions consistently and document material deviations.</li></ul>
-</section>
-<section class="sec" id="risk-errors-and-mistakes-1"><h2><span class="num">19</span>Risk, Errors and Mistakes</h2>
-<ul class="checks"><li>Wrong material, wrong quantity or wrong transaction can propagate into production, maintenance, finance and planning.</li><li>Poor data can produce apparently precise but operationally incorrect decisions.</li><li>Weak segregation of duties can create unauthorized purchases, adjustments or master-data changes.</li><li>Over-control can create delays; under-control can create loss, shortage or non-compliance. Controls should therefore be risk-based.</li><li>Emergency actions can bypass normal checks; the emergency path should therefore contain minimum mandatory controls and retrospective review.</li></ul>
-<p>A practical error-control method is to distinguish human error, process weakness, master-data error, transaction error, equipment/system failure and deliberate non-compliance. Each category requires a different response. Repeated mistakes should trigger root-cause analysis and process redesign rather than repeated reminders alone.</p>
-</section>
-<section class="sec" id="detailed-industrial-case-study-1"><h2><span class="num">20</span>Detailed Industrial Case Study</h2>
-<p>Case: improving FIFO, LIFO &amp; FEFO in an industrial plant</p>
-<p>Situation: The plant has recurring issues associated with FIFO, LIFO &amp; FEFO. Different users apply different practices, records are not always synchronized and exceptions are handled reactively. The immediate management concern is the visible operational effect, while the deeper issue is the absence of a consistent control loop.</p>
-<p>Diagnosis: The team first defines the process boundary, identifies the material and information flows, collects representative transactions, and separates normal variation from abnormal exceptions. It then identifies where a requirement is created, where information changes hands, where a transaction is posted, and where the result is verified.</p>
-<p>Intervention: A standard operating method is established, critical master-data fields are cleaned, decision triggers are defined, and exception ownership is assigned. Staff are trained on the reason for each control rather than only on the sequence of clicks or paperwork. The first review cycle concentrates on the highest-consequence exceptions.</p>
-<p>Control: Management reviews the selected KPIs, open exceptions, ageing and repeat failures. Where an exception repeats, the team examines the underlying cause. The process is considered stable only when performance improves without creating an unacceptable deterioration elsewhere.</p>
-<p>Result expected: The mature state is not simply a higher KPI. It is a process in which material status is visible, decisions occur before critical dates, records are trustworthy, abnormal cases are escalated and corrective actions remain effective after the immediate problem has disappeared.</p>
-</section>
-<section class="sec" id="practical-examples-1"><h2><span class="num">21</span>Practical Examples</h2>
-<ul class="checks"><li>An industrial unit applies FIFO, LIFO &amp; FEFO to a recurring material-management problem, first defining the requirement and control boundary, then establishing the operating rule and monitoring exceptions.</li><li>A monthly review compares planned and actual performance for FIFO, LIFO &amp; FEFO; significant deviations are assigned to owners, root causes are documented and the effectiveness of corrective action is checked in the next review.</li></ul>
-</section>
-<section class="sec" id="review-and-control-checklist-1"><h2><span class="num">22</span>Review and Control Checklist</h2>
-<ul class="checks"><li>Is the scope and purpose of FIFO, LIFO &amp; FEFO clearly defined?</li><li>Are inputs, outputs, decision points and responsibilities documented?</li><li>Are critical master-data and transaction fields complete and accurate?</li><li>Is there a defined method for exceptions, escalation and closure?</li><li>Are performance measures calculated consistently and reviewed at an appropriate frequency?</li><li>Are recurring deviations subjected to root-cause analysis rather than repeated correction?</li><li>Are records retained sufficiently to reconstruct important decisions and transactions?</li></ul>
-</section>
-<section class="sec" id="responsibilities-1"><h2><span class="num">23</span>Responsibilities</h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th><strong>Role</strong></th>
-<th><strong>Core responsibility</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Stores</td>
-<td>Execute physical controls, identification, location discipline, receipt/issue/transfer transactions and record accuracy within the assigned scope.</td>
-</tr>
-<tr>
-<td>Purchase</td>
-<td>Manage sourcing, commercial terms, supplier commitments and order actions relevant to the topic.</td>
-</tr>
-<tr>
-<td>Planning</td>
-<td>Define or communicate requirements, dates, quantities, priorities and planning parameters.</td>
-</tr>
-<tr>
-<td>User Department</td>
-<td>Define technical need, confirm usage/acceptance where applicable and report abnormal consumption or shortages.</td>
-</tr>
-<tr>
-<td>Finance / Cost Control</td>
-<td>Control valuation, commercial evidence and financial impacts within its mandate.</td>
-</tr>
-<tr>
-<td>Management</td>
-<td>Set policy, approve thresholds, review performance and remove systemic constraints.</td>
-</tr>
-</tbody>
-</table></div>
-</section>
-<section class="sec" id="limitations-and-conditions-1"><h2><span class="num">24</span>Limitations and Conditions</h2>
-<ul class="checks"><li>No methodology can compensate for fundamentally incorrect inputs; data quality remains a limiting factor.</li><li>Thresholds and parameters are context-dependent and should not be treated as universal constants.</li><li>A metric can be improved mechanically while the underlying business outcome deteriorates if the metric boundary is poorly designed.</li><li>Local conditions such as supplier market structure, equipment criticality, storage constraints and ERP configuration can materially affect the appropriate method.</li></ul>
-</section>
-<section class="sec" id="management-review-questions-1"><h2><span class="num">25</span>Management Review Questions</h2>
-<ul class="checks"><li>What has changed in the operating environment since the current FIFO, LIFO &amp; FEFO method was established?</li><li>Which exceptions are increasing, recurring or remaining open beyond the expected closure time?</li><li>Is the measured result improving because the process improved, or because the measurement boundary changed?</li><li>Are controls proportionate to material value, criticality, variability and business consequence?</li><li>What single process weakness, if removed, would prevent the largest number of recurring failures?</li></ul>
-</section>
-<div class="pn"><a href="../stores/bin-and-location-management.html"><small>← Previous in Stores</small><b>Bin &amp; Location Management</b></a><a class="next" href="../stores/internal-material-transfer.html"><small>Next in Stores →</small><b>Internal Material Transfer</b></a></div><div class="related"><h3>More in Stores</h3><div class="cards"><a class="card sm" style="--accent:#168a49" href="../stores/stores-5s-and-tpm.html" data-item="stores 5s &amp; tpm"><h3>Stores 5S &amp; TPM</h3><p>Stores 5S &amp; TPM is an industrial materials-management discipline concerned with controlling the relevant material…</p></a><a class="card sm" style="--accent:#168a49" href="../stores/stores-kpis.html" data-item="stores kpis"><h3>Stores KPIs</h3><p>Stores KPIs is a structured management measure used to quantify a defined aspect of materials performance, establish a…</p></a><a class="card sm" style="--accent:#168a49" href="../stores/job-work-reconciliation.html" data-item="job-work reconciliation"><h3>Job-Work Reconciliation</h3><p>Job-Work Reconciliation is an industrial materials-management discipline concerned with controlling the relevant…</p></a><a class="card sm" style="--accent:#168a49" href="../stores/material-identification-and-codification.html" data-item="material identification &amp; codification"><h3>Material Identification &amp; Codification</h3><p>Material identification and codification is the disciplined method of assigning unique, meaningful and controlled…</p></a></div></div></article></div></main>
+</table></div></div>
+<p>The business should document the relationship between operational and financial methods.</p></div></div></section>
+<section class="bl-sec ff-ch" id="s19" style="--c:#168a49"><header class="bl-sec-h"><span class="big" aria-hidden="true">19</span><h2><span class="num">19</span><span class="ch">Chapter 19:</span> Key Takeaways</h2></header><div class="bl-sec-b"><ol class="bl-ol ff-take"><li>FIFO assigns the oldest costs to cost of goods sold first.</li><li>LIFO assigns the newest costs to cost of goods sold first.</li><li>FEFO issues products with the earliest expiration dates first.</li><li>FIFO and LIFO are accounting cost-flow methods.</li><li>FEFO is mainly a physical inventory-rotation method.</li><li>During inflation, FIFO usually produces lower cost of goods sold and higher profit than LIFO.</li><li>During inflation, LIFO usually produces higher cost of goods sold and lower profit than FIFO.</li><li>FIFO is permitted under IFRS and US GAAP.</li><li>LIFO is prohibited under IFRS but permitted under US GAAP, subject to applicable requirements.</li><li>Weighted average smooths changes in purchase costs.</li><li>Specific identification is appropriate for unique, high-value items.</li><li>FEFO is critical for pharmaceuticals, food, chemicals, and other expiring products.</li><li>Accurate batch, lot, barcode, and expiration records improve inventory control.</li><li>Inventory valuation affects the income statement, balance sheet, taxes, and performance ratios.</li><li>A business must apply its selected accounting policy consistently and maintain adequate documentation.</li></ol></div></section>
+<section class="bl-sec ff-gloss" id="s20" style="--c:#c98a00"><header class="bl-sec-h"><span class="big" aria-hidden="true">A–Z</span><h2><span class="num">A–Z</span>Glossary</h2></header><div class="bl-sec-b"><nav class="ff-az" aria-label="Glossary letters"><a href="#g-A">A</a><a href="#g-B">B</a><a href="#g-C">C</a><a href="#g-D">D</a><a href="#g-E">E</a><a href="#g-F">F</a><a href="#g-G">G</a><a href="#g-I">I</a><a href="#g-J">J</a><a href="#g-L">L</a><a href="#g-N">N</a><a href="#g-P">P</a><a href="#g-R">R</a><a href="#g-S">S</a><a href="#g-W">W</a></nav><div class="ff-terms"><div class="ff-term" id="g-A"><h4>Accounting Policy</h4><p>A principle or method selected by an organization for recording and reporting financial transactions.</p></div><div class="ff-term" id="g-B"><h4>Batch</h4><p>A group of products manufactured or received together under similar conditions.</p></div><div class="ff-term"><h4>Balance Sheet</h4><p>A financial statement that reports assets, liabilities, and equity at a particular date.</p></div><div class="ff-term" id="g-C"><h4>Cost of Goods Sold</h4><p>The cost assigned to inventory units sold during an accounting period.</p></div><div class="ff-term"><h4>Cost Layer</h4><p>A group of inventory units with the same purchase or production cost.</p></div><div class="ff-term"><h4>Current Asset</h4><p>An asset expected to be sold, used, or converted into cash within the normal operating cycle or generally within one year.</p></div><div class="ff-term" id="g-D"><h4>Deflation</h4><p>A general decline in prices over time.</p></div><div class="ff-term" id="g-E"><h4>Ending Inventory</h4><p>The inventory remaining at the end of an accounting period.</p></div><div class="ff-term"><h4>Expiration Date</h4><p>The date after which a product may no longer be safe, effective, or suitable for sale or use.</p></div><div class="ff-term" id="g-F"><h4>FEFO</h4><p>First-Expired, First-Out; a physical stock-rotation method that issues products with the earliest expiration dates first.</p></div><div class="ff-term"><h4>FIFO</h4><p>First-In, First-Out; an inventory cost-flow assumption that assigns the earliest costs to cost of goods sold first.</p></div><div class="ff-term" id="g-G"><h4>Gross Profit</h4><p>Sales revenue minus cost of goods sold.</p></div><div class="ff-term" id="g-I"><h4>Inventory</h4><p>Goods and materials held for sale, production, or consumption.</p></div><div class="ff-term"><h4>Inventory Layer</h4><p>A quantity of inventory recorded at a particular unit cost.</p></div><div class="ff-term"><h4>Inventory Turnover</h4><p>A ratio that measures how frequently inventory is sold and replaced.</p>
+<p>A common formula is:</p>
+<figure class="bl-formula"><figcaption><span>ƒ</span>Inventory Turnover</figcaption><div class="bl-math"><math display="block" aria-label="Inventory Turnover = (Cost of Goods Sold) ÷ (Average Inventory)"><mtext>Inventory Turnover</mtext><mo>=</mo><mfrac><mrow><mtext>Cost of Goods Sold</mtext></mrow><mrow><mtext>Average Inventory</mtext></mrow></mfrac></math></div></figure></div><div class="ff-term" id="g-J"><h4>JIT</h4><p>Just-in-time inventory management, which seeks to receive inventory close to the time it is needed.</p></div><div class="ff-term" id="g-L"><h4>LIFO</h4><p>Last-In, First-Out; an inventory cost-flow assumption that assigns the latest costs to cost of goods sold first.</p></div><div class="ff-term"><h4>LIFO Conformity Rule</h4><p>A US tax rule generally requiring a company using LIFO for tax purposes to use LIFO for financial reporting purposes for the same inventory.</p></div><div class="ff-term"><h4>LIFO Liquidation</h4><p>The release of older LIFO cost layers into cost of goods sold because inventory quantities decline.</p></div><div class="ff-term"><h4>LIFO Reserve</h4><p>The difference between inventory valued under FIFO and inventory valued under LIFO.</p></div><div class="ff-term"><h4>Lot</h4><p>A group of inventory items that share an identifying number or common production or receipt characteristics.</p></div><div class="ff-term" id="g-N"><h4>Net Realizable Value</h4><p>Estimated selling price less estimated costs of completion and sale.</p></div><div class="ff-term" id="g-P"><h4>Perpetual Inventory System</h4><p>An inventory system that updates records after each inventory transaction.</p></div><div class="ff-term"><h4>Periodic Inventory System</h4><p>An inventory system that determines ending inventory and cost of goods sold at the end of a period, usually after a physical count.</p></div><div class="ff-term" id="g-R"><h4>Reorder Point</h4><p>The inventory level at which a new purchase order should be placed.</p></div><div class="ff-term" id="g-S"><h4>Safety Stock</h4><p>Additional inventory held to protect against demand and supply uncertainty.</p></div><div class="ff-term"><h4>Specific Identification</h4><p>An inventory method that assigns the actual cost of each identifiable item to the item sold.</p></div><div class="ff-term"><h4>Stores Ledger</h4><p>A detailed record of inventory receipts, issues, balances, quantities, and costs.</p></div><div class="ff-term" id="g-W"><h4>Weighted-Average Cost</h4><p>An inventory valuation method that assigns an average cost to units available for sale.</p></div></div></div></section>
+<div class="pn"><a href="../stores/bin-and-location-management.html"><small>← Previous in Stores</small><b>Bin &amp; Location Management</b></a><a class="next" href="../stores/internal-material-transfer.html"><small>Next in Stores →</small><b>Internal Material Transfer</b></a></div><div class="related"><h3>More in Stores</h3><div class="cards"><a class="card sm" style="--accent:#168a49" href="../stores/stores-5s-and-tpm.html" data-item="stores 5s &amp; tpm"><h3>Stores 5S &amp; TPM</h3><p>Stores 5S &amp; TPM is an industrial materials-management discipline concerned with controlling the relevant material…</p></a><a class="card sm" style="--accent:#168a49" href="../stores/stores-kpis.html" data-item="stores kpis"><h3>Stores KPIs</h3><p>Stores KPIs is a structured management measure used to quantify a defined aspect of materials performance, establish a…</p></a><a class="card sm" style="--accent:#168a49" href="../stores/job-work-reconciliation.html" data-item="job-work reconciliation"><h3>Job-Work Reconciliation</h3><p>Job-Work Reconciliation is an industrial materials-management discipline concerned with controlling the relevant…</p></a><a class="card sm" style="--accent:#168a49" href="../stores/material-identification-and-codification.html" data-item="material identification &amp; codification"><h3>Material Identification &amp; Codification</h3><p>Material identification and codification is the disciplined method of assigning unique, meaningful and controlled…</p></a></div></div>
+
+
+
+
+
+</article></div></main>
 <footer class="site-footer"><div class="wrap">
 <div class="foot-grid">
 <div><h4>Industrial Materials Management</h4><p>A complete professional reference for industrial Stores, Inventory, Purchase, Planning, Materials Management, ERP &amp; MIS and KPIs — 431 topics, each in the same practical 25-part structure.</p></div>

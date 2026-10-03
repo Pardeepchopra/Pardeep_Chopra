@@ -148,3 +148,6 @@
 @media print{.bl-art{display:none}.bl-sec{break-inside:avoid-page;box-shadow:none}}
 
 .bl-ex header small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85;font-weight:800}
+
+/* the site's prev/next ".pn" class must not leak into numbered badges */
+.bl-timeline .pn{display:grid!important;grid-template-columns:none!important;margin:0!important;gap:0!important;place-items:center}
