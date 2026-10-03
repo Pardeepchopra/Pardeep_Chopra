@@ -36,7 +36,7 @@ if(links.length&&"IntersectionObserver" in window){
       }
     });
   },{rootMargin:"-"+(parseInt(getComputedStyle(R).getPropertyValue("--hdr"))||104)+"px 0px -65% 0px"});
-  D.querySelectorAll(".sec[id]").forEach(function(s){io.observe(s);});
+  D.querySelectorAll(".sec[id],.bl-sec[id]").forEach(function(s){io.observe(s);});
 }
 /* collapse the contents list on phones */
 var toc=D.querySelector("details.toc");
