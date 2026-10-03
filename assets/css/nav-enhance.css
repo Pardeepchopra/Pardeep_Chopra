@@ -1,9 +1,0 @@
-@import url("theme-industrial.css");
-.menu-drop.is-open>.menu-panel{display:block}
-.menu-drop.is-open>.menu-trigger{background:#e7eeea;color:#145f57}
-.menu-trigger:focus-visible,.menu-panel a:focus-visible,.btn:focus-visible,.flow-node:focus-visible,.card-link-area:focus-visible{outline:3px solid #2f7d73;outline-offset:2px}
-.discipline:focus-within{outline:3px solid #2f7d73;outline-offset:2px}
-@media(max-width:900px){.menu-panel{max-height:60vh;overflow-y:auto}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important;transition:none!important}}
-.skip-link{position:absolute;left:-9999px;top:0;background:#27302f;color:#fff;padding:10px 14px;z-index:1000000;text-decoration:none;font-weight:700}
-.skip-link:focus{left:8px;top:8px}
